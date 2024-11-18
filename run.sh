@@ -1,0 +1,1 @@
+examples/mcore/gpt4/pretrain_gpt_custom.sh

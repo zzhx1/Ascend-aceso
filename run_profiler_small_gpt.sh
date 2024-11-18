@@ -1,0 +1,1 @@
+profiler/scripts/profile_small_gpt.sh

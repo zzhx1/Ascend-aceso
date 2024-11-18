@@ -1,3 +1,4 @@
+
 # Copyright (c) 2022, NVIDIA CORPORATION. All rights reserved.
 
 import logging
@@ -31,7 +32,7 @@ def need_to_build_dataset():
         return rank == 0
     gpus_per_node = torch.cuda.device_count()
     current_rank = torch.cuda.current_device()
-    if args.tensor_model_parallel_size > gpus_per_node:
+    if args.tensor_parallel_size_of_each_op[0][0] > gpus_per_node:
         return mpu.get_tensor_model_parallel_rank() == 0
     return mpu.get_tensor_model_parallel_rank() == 0 and current_rank % gpus_per_node == 0
 

@@ -76,6 +76,14 @@ def initialize_megatron(
                      "--use-checkpoints-args requires --load argument")
         load_args_from_checkpoint(args)
 
+    if args.prof_op:
+        args.num_gpus = [args.world_size]
+        args.num_layers = 1
+        args.flex_recompute_activations = [False]
+        args.resharding_stages = [False] 
+        args.recompute_ops = [0]
+        args.num_stages = args.pipeline_model_parallel_size
+    
     if args.yaml_cfg is not None:
         args = validate_yaml(args, args_defaults)
     else:
