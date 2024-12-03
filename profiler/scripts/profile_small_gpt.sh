@@ -3,7 +3,8 @@
 export COMBINED_ENABLE=1
 export CUDA_DEVICE_MAX_CONNECTIONS=1
 export PYTORCH_NPU_ALLOC_CONF=expandable_segments:True
-
+# export ASCEND_GLOBAL_LOG_LEVEL=3        # CANN日志级别，0为debug，1为info，2为warning，3为error
+# export ASCEND_SLOG_PRINT_TO_STDOUT=1    # 配置开启日志打屏
 
 
 MASTER_ADDR=localhost
@@ -11,7 +12,7 @@ MASTER_PORT=6000
 NNODES=1
 NODE_RANK=0
 
-export PYTHONPATH=$PYTHONPATH:/workspace/dupfile/RC4_single/ModelLink
+export PYTHONPATH=$PYTHONPATH:/workspace/RC4/ModelLink
 RUNTIME_PATH=$(pwd)/
 PROFILING_PATH=${RUNTIME_PATH}profiled-time-miniset/
 VOCAB_FILE=/workspace/RC4/ModelLink/vocab_file/gpt2-vocab.json
@@ -51,21 +52,19 @@ GPT_ARGS="
     --tokenizer-type GPT2BPETokenizer \
     --use-mcore-models \
     --use-flash-attn \
-    --use-distributed-optimizer \
-    --recompute-granularity selective \
     --no-gradient-accumulation-fusion \
     --no-masked-softmax-fusion \
     --no-bias-gelu-fusion \
     --attention-softmax-in-fp32 \
     --attention-dropout 0.0 \
     --hidden-dropout 0.0 \
-    --fp16
+    --fp16 \
 "
 
 mkdir -p ${PROFILING_PATH}
-MAX_NUM_GPUS=1
+MAX_NUM_GPUS=8
 MODEL_NAME=gpt
-MODEL_SIZE=350M
+MODEL_SIZE=1_3B
 
 echo "------ Start profiling ------"
 for ((tp_size=1; tp_size<=$MAX_NUM_GPUS; tp_size=tp_size*2))
@@ -80,30 +79,29 @@ do
     "
 
     echo [TIME] before profiling tp_size $tp_size : $(date '+%Y-%m-%d-%H-%M-%S') >> ${PROFILING_PATH}profiling_${MODEL_NAME}.log
-    torchrun $DISTRIBUTED_ARGS profiler/op_profiler.py \
+    torchrun $DISTRIBUTED_ARGS op_profiler.py \
         ${DATA_ARGS} \
         ${GPT_ARGS} \
         --use-mcore-models \
         --prof-op \
         --prof-tp-size $tp_size \
         --prof-path $PROFILING_PATH \
-        --prof-cache-file ${PROFILING_PATH}${MODEL_NAME}_op_profile.pkl \
         --prof-model-name $MODEL_NAME \
         --prof-model-size $MODEL_SIZE \
-        --prof-warmup-times 1 \
-        --prof-repeat-times 1 \
+        --prof-warmup-times 5 \
+        --prof-repeat-times 5 \
         2>&1 | tee ${PROFILING_PATH}profiling_${MODEL_NAME}_op_tp${tp_size}.log
     
     echo [TIME] after profiling tp_size $tp_size : $(date '+%Y-%m-%d-%H-%M-%S') >> ${PROFILING_PATH}profiling_${MODEL_NAME}.log
 done
 
-exit 0
+
 echo "comm_profiler.py"
 for ((num_gpus=2; num_gpus<=$MAX_NUM_GPUS; num_gpus=num_gpus*2))
 do
 echo [TIME] before profiling communication ${num_gpus}-gpus : $(date '+%Y-%m-%d-%H-%M-%S') >> ${PROFILING_PATH}profiling_${MODEL_NAME}.log
 
-python3 profiler/comm_profiler.py \
+python3 comm_profiler.py \
     --prof-path $PROFILING_PATH \
     --prof-cache-file ${PROFILING_PATH}comm_profile.pkl \
     --prof-op-time-path $PROFILING_PATH \

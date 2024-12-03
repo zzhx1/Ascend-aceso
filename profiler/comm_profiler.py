@@ -1,6 +1,8 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
-
+import torch_npu
+from torch_npu.npu import amp # 导入AMP模块
+from torch_npu.contrib import transfer_to_npu # 使能自动迁移
 import os
 import torch
 import torch.distributed as dist
@@ -162,11 +164,13 @@ def run(rank, world_size, data_size_list, model, size, torch_data_type):
             f_result = open(args.prof_path + save_file_name,'w')
             f_csv = csv.writer(f_result)
             f_csv.writerow(result_title)
+            print(f"avg_time_list: {avg_time_list}")
             for data_size_in_mb in avg_time_list:
                 tmp_row = [0, 0]
                 tmp_row[0] = '{:.0f}'.format(data_size_in_mb)
                 tmp_row[1] = '{:.3f}'.format(float(avg_time_list[data_size_in_mb]))
                 f_csv.writerow(tmp_row)  
+            f_result.close()
 
     if rank == 0:
         save_dict = {}

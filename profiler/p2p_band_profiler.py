@@ -3,6 +3,10 @@
 
 import os
 import torch
+import torch_npu
+import sys
+from torch_npu.npu import amp # 导入AMP模块
+from torch_npu.contrib import transfer_to_npu # 使能自动迁移
 import torch.distributed as dist
 import torch.multiprocessing as multiproc
 import time
@@ -12,6 +16,7 @@ result_file_name = os.environ.get("FILE_NAME", "p2p_band.log")
 
 def run(local_rank, global_rank):
     """ Simple collective communication. """
+    print(f"{'#'*80}\n{local_rank}\n{global_rank}\n {'#'*80}")
     global result_file_name
     all_data_sizes = []
     all_bandwidths = []
@@ -24,6 +29,7 @@ def run(local_rank, global_rank):
         all_data_sizes.append(data_size_in_mb)
         data_size = data_size_in_mb * 1024 * 1024 // 2
         tensor = torch.ones(data_size, dtype=torch.float16).cuda()
+        
 
         if global_rank == 0:
             for i in range(warmup_times): 
@@ -49,7 +55,8 @@ def run(local_rank, global_rank):
                 torch.cuda.synchronize()
                 end = time.time()    
                 time_list.append((end - start)*1000)    
-
+        
+        
         avg_time_result_in_ms = sum(time_list)/repeat_times
         bandwidth_in_gb_per_second = (data_size_in_mb/1024) / (avg_time_result_in_ms/1000)
         all_bandwidths.append(f"{bandwidth_in_gb_per_second:.2f}")
@@ -76,11 +83,16 @@ def init_process(local_rank, global_rank, world_size, fn, backend='nccl'):
     
     fn(local_rank, global_rank)
 
+# import multiprocessing as multiproc
+
 if __name__ == "__main__":
+    
     gpus_per_node = int(os.getenv('GPUS_PER_NODE', 1))
     num_nodes = int(os.getenv('NNODES', 1))
     node_rank = int(os.getenv('NODE_RANK', 0))
-    multiproc.set_start_method("spawn")
+    multiproc.set_start_method("spawn", force=True)
+    print(f"{multiproc.get_start_method()}")
+
     world_size = gpus_per_node * num_nodes
 
     processes = []

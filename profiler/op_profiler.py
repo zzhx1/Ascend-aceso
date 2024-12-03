@@ -2,9 +2,10 @@
 # Licensed under the MIT License.
 
 import torch_npu
-from modellink import megatron_adaptor
-
+from torch_npu.npu import amp # 导入AMP模块
+from torch_npu.contrib import transfer_to_npu # 使能自动迁移
 import torch
+
 import time
 import csv
 import pickle
@@ -13,12 +14,12 @@ import numpy as np
 import sys
 
 
-sys.path.append('../')
-from modellink.training.initialize import set_jit_fusion_options
-from modellink.tasks.finetune.lora.utils import is_enable_lora
+# sys.path.append('../')
+from modellink import megatron_adaptor
 from megatron.training.arguments import core_transformer_config_from_args, flex_config_from_args
 from megatron.training.yaml_arguments import core_transformer_config_from_yaml
-from megatron.training import initialize_megatron
+# from megatron.training import initialize_megatron
+from modellink.training.initialize import initialize_megatron
 from megatron.training import get_args
 from megatron.core import mpu 
 from megatron.core.flexmodels.gpt.flex_gpt import FlexGPTModel
@@ -63,14 +64,15 @@ def wrap_op(op, config, flex_config):
     input_mats = np.array(all_ranks).reshape([1, 1, 1, op.dp_size, op.tp_size])    
     input_mats_ = {}
     op.input_mats = input_mats_
-
     # for param in op.parameters():
     #     mpu.set_defaults_if_not_set_tensor_model_parallel_attributes(param)
-
+    # op.cuda(torch.cuda.current_device())
+    
     op.cuda(torch.cuda.current_device())
     if args.fp16:
         op = Float16Module(config, op) 
 
+    
     op = DDP(config,
                      flex_config,
                      op,
@@ -83,6 +85,8 @@ def wrap_op(op, config, flex_config):
                      # model chunks is overlapped with compute anyway.
                      disable_bucketing=True,
                      check_for_nan_in_grad=args.check_for_nan_in_loss_and_grad)
+    
+
     return op
     # return op
     raise NotImplementedError('Unknown DDP implementation specified: {}. '
@@ -125,7 +129,7 @@ def get_model(model_name, model_size):
         args.max_position_embeddings = seq_len
         args.padded_vocab_size = vocab_size
         args.num_layers = num_layers
-        args.seq_length = seq_len
+        args.seq_length = seq_len     
         use_te = args.transformer_impl == "transformer_engine"
         if args.yaml_cfg is not None:
             config = core_transformer_config_from_yaml(args, "language_model")
@@ -319,15 +323,16 @@ def get_outputs_and_grads(output_tensors: dict, output_extra_tensors, grad_type)
         origin_outputs.append(output_extra_tensors[output_extra_name])
 
     output_grads = []
+    
     ## add one more dummy op for each output tensor
     for output_tensor in origin_outputs:
         if output_tensor == None:
             continue
         tensor_shape = list(output_tensor.size())
         if len(tensor_shape) >= 3:
-            pool_op = torch.nn.AdaptiveMaxPool2d(1)
+            pool_op = lambda x: torch.mean(x, dim=(-2, -1))
         elif len(tensor_shape) >= 2:
-            pool_op = torch.nn.AdaptiveMaxPool1d(1)
+            pool_op = lambda x: torch.mean(x, dim=-1)
         else:
             pool_op = torch.nn.Identity()
         output_tensor_ = pool_op(output_tensor)
@@ -340,6 +345,7 @@ def get_outputs_and_grads(output_tensors: dict, output_extra_tensors, grad_type)
 def profile_op(mbs, algo, op_info: OpInfo, params_dtype, grad_type, op_uniq_name, config, flex_config):
     global profiled_results
     op_info.op_index = 0
+    
     op = wrap_op(gen_op(op_info), config, flex_config)
     input_data, input_extra_tensors = get_inputs(op_uniq_name, params_dtype)
     input_tensors = get_input_tensors(op_info, input_data, input_extra_tensors)
@@ -381,8 +387,9 @@ def profile_op(mbs, algo, op_info: OpInfo, params_dtype, grad_type, op_uniq_name
 
         avg_warmup_time = (sum_warmup_time * 1000000) / args.prof_warmup_times
         tensor_value = torch.tensor(avg_warmup_time).cuda()
-        torch.distributed.all_reduce(tensor_value, op=torch.distributed.ReduceOp.AVG)
+        torch.distributed.all_reduce(tensor_value, op=torch.distributed.ReduceOp.SUM)        
         avg_warmup_time = tensor_value.item()
+        avg_warmup_time = tensor_value.item() / args.world_size
 
         if args.prof_repeat_threshold is not None and avg_warmup_time >= args.prof_repeat_threshold:
             remaining_fwd_times = args.prof_repeat_times[1]
@@ -519,7 +526,8 @@ def dump_profiled_results(save_filename_prefix, mbs, algo, op_list: list[OpInfo]
         save_dict = {}
         save_dict["profiled_results"] = profiled_results
         save_dict["op_hash_list"] = op_hash_list
-        pickle.dump(save_dict, open(args.prof_cache_file, "wb"))
+        if args.prof_cache_file is not None:
+            pickle.dump(save_dict, open(args.prof_cache_file, "wb"))
 
 def estimate_profile_time(task):
     global ref_data
@@ -566,8 +574,8 @@ def run_profile(task):
     mbs = task["mbs"]
 
     grad_type = torch.float
-    flex_model, config, flex_config = get_model(model, size)
-    op_list: list[OpInfo] = flex_model.full_op_list
+
+    
 
     args = get_args()
     tp_size = args.prof_tp_size
@@ -576,6 +584,8 @@ def run_profile(task):
     save_filename_prefix = f"{model}_{size}"
 
     args.micro_batch_size = mbs
+    flex_model, config, flex_config = get_model(model, size)
+    op_list: list[OpInfo] = flex_model.full_op_list
     for algo in algo_list:
         ## infer the data size according to op specs
         infer_data_size(op_list, save_filename_prefix, mbs, algo)
@@ -583,6 +593,9 @@ def run_profile(task):
         for op_info in op_list:
             op_uniq_name = save_filename_prefix + op_info.op_name + f"mbs{mbs}tp_size{tp_size}algo{algo}" 
             op_hash = get_op_hash(op_info, mbs, tp_size, algo, save_filename_prefix)
+            
+              
+
             if op_uniq_name in profiled_results:
                 print_rank0(f"working on {op_info.op_name}, mbs = {mbs}, tp = {tp_size}, algo = {algo} ... Hit same op in cache!!!")  
                 continue
@@ -599,7 +612,9 @@ def run_profile(task):
                     if SKIP_RUNNING:
                         _fwd_time, _bwd_time, _reserved_fwd, _reserved_bwd, _allocated_fwd = 0, 0, 0, 0, 0
                     else:
+                        
                         _fwd_time, _bwd_time, _reserved_fwd, _reserved_bwd, _allocated_fwd = profile_op(mbs, algo, op_info, params_dtype, grad_type, op_uniq_name, config, flex_config) 
+
                 except RuntimeError as e:
                     print(f"RuntimeError: {e}. {traceback.format_exc()}")
                     _fwd_time, _bwd_time, _reserved_fwd, _reserved_bwd, _allocated_fwd = 10000000, 10000000, 10000000, 10000000, 10000000
@@ -638,13 +653,22 @@ def get_prof_tasks_by_rank(all_tasks, num_nodes, node_rank):
             print(f"DROP task: {all_tasks[i]['model']}_{all_tasks[i]['size']}, mbs {all_tasks[i]['mbs']}. (accum time = {_current_sum_time:.2f} / {sum_time:.2f}, ratio = {_current_ratio:.2f}). this should be profiled by rank {_supposed_rank}")
     return _all_tasks
 
+
+import torch_npu.profiler
+def trace_handler(p):
+    rank = int(os.environ.get("RANK", 0))   
+    # output = p.key_averages().table(sort_by="self_cuda_time_total", row_limit=10)
+    # print(f"Rank{rank}-trace-handler\n",output)  
+    trace_file = f"/workspace/trace_file/trace_{rank}_{p}.json"
+    p.tensorboard_trace_handler(trace_file)
+
 if __name__ == "__main__":
+    torch.npu.set_compile_mode(jit_compile=False)
     start_profiling_time = time.time()
     initialize_megatron()
     args = get_args()
-    print(args)
     ## read cached database if exists
-    if os.path.exists(args.prof_cache_file):
+    if args.prof_cache_file is not None and os.path.exists(args.prof_cache_file):
         cached_results = pickle.load(open(args.prof_cache_file, "rb"))
         profiled_results = cached_results["profiled_results"]
         op_hash_list = cached_results["op_hash_list"]
@@ -666,15 +690,27 @@ if __name__ == "__main__":
             for mbs in micro_batch_sizes:
                 all_prof_tasks.append({"model": model, "size": size, "mbs": mbs})
 
+
     ## distribute profiling tasks if using multiple nodes
     if args.prof_num_nodes is not None:
         new_hash_list = []
         ref_data = pickle.load(open(args.prof_ref_data, "rb"))["profiled_results"]
         all_prof_tasks = get_prof_tasks_by_rank(all_prof_tasks, args.prof_num_nodes, args.prof_node_rank)
 
+
+#########################################################################        
     ## run profiling tasks
+    # with torch.profiler.profile(
+    #     activities=[torch.profiler.ProfilerActivity.CPU, torch.profiler.ProfilerActivity.CUDA],           
+    #     on_trace_ready=torch_npu.profiler.tensorboard_trace_handler("./result"),
+    #     schedule=torch.profiler.schedule(wait=1, warmup=1, active=2, repeat=1),
+    #     with_stack=True
+    # ) as prof:
     for prof_task in all_prof_tasks:
         run_profile(prof_task)
+        # prof.step()
+#########################################################################        
+
 
     end_profiling_time = time.time()
     print_rank0(f"[TOTAL PROFILING TIME] {end_profiling_time - start_profiling_time:2f} s")
