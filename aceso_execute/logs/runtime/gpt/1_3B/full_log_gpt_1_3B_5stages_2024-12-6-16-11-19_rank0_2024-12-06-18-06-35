@@ -1,0 +1,101 @@
+[2024-12-06 18:06:37,886] torch.distributed.run: [WARNING] 
+[2024-12-06 18:06:37,886] torch.distributed.run: [WARNING] *****************************************
+[2024-12-06 18:06:37,886] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-12-06 18:06:37,886] torch.distributed.run: [WARNING] *****************************************
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:299: ImportWarning: 
+    *************************************************************************************************************
+    The torch.Tensor.cuda and torch.nn.Module.cuda are replaced with torch.Tensor.npu and torch.nn.Module.npu now..
+    The torch.cuda.DoubleTensor is replaced with torch.npu.FloatTensor cause the double type is not supported now..
+    The backend in torch.distributed.init_process_group set to hccl now..
+    The torch.cuda.* and torch.cuda.amp.* are replaced with torch.npu.* and torch.npu.amp.* now..
+    The device parameters have been replaced with npu in the function below:
+    torch.logspace, torch.randint, torch.hann_window, torch.rand, torch.full_like, torch.ones_like, torch.rand_like, torch.randperm, torch.arange, torch.frombuffer, torch.normal, torch._empty_per_channel_affine_quantized, torch.empty_strided, torch.empty_like, torch.scalar_tensor, torch.tril_indices, torch.bartlett_window, torch.ones, torch.sparse_coo_tensor, torch.randn, torch.kaiser_window, torch.tensor, torch.triu_indices, torch.as_tensor, torch.zeros, torch.randint_like, torch.full, torch.eye, torch._sparse_csr_tensor_unsafe, torch.empty, torch._sparse_coo_tensor_unsafe, torch.blackman_window, torch.zeros_like, torch.range, torch.sparse_csr_tensor, torch.randn_like, torch.from_file, torch._cudnn_init_dropout_state, torch._empty_affine_quantized, torch.linspace, torch.hamming_window, torch.empty_quantized, torch._pin_memory, torch.autocast, torch.load, torch.Generator, torch.Tensor.new_empty, torch.Tensor.new_empty_strided, torch.Tensor.new_full, torch.Tensor.new_ones, torch.Tensor.new_tensor, torch.Tensor.new_zeros, torch.Tensor.to, torch.nn.Module.to, torch.nn.Module.to_empty
+    *************************************************************************************************************
+    
+  warnings.warn(msg, ImportWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py39_cpu/adaptive_cp/build.ninja...
+Building extension module adaptive_cp...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py39_cpu/adaptive_cp/build.ninja...
+Building extension module adaptive_cp...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+ninja: no work to do.
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py39_cpu/adaptive_cp/build.ninja...
+Building extension module adaptive_cp...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+##############################
+!!!!!!!!!!!!!!!!!!!
+world_size: 8
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/tmp/tmpvi5cgbuk'>
+  _warnings.warn(warn_message, ResourceWarning)
+##############################
+!!!!!!!!!!!!!!!!!!!
+world_size: 8
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/tmp/tmpk0g17oek'>
+  _warnings.warn(warn_message, ResourceWarning)
+##############################
+!!!!!!!!!!!!!!!!!!!
+##############################
+!!!!!!!!!!!!!!!!!!!
+world_size: 8
+world_size: 8
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/tmp/tmpxor9h6hs'>
+  _warnings.warn(warn_message, ResourceWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/tmp/tmpvibac5yx'>
+  _warnings.warn(warn_message, ResourceWarning)
+##############################
+!!!!!!!!!!!!!!!!!!!
+world_size: 8
+##############################
+!!!!!!!!!!!!!!!!!!!
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/tmp/tmpae5n_elb'>
+  _warnings.warn(warn_message, ResourceWarning)
+##############################
+!!!!!!!!!!!!!!!!!!!
+world_size: 8
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/tmp/tmp493l0dhf'>
+  _warnings.warn(warn_message, ResourceWarning)
+world_size: 8
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/tmp/tmpxfpeinlh'>
+  _warnings.warn(warn_message, ResourceWarning)
+##############################
+!!!!!!!!!!!!!!!!!!!
+world_size: 8
+using world size: 8, context-parallel size: 1
+--checkpoint-activations is no longer valid, use --recompute-activations, or, for more control, --recompute-granularity and --recompute-method.
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/tmp/tmp5ss3tnkb'>
+  _warnings.warn(warn_message, ResourceWarning)

@@ -24,7 +24,7 @@ init_config=balance
 
 #### Paths ####
 DATABASE_PATH=../profiler/profiled-time-miniset/
-RESULT_PATH=../test_eval_logs_4/
+RESULT_PATH=./test_eval_logs_4/
 
 LOG_PATH=${RESULT_PATH}search/${model_name}/${model_size}/
 CONFIG_SAVE_PATH=${RESULT_PATH}configs/${model_name}/${model_size}/
@@ -33,6 +33,25 @@ mkdir -p ${LOG_PATH}trends && mkdir -p ${CONFIG_SAVE_PATH}top_configs && mkdir -
 CURRENT_TIME=$(date '+%Y-%m-%d-%H-%M-%S')
 echo "[LOG][SEARCH]($CURRENT_TIME) searching for $model_name, $model_size, $num_nodes nodes * $gpus_per_node GPUs." >> ${RESULT_PATH}full_log.log
     
+
+
+# python3 aceso_search.py \
+#     --model-name $model_name \
+#     --model-size $model_size \
+#     --global-batch-size $global_batch_size \
+#     --micro-batch-size 1 2 4 8 \
+#     --num-nodes $num_nodes \
+#     --num-gpus-per-node $gpus_per_node \
+#     --memory-limit $memory_limit \
+#     --log-path $LOG_PATH \
+#     --profiled-time-path $DATABASE_PATH \
+#     --config-save-path $CONFIG_SAVE_PATH \
+#     --config-suffix $CURRENT_TIME \
+#     --max-num-hops $max_num_hops \
+#     --time-budget-total $budget \
+#     --initial-point $init_config 
+
+
 python3 aceso_search.py \
     --model-name $model_name \
     --model-size $model_size \

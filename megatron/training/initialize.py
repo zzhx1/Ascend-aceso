@@ -49,13 +49,14 @@ def initialize_megatron(
     Returns a function to finalize distributed env initialization
     (optionally, only when args.lazy_mpu_init == True)
     """
+    
     if not allow_no_cuda:
         # Make sure cuda is available.
         assert torch.cuda.is_available(), "Megatron requires CUDA."
-
+    
     # Parse arguments
     args = parse_args(extra_args_provider, ignore_unknown_args)
-
+    
     if args.use_checkpoint_args or args_defaults.get("use_checkpoint_args", False):
         assert args.load is not None, "--use-checkpoints-args requires --load argument"
         load_args_from_checkpoint(args)
@@ -68,7 +69,6 @@ def initialize_megatron(
         args.flex_recompute_activations = [False]
         args.resharding_stages = [False] 
         args.recompute_ops = [0]
-    
     if args.yaml_cfg is not None:
         args = validate_yaml(args, args_defaults)
     else:

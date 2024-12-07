@@ -1,0 +1,390 @@
+[2024-12-06 20:00:37,858] torch.distributed.run: [WARNING] 
+[2024-12-06 20:00:37,858] torch.distributed.run: [WARNING] *****************************************
+[2024-12-06 20:00:37,858] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-12-06 20:00:37,858] torch.distributed.run: [WARNING] *****************************************
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:299: ImportWarning: 
+    *************************************************************************************************************
+    The torch.Tensor.cuda and torch.nn.Module.cuda are replaced with torch.Tensor.npu and torch.nn.Module.npu now..
+    The torch.cuda.DoubleTensor is replaced with torch.npu.FloatTensor cause the double type is not supported now..
+    The backend in torch.distributed.init_process_group set to hccl now..
+    The torch.cuda.* and torch.cuda.amp.* are replaced with torch.npu.* and torch.npu.amp.* now..
+    The device parameters have been replaced with npu in the function below:
+    torch.logspace, torch.randint, torch.hann_window, torch.rand, torch.full_like, torch.ones_like, torch.rand_like, torch.randperm, torch.arange, torch.frombuffer, torch.normal, torch._empty_per_channel_affine_quantized, torch.empty_strided, torch.empty_like, torch.scalar_tensor, torch.tril_indices, torch.bartlett_window, torch.ones, torch.sparse_coo_tensor, torch.randn, torch.kaiser_window, torch.tensor, torch.triu_indices, torch.as_tensor, torch.zeros, torch.randint_like, torch.full, torch.eye, torch._sparse_csr_tensor_unsafe, torch.empty, torch._sparse_coo_tensor_unsafe, torch.blackman_window, torch.zeros_like, torch.range, torch.sparse_csr_tensor, torch.randn_like, torch.from_file, torch._cudnn_init_dropout_state, torch._empty_affine_quantized, torch.linspace, torch.hamming_window, torch.empty_quantized, torch._pin_memory, torch.autocast, torch.load, torch.Generator, torch.Tensor.new_empty, torch.Tensor.new_empty_strided, torch.Tensor.new_full, torch.Tensor.new_ones, torch.Tensor.new_tensor, torch.Tensor.new_zeros, torch.Tensor.to, torch.nn.Module.to, torch.nn.Module.to_empty
+    *************************************************************************************************************
+    
+  warnings.warn(msg, ImportWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/workspace/RC4/ModelLink/megatron/training/arguments.py:944: DeprecationWarning: invalid escape sequence \ 
+  '   --rampup-batch-size 16 8 300000 \ '
+/workspace/RC4/ModelLink/megatron/training/arguments.py:944: DeprecationWarning: invalid escape sequence \ 
+  '   --rampup-batch-size 16 8 300000 \ '
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py39_cpu/adaptive_cp/build.ninja...
+Building extension module adaptive_cp...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+ninja: no work to do.
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py39_cpu/adaptive_cp/build.ninja...
+Building extension module adaptive_cp...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+ninja: no work to do.
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+world_size: 8
+using world size: 8, context-parallel size: 1
+1123124
+--checkpoint-activations is no longer valid, use --recompute-activations, or, for more control, --recompute-granularity and --recompute-method.
+2
+3
+WARNING: Setting args.overlap_p2p_comm to False since non-interleaved schedule does not support overlapping p2p communication
+4
+accumulate and all-reduce gradients in fp32 for bfloat16 data type.
+using torch.bfloat16 for parameters ...
+5
+6
+7
+8
+9
+10
+11
+Traceback (most recent call last):
+  File "/workspace/RC4/ModelLink/pretrain_gpt.py", line 228, in <module>
+    main()
+  File "/workspace/RC4/ModelLink/pretrain_gpt.py", line 221, in main
+    pretrain(train_valid_test_datasets_provider,
+  File "/workspace/RC4/ModelLink/modellink/training/training.py", line 290, in pretrain
+    initialize_megatron(extra_args_provider=extra_args_provider,
+  File "/workspace/RC4/ModelLink/modellink/training/initialize.py", line 93, in initialize_megatron
+    validate_args(args, args_defaults)####
+  File "/workspace/RC4/ModelLink/modellink/training/arguments.py", line 965, in wrapper
+    megatron_validate_args(args, defaults)
+  File "/workspace/RC4/ModelLink/megatron/training/arguments.py", line 534, in validate_args
+    validate_json_args(args)
+  File "/workspace/RC4/ModelLink/megatron/training/json_arguments.py", line 50, in validate_json_args
+    assert len(args.flex_recompute_activations) == args.num_stages, f"flex_recompute_activations should have the same length as num_stages: {len(args.flex_recompute_activations)} {args.num_stages}"
+AttributeError: 'Namespace' object has no attribute 'flex_recompute_activations'
+[ERROR] 2024-12-06-20:00:46 (PID:241110, Device:-1, RankID:-1) ERR99999 UNKNOWN application exception
+world_size: 8
+1123124
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Traceback (most recent call last):
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/tmp/tmpegi4y4dg'>
+  _warnings.warn(warn_message, ResourceWarning)
+  File "/workspace/RC4/ModelLink/pretrain_gpt.py", line 228, in <module>
+    main()
+  File "/workspace/RC4/ModelLink/pretrain_gpt.py", line 221, in main
+    pretrain(train_valid_test_datasets_provider,
+  File "/workspace/RC4/ModelLink/modellink/training/training.py", line 290, in pretrain
+    initialize_megatron(extra_args_provider=extra_args_provider,
+  File "/workspace/RC4/ModelLink/modellink/training/initialize.py", line 93, in initialize_megatron
+    validate_args(args, args_defaults)####
+  File "/workspace/RC4/ModelLink/modellink/training/arguments.py", line 965, in wrapper
+    megatron_validate_args(args, defaults)
+  File "/workspace/RC4/ModelLink/megatron/training/arguments.py", line 534, in validate_args
+    validate_json_args(args)
+  File "/workspace/RC4/ModelLink/megatron/training/json_arguments.py", line 50, in validate_json_args
+    assert len(args.flex_recompute_activations) == args.num_stages, f"flex_recompute_activations should have the same length as num_stages: {len(args.flex_recompute_activations)} {args.num_stages}"
+AttributeError: 'Namespace' object has no attribute 'flex_recompute_activations'
+[ERROR] 2024-12-06-20:00:46 (PID:241114, Device:-1, RankID:-1) ERR99999 UNKNOWN application exception
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/tmp/tmplchfccv4'>
+  _warnings.warn(warn_message, ResourceWarning)
+world_size: 8
+1123124
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Traceback (most recent call last):
+  File "/workspace/RC4/ModelLink/pretrain_gpt.py", line 228, in <module>
+    main()
+  File "/workspace/RC4/ModelLink/pretrain_gpt.py", line 221, in main
+    pretrain(train_valid_test_datasets_provider,
+  File "/workspace/RC4/ModelLink/modellink/training/training.py", line 290, in pretrain
+    initialize_megatron(extra_args_provider=extra_args_provider,
+  File "/workspace/RC4/ModelLink/modellink/training/initialize.py", line 93, in initialize_megatron
+    validate_args(args, args_defaults)####
+  File "/workspace/RC4/ModelLink/modellink/training/arguments.py", line 965, in wrapper
+    megatron_validate_args(args, defaults)
+  File "/workspace/RC4/ModelLink/megatron/training/arguments.py", line 534, in validate_args
+    validate_json_args(args)
+  File "/workspace/RC4/ModelLink/megatron/training/json_arguments.py", line 50, in validate_json_args
+    assert len(args.flex_recompute_activations) == args.num_stages, f"flex_recompute_activations should have the same length as num_stages: {len(args.flex_recompute_activations)} {args.num_stages}"
+AttributeError: 'Namespace' object has no attribute 'flex_recompute_activations'
+[ERROR] 2024-12-06-20:00:46 (PID:241113, Device:-1, RankID:-1) ERR99999 UNKNOWN application exception
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/tmp/tmpzloypyoq'>
+  _warnings.warn(warn_message, ResourceWarning)
+world_size: 8
+1123124
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Traceback (most recent call last):
+  File "/workspace/RC4/ModelLink/pretrain_gpt.py", line 228, in <module>
+    main()
+  File "/workspace/RC4/ModelLink/pretrain_gpt.py", line 221, in main
+    pretrain(train_valid_test_datasets_provider,
+  File "/workspace/RC4/ModelLink/modellink/training/training.py", line 290, in pretrain
+    initialize_megatron(extra_args_provider=extra_args_provider,
+  File "/workspace/RC4/ModelLink/modellink/training/initialize.py", line 93, in initialize_megatron
+    validate_args(args, args_defaults)####
+  File "/workspace/RC4/ModelLink/modellink/training/arguments.py", line 965, in wrapper
+    megatron_validate_args(args, defaults)
+  File "/workspace/RC4/ModelLink/megatron/training/arguments.py", line 534, in validate_args
+    validate_json_args(args)
+  File "/workspace/RC4/ModelLink/megatron/training/json_arguments.py", line 50, in validate_json_args
+    assert len(args.flex_recompute_activations) == args.num_stages, f"flex_recompute_activations should have the same length as num_stages: {len(args.flex_recompute_activations)} {args.num_stages}"
+AttributeError: 'Namespace' object has no attribute 'flex_recompute_activations'
+[ERROR] 2024-12-06-20:00:46 (PID:241116, Device:-1, RankID:-1) ERR99999 UNKNOWN application exception
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/tmp/tmpm3grk035'>
+  _warnings.warn(warn_message, ResourceWarning)
+world_size: 8
+1123124
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Traceback (most recent call last):
+  File "/workspace/RC4/ModelLink/pretrain_gpt.py", line 228, in <module>
+    main()
+  File "/workspace/RC4/ModelLink/pretrain_gpt.py", line 221, in main
+    pretrain(train_valid_test_datasets_provider,
+  File "/workspace/RC4/ModelLink/modellink/training/training.py", line 290, in pretrain
+    initialize_megatron(extra_args_provider=extra_args_provider,
+  File "/workspace/RC4/ModelLink/modellink/training/initialize.py", line 93, in initialize_megatron
+    validate_args(args, args_defaults)####
+  File "/workspace/RC4/ModelLink/modellink/training/arguments.py", line 965, in wrapper
+    megatron_validate_args(args, defaults)
+  File "/workspace/RC4/ModelLink/megatron/training/arguments.py", line 534, in validate_args
+    validate_json_args(args)
+  File "/workspace/RC4/ModelLink/megatron/training/json_arguments.py", line 50, in validate_json_args
+    assert len(args.flex_recompute_activations) == args.num_stages, f"flex_recompute_activations should have the same length as num_stages: {len(args.flex_recompute_activations)} {args.num_stages}"
+AttributeError: 'Namespace' object has no attribute 'flex_recompute_activations'
+[ERROR] 2024-12-06-20:00:46 (PID:241111, Device:-1, RankID:-1) ERR99999 UNKNOWN application exception
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/tmp/tmpd__a79cb'>
+  _warnings.warn(warn_message, ResourceWarning)
+world_size: 8
+1123124
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Traceback (most recent call last):
+  File "/workspace/RC4/ModelLink/pretrain_gpt.py", line 228, in <module>
+    main()
+  File "/workspace/RC4/ModelLink/pretrain_gpt.py", line 221, in main
+    pretrain(train_valid_test_datasets_provider,
+  File "/workspace/RC4/ModelLink/modellink/training/training.py", line 290, in pretrain
+    initialize_megatron(extra_args_provider=extra_args_provider,
+  File "/workspace/RC4/ModelLink/modellink/training/initialize.py", line 93, in initialize_megatron
+    validate_args(args, args_defaults)####
+  File "/workspace/RC4/ModelLink/modellink/training/arguments.py", line 965, in wrapper
+    megatron_validate_args(args, defaults)
+  File "/workspace/RC4/ModelLink/megatron/training/arguments.py", line 534, in validate_args
+    validate_json_args(args)
+  File "/workspace/RC4/ModelLink/megatron/training/json_arguments.py", line 50, in validate_json_args
+    assert len(args.flex_recompute_activations) == args.num_stages, f"flex_recompute_activations should have the same length as num_stages: {len(args.flex_recompute_activations)} {args.num_stages}"
+AttributeError: 'Namespace' object has no attribute 'flex_recompute_activations'
+[ERROR] 2024-12-06-20:00:46 (PID:241115, Device:-1, RankID:-1) ERR99999 UNKNOWN application exception
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/tmp/tmp4nnn8ms9'>
+  _warnings.warn(warn_message, ResourceWarning)
+world_size: 8
+1123124
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Traceback (most recent call last):
+  File "/workspace/RC4/ModelLink/pretrain_gpt.py", line 228, in <module>
+    main()
+  File "/workspace/RC4/ModelLink/pretrain_gpt.py", line 221, in main
+    pretrain(train_valid_test_datasets_provider,
+  File "/workspace/RC4/ModelLink/modellink/training/training.py", line 290, in pretrain
+    initialize_megatron(extra_args_provider=extra_args_provider,
+  File "/workspace/RC4/ModelLink/modellink/training/initialize.py", line 93, in initialize_megatron
+    validate_args(args, args_defaults)####
+  File "/workspace/RC4/ModelLink/modellink/training/arguments.py", line 965, in wrapper
+    megatron_validate_args(args, defaults)
+  File "/workspace/RC4/ModelLink/megatron/training/arguments.py", line 534, in validate_args
+    validate_json_args(args)
+  File "/workspace/RC4/ModelLink/megatron/training/json_arguments.py", line 50, in validate_json_args
+    assert len(args.flex_recompute_activations) == args.num_stages, f"flex_recompute_activations should have the same length as num_stages: {len(args.flex_recompute_activations)} {args.num_stages}"
+AttributeError: 'Namespace' object has no attribute 'flex_recompute_activations'
+[ERROR] 2024-12-06-20:00:47 (PID:241112, Device:-1, RankID:-1) ERR99999 UNKNOWN application exception
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/tmp/tmpvrf7y1kg'>
+  _warnings.warn(warn_message, ResourceWarning)
+world_size: 8
+1123124
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Traceback (most recent call last):
+  File "/workspace/RC4/ModelLink/pretrain_gpt.py", line 228, in <module>
+    main()
+  File "/workspace/RC4/ModelLink/pretrain_gpt.py", line 221, in main
+    pretrain(train_valid_test_datasets_provider,
+  File "/workspace/RC4/ModelLink/modellink/training/training.py", line 290, in pretrain
+    initialize_megatron(extra_args_provider=extra_args_provider,
+  File "/workspace/RC4/ModelLink/modellink/training/initialize.py", line 93, in initialize_megatron
+    validate_args(args, args_defaults)####
+  File "/workspace/RC4/ModelLink/modellink/training/arguments.py", line 965, in wrapper
+    megatron_validate_args(args, defaults)
+  File "/workspace/RC4/ModelLink/megatron/training/arguments.py", line 534, in validate_args
+    validate_json_args(args)
+  File "/workspace/RC4/ModelLink/megatron/training/json_arguments.py", line 50, in validate_json_args
+    assert len(args.flex_recompute_activations) == args.num_stages, f"flex_recompute_activations should have the same length as num_stages: {len(args.flex_recompute_activations)} {args.num_stages}"
+AttributeError: 'Namespace' object has no attribute 'flex_recompute_activations'
+[ERROR] 2024-12-06-20:00:47 (PID:241117, Device:-1, RankID:-1) ERR99999 UNKNOWN application exception
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/tmp/tmp34mvg5rx'>
+  _warnings.warn(warn_message, ResourceWarning)
+[2024-12-06 20:00:52,939] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 241110) of binary: /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9
+Traceback (most recent call last):
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/run.py", line 806, in main
+    run(args)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+pretrain_gpt.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-12-06_20:00:52
+  host      : ascend01
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 241111)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-12-06_20:00:52
+  host      : ascend01
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 241112)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2024-12-06_20:00:52
+  host      : ascend01
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 241113)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2024-12-06_20:00:52
+  host      : ascend01
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 241114)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2024-12-06_20:00:52
+  host      : ascend01
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 241115)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2024-12-06_20:00:52
+  host      : ascend01
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 241116)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2024-12-06_20:00:52
+  host      : ascend01
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 241117)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-12-06_20:00:52
+  host      : ascend01
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 241110)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

@@ -31,11 +31,12 @@ def get_full_op_list(args):
     global op_list, full_op_list
     if op_list is None:
         op_list = get_op_list(args)
+
     if full_op_list is None:
         if args.model_name in ["gpt", "scale-layer"]:
             head_ops = [op_list[0]]
-            decoder_layer = op_list[1:14]
-            tail_ops = op_list[14:]
+            decoder_layer = op_list[1:3]
+            tail_ops = op_list[3:]
             full_op_list = head_ops + decoder_layer * args.num_layers + tail_ops
         elif args.model_name in ["t5"]:
             encoder_head_ops = [op_list[0]]

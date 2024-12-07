@@ -162,7 +162,7 @@ def read_profiled_time(model_name, model_size, time_path):
     global inter_band, intra_band
     inter_band_file = time_path + "p2p_inter_node.csv"
     intra_band_file = time_path + "p2p_intra_node.csv"
-    print(f"{'#'*80}\n{inter_band_file}\n{intra_band_file}\n {'#'*80}")
+    # print(f"{'#'*80}\n{inter_band_file}\n{intra_band_file}\n {'#'*80}")
     try:
         with open(intra_band_file) as f:
             src_data = csv.reader(f)

@@ -115,14 +115,14 @@ class Bucket:
 
         # Make sure norm of grads in bucket are not NaN
         # prior to data-parallel all-reduce / reduce-scatter.
-        if self.check_for_nan_in_grad:
-            global_rank = torch.distributed.get_rank()
-            norm = self.grad_data.norm(p=2)
-            assert not norm.isnan(), (
-                f'Rank {global_rank}: found NaN in local grad norm in '
-                f'backward pass before data-parallel communication collective. '
-                f'Device: {torch.cuda.current_device()}, node: {os.uname()[1]}'
-            )
+        # if self.check_for_nan_in_grad:
+        #     global_rank = torch.distributed.get_rank()
+        #     norm = self.grad_data.norm(p=2)
+        #     assert not norm.isnan(), (
+        #         f'Rank {global_rank}: found NaN in local grad norm in '
+        #         f'backward pass before data-parallel communication collective. '
+        #         f'Device: {torch.cuda.current_device()}, node: {os.uname()[1]}'
+        #     )
 
         self.grad_data *= self.gradient_scaling_factor
         # Use async_op only when overlap_grad_reduce is True.

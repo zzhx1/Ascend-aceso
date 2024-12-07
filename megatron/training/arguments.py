@@ -81,16 +81,13 @@ def parse_args(extra_args_provider=None, ignore_unknown_args=False):
     else:
         assert args.flexpipe_config is not None, "An Aceso config should be provided."
         args.log_name = args.flexpipe_config.split("/")[-1].split(".json")[0]
-    
     if args.flexpipe_config is not None:
         args = load_json_args(args.flexpipe_config, args)
-        
     # Experimental yaml
     if args.yaml_cfg is not None:
         from .yaml_arguments import load_yaml
         assert args.yaml_cfg and args.use_mcore_models, "To use yaml, mcore must be enabled"
         args = load_yaml(args.yaml_cfg)
-
 
 
 
@@ -174,9 +171,6 @@ def load_retro_args(args):
 
 def validate_args(args, defaults={}):
 
-    # print(f"{'#'*80}\n{args.num_gpus}\n{args.num_stages}\n {'#'*80}")
-    # sys.exit()
-
     # Load saved args from Retro (if applicable).
     load_retro_args(args)
     print(f"world_size: {args.world_size}")
@@ -191,7 +185,7 @@ def validate_args(args, defaults={}):
     del args.pipeline_model_parallel_split_rank
     assert args.context_parallel_size == 1, '--context-parallel-size not implemented in flexpipe now' 
     
-
+    
     if args.rank == 0:
         print('using world size: {}, context-parallel size: {}'.format(
                   args.world_size, args.context_parallel_size), flush=True)
@@ -216,18 +210,18 @@ def validate_args(args, defaults={}):
     assert args.model_parallel_size is None, '--model-parallel-size is no ' \
         'longer valid, use --tensor-model-parallel-size instead'
     del args.model_parallel_size
-
+    
     if args.checkpoint_activations:
         if args.rank == 0:
             print('--checkpoint-activations is no longer valid, use --recompute-activations, '
                   'or, for more control, --recompute-granularity and --recompute-method.')
-        exit()
+        
     del args.checkpoint_activations
-
+    
     if args.recompute_activations:
         args.recompute_granularity = 'selective'
     del args.recompute_activations
-
+  
     # Set input defaults.
     for key in defaults:
         # For default to be valid, it should not be provided in the
@@ -241,7 +235,7 @@ def validate_args(args, defaults={}):
                                                flush=True)
         else:
             setattr(args, key, defaults[key])
-
+ 
     # Batch size.
     assert args.micro_batch_size is not None, '--micro-batch-size is needed in flexpipe'
     assert args.micro_batch_size > 0
@@ -568,7 +562,7 @@ def flex_config_from_args(args, config_class=None):
         if hasattr(args, f.name):
             kw_args[f.name] = getattr(args, f.name)
     kw_args['recompute_ops'] = args.recompute_ops
-    kw_args['flex_recompute_activations'] = args.flex_recompute_activations
+    # kw_args['flex_recompute_activations'] = args.flex_recompute_activations
     kw_args['resharding_stages'] = args.resharding_stages
     kw_args['scatter_gather_tensors_in_pipeline'] = args.scatter_gather_tensors_in_pipeline
     return config_class(**kw_args)

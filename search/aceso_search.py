@@ -11,7 +11,7 @@ import time
 import os 
 import csv
 from aceso_prims import reset_move_count, get_move_count
-
+import sys
 args = parse_args()
 print_args(args)
 
@@ -23,6 +23,7 @@ def initialize_search(num_stages):
     global current_min_time, unexplored_configs, explored_configs
     print(f"working on num_stages = {num_stages}")        
     config = generate_initial_config(num_stages, args)  
+
     if config is not None:
         update_recompute(config)
         predict_time_breakdown(config)   
@@ -316,7 +317,7 @@ if __name__=='__main__':
         process_list = []
         queue = Queue()
         queue.put(result_dict)
-        for num_stages in range(args.start_num_stages, args.end_num_stages + 1):
+        for num_stages in range(args.start_num_stages, args.end_num_stages + 1): #1-8
             p = Process(target=run_search, args=(num_stages, queue))
             process_list.append(p)
             p.start()

@@ -16,7 +16,7 @@ result_file_name = os.environ.get("FILE_NAME", "p2p_band.log")
 
 def run(local_rank, global_rank):
     """ Simple collective communication. """
-    print(f"{'#'*80}\n{local_rank}\n{global_rank}\n {'#'*80}")
+    # print(f"{'#'*80}\n{local_rank}\n{global_rank}\n {'#'*80}")
     global result_file_name
     all_data_sizes = []
     all_bandwidths = []

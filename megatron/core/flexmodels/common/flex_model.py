@@ -362,9 +362,9 @@ class FlexPipeModel(MegatronModule):
         self.input_tensor = None
         rank_in_pipeline = mpu.get_pipeline_model_parallel_rank()
         self.recompute_ops = flex_config.recompute_ops[rank_in_pipeline]
-        self.flex_recompute_activations = flex_config.flex_recompute_activations[
-            rank_in_pipeline
-        ]
+        # self.flex_recompute_activations = flex_config.flex_recompute_activations[
+        #     rank_in_pipeline
+        # ]
 
         full_model_op_list[0].prev_name = None
         full_model_op_list[-1].is_last_op = True
@@ -607,52 +607,52 @@ class FlexPipeModel(MegatronModule):
         else:
             hidden_states = inputs
 
-        if self.flex_recompute_activations:
-            start_index = 0
-            end_index = self.num_ops
+        # if self.flex_recompute_activations:
+        #     start_index = 0
+        #     end_index = self.num_ops
 
-            while start_index < end_index:
-                if not self.recompute_ops[start_index]:
-                    op = self.ops[start_index]
-                    hidden_states = op(
-                        hidden_states, input_extra_tensors, output_extra_tensors
-                    )
+        #     while start_index < end_index:
+        #         if not self.recompute_ops[start_index]:
+        #             op = self.ops[start_index]
+        #             hidden_states = op(
+        #                 hidden_states, input_extra_tensors, output_extra_tensors
+        #             )
                     
-                    start_index += 1
-                else:
-                    checkpoint_end_index = start_index
-                    ## NOTE: this is important for recomputation, set the recomputation breaking point.
-                    while (
-                        checkpoint_end_index < end_index
-                        and self.recompute_ops[checkpoint_end_index]
-                    ):
-                        checkpoint_end_index += 1
-                        if checkpoint_end_index < end_index and (
-                            self.ops[checkpoint_end_index].op_name
-                            in ["dec-self-attention"]
-                        ):
-                            break
+        #             start_index += 1
+        #         else:
+        #             checkpoint_end_index = start_index
+        #             ## NOTE: this is important for recomputation, set the recomputation breaking point.
+        #             while (
+        #                 checkpoint_end_index < end_index
+        #                 and self.recompute_ops[checkpoint_end_index]
+        #             ):
+        #                 checkpoint_end_index += 1
+        #                 if checkpoint_end_index < end_index and (
+        #                     self.ops[checkpoint_end_index].op_name
+        #                     in ["dec-self-attention"]
+        #                 ):
+        #                     break
 
-                    tmp_input_extra_tensors = {}
-                    hidden_states = self._checkpointed_forward(
-                        start_index,
-                        checkpoint_end_index,
-                        hidden_states,
-                        input_extra_tensors,
-                        output_extra_tensors,
-                        tmp_input_extra_tensors,
-                    )
+        #             tmp_input_extra_tensors = {}
+        #             hidden_states = self._checkpointed_forward(
+        #                 start_index,
+        #                 checkpoint_end_index,
+        #                 hidden_states,
+        #                 input_extra_tensors,
+        #                 output_extra_tensors,
+        #                 tmp_input_extra_tensors,
+        #             )
                     
-                    for key in tmp_input_extra_tensors:
-                        input_extra_tensors[key] = tmp_input_extra_tensors[key]
+        #             for key in tmp_input_extra_tensors:
+        #                 input_extra_tensors[key] = tmp_input_extra_tensors[key]
 
-                    start_index = checkpoint_end_index
-        else:
-            for index in range(self.num_ops):
-                op = self.ops[index]
-                hidden_states = op(
-                    hidden_states, input_extra_tensors, output_extra_tensors
-                )
+        #             start_index = checkpoint_end_index
+        # else:
+        for index in range(self.num_ops):
+            op = self.ops[index]
+            hidden_states = op(
+                hidden_states, input_extra_tensors, output_extra_tensors
+            )
                 
         NUM_BATCHES = NUM_BATCHES + 1
         output = hidden_states

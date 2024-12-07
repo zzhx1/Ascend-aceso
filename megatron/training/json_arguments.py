@@ -4,27 +4,51 @@
 
 import json
 
+# def load_json_args(json_file, args):
+#     with open(json_file) as f:
+#         config_dict = json.load(f)
+#         args.num_layers = config_dict["num_layers"]
+#         args.num_stages = config_dict["num_stages"]
+#         args.num_gpus = config_dict["num_gpus"]
+#         args.flex_recompute_activations = config_dict["flex_recompute_activations"]
+#         args.resharding_stages = config_dict["resharding_stages"]
+#         args.num_ops_in_each_stage = config_dict["num_ops_in_each_stage"]
+#         args.tensor_parallel_size_of_each_op = config_dict["tensor_parallel_size_of_each_op"]
+#         args.data_parallel_size_of_each_op = config_dict["data_parallel_size_of_each_op"]
+#         args.recompute_ops = config_dict["recompute_ops"]
+#         args.algo_of_each_op = config_dict["algo_of_each_op"]
+#         args.pipeline_model_parallel_size = args.num_stages
+#     return args
+
 def load_json_args(json_file, args):
     with open(json_file) as f:
         config_dict = json.load(f)
         args.num_layers = config_dict["num_layers"]
+        args.seq_length = config_dict["seq_length"]
+        args.max_position_embeddings = config_dict["max_position_embeddings"]
+        args.num_attention_heads = config_dict["num_attention_heads"]
+        args.hidden_size = config_dict["hidden_size"]
+        args.global_batch_size = config_dict["global_batch_size"]
+        args.micro_batch_size = config_dict["micro_batch_size"]
         args.num_stages = config_dict["num_stages"]
         args.num_gpus = config_dict["num_gpus"]
-        args.flex_recompute_activations = config_dict["flex_recompute_activations"]
+        args.checkpoint_activations = config_dict["checkpoint_activations"]
+        # args.flex_recompute_activations = config_dict["flex_recompute_activations"]
         args.resharding_stages = config_dict["resharding_stages"]
         args.num_ops_in_each_stage = config_dict["num_ops_in_each_stage"]
-        args.tensor_parallel_size_of_each_op = config_dict["tensor_parallel_size_of_each_op"]
+        args.tensor_parallel_size_of_each_op = config_dict["model_parallel_size_of_each_op"]
         args.data_parallel_size_of_each_op = config_dict["data_parallel_size_of_each_op"]
         args.recompute_ops = config_dict["recompute_ops"]
         args.algo_of_each_op = config_dict["algo_of_each_op"]
         args.pipeline_model_parallel_size = args.num_stages
+        # print(args)
     return args
 
 def validate_json_args(args):
     # len(num_gpus) must be equal to num_stages
     assert len(args.num_gpus) == args.num_stages, f"num_gpus should have the same length as num_stages: {len(args.num_gpus)} {args.num_stages}"
     
-    assert len(args.flex_recompute_activations) == args.num_stages, f"flex_recompute_activations should have the same length as num_stages: {len(args.flex_recompute_activations)} {args.num_stages}"
+    # assert len(args.flex_recompute_activations) == args.num_stages, f"flex_recompute_activations should have the same length as num_stages: {len(args.flex_recompute_activations)} {args.num_stages}"
     
     assert len(args.resharding_stages) == args.num_stages, f"resharding_stages should have the same length as num_stages: {len(args.resharding_stages)} {args.num_stages}"
     

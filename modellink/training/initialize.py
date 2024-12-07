@@ -63,6 +63,7 @@ def initialize_megatron(
     Returns a function to finalize distributed env initialization
     (optionally, only when args.lazy_mpu_init == True)
     """
+    
     if not allow_no_cuda:
         # Make sure cuda is available.
         ensure_valid(torch.cuda.is_available(), "Megatron requires CUDA.")
@@ -97,7 +98,7 @@ def initialize_megatron(
     if args.use_deter_comp:
         seed_all(args.seed)
         print_rank_0("deterministic computing is applied for npu.")
-
+    
     # torch.distributed initialization
     def finish_mpu_init():
         args = get_args()
