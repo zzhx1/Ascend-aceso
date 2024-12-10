@@ -148,6 +148,8 @@ def ulysses_context_parallel_forward_wrapper(fn):
 def dot_product_attention_forward_wrapper(fn):
     @wraps(fn)
     def wrapper(self, query, key, value, attention_mask, attn_mask_type, packed_seq_params):
+        
+
         if attention_mask is None:
             attention_mask = get_attention_mask()
         assert packed_seq_params is None, (

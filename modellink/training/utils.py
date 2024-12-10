@@ -223,13 +223,13 @@ def get_batch_on_this_tp_rank(data_iterator):
         if item is not None:
             torch.distributed.broadcast(item, mpu.get_tensor_model_parallel_src_rank(),
                                         group=mpu.get_tensor_model_parallel_group())
-
+    local_micro_batch_size = args.micro_batch_size // mpu.get_data_parallel_world_size()
     if mpu.get_tensor_model_parallel_rank() == 0:
         if data_iterator is not None:
             data = next(data_iterator)
         else:
             data = None
-
+        
         batch = {
             'tokens': data["tokens"].cuda(non_blocking=True),
             'labels': data["labels"].cuda(non_blocking=True),
@@ -262,21 +262,24 @@ def get_batch_on_this_tp_rank(data_iterator):
 
     else:
 
-        tokens = torch.empty((args.micro_batch_size, args.seq_length), dtype=torch.int64,
+        tokens = torch.empty((local_micro_batch_size, args.seq_length), dtype=torch.int64,
                              device=torch.cuda.current_device())
-        labels = torch.empty((args.micro_batch_size, args.seq_length), dtype=torch.int64,
+        labels = torch.empty((local_micro_batch_size, args.seq_length), dtype=torch.int64,
                              device=torch.cuda.current_device())
-        loss_mask = torch.empty((args.micro_batch_size, args.seq_length), dtype=torch.float32,
+        loss_mask = torch.empty((local_micro_batch_size, args.seq_length), dtype=torch.float32,
                                 device=torch.cuda.current_device())
         if args.create_attention_mask_in_dataloader:
             attention_mask = torch.empty(
-                (args.micro_batch_size, 1, args.seq_length, args.seq_length), dtype=torch.bool,
+                (local_micro_batch_size, 1, args.seq_length, args.seq_length), dtype=torch.bool,
                 device=torch.cuda.current_device()
             )
         else:
             attention_mask = None
-        position_ids = torch.empty((args.micro_batch_size, args.seq_length), dtype=torch.int64,
+        position_ids = torch.empty((local_micro_batch_size, args.seq_length), dtype=torch.int64,
                                    device=torch.cuda.current_device())
+        
+
+
 
         if args.pipeline_model_parallel_size == 1:
             _broadcast(tokens)

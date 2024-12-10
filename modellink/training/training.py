@@ -292,7 +292,7 @@ def pretrain(train_valid_test_dataset_provider,
     
     args = get_args()
     timers = get_timers()
-
+    
     if args.log_progress:
         append_to_progress_log("Starting job")
 

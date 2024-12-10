@@ -2,7 +2,7 @@
 # Licensed under the MIT License.
 
 from aceso_cost_model import read_profiled_time, predict_time_breakdown, update_recompute, get_reserved_memory_list
-from multiprocessing import Process, Queue
+from multiprocessing import Process, Queue, current_process
 from aceso_utils import *
 from aceso_prims import action_resource_table, finetune_dim_stage_level, finetune, get_explored_cases, reset_explored_cases
 from aceso_policy import *

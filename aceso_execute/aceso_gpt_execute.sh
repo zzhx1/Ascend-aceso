@@ -7,6 +7,7 @@ ROOT_PATH=$(pwd)
 model_name=gpt
 #### Model info ####
 model_size=1_3B
+model_size=2_6B
 
 #### Hardware info ####
 NNODES=1
@@ -53,33 +54,38 @@ echo "[LOG][RUNTIME]($(date '+%Y-%m-%d-%H-%M-%S')) start executing config: $conf
 
 
 
-
 torchrun $DISTRIBUTED_ARGS \
     pretrain_gpt.py \
+    --use-cp-send-recv-overlap \
+    --context-parallel-algo megatron_cp_algo \
     --flexpipe-config $CONFIG_SAVE_PATH${file_name} \
-    --train-iters 3 \
+    --train-iters 10 \
     --eval-iters 0 \
-    --lr-decay-iters 320000 \
     --mock-data \
     --vocab-file vocab_file/gpt2-vocab.json \
     --merge-file vocab_file/gpt2-merges.txt \
     --split 949,50,1 \
     --distributed-backend nccl \
-    --lr 6.0e-5 \
+    --transformer-impl local \
+    --no-async-tensor-model-parallel-allreduce \
+    --lr 0.00015 \
+    --lr-decay-iters 320000 \
     --lr-decay-style cosine \
-    --min-lr 6.0e-6 \
+    --min-lr 1.0e-5 \
     --weight-decay 1e-2 \
+    --lr-warmup-fraction .01 \
     --clip-grad 1.0 \
-    --lr-warmup-fraction .001 \
-    --log-interval 1 \
     --tokenizer-type GPT2BPETokenizer \
     --use-mcore-models \
-    --use-distributed-optimizer \
-    --fp16 \
-    --no-shared-storage \
+    --no-gradient-accumulation-fusion \
     --no-masked-softmax-fusion \
     --no-bias-gelu-fusion \
-    --no-gradient-accumulation-fusion \
+    --attention-softmax-in-fp32 \
+    --attention-dropout 0.0 \
+    --hidden-dropout 0.0 \
+    --fp16 \
+    --use-flash-attn \
+    --log-interval 1 \
     --log-path $LOG_PATH \
     2>&1 | tee ${LOG_PATH}full_log_${config_name}_rank${NODE_RANK}_${CURRENT_TIME}  
 
@@ -87,11 +93,12 @@ echo "[LOG][RUNTIME]($(date '+%Y-%m-%d-%H-%M-%S')) end executing config: $config
 
 done 
 
-
+# --lr-warmup-fraction .001 \
 # --use-flash-attn \
 # --attention-softmax-in-fp32 \
 # --initial-loss-scale 4096 \
 # --no-shared-storage \
-# --no-masked-softmax-fusion \
-# --no-bias-gelu-fusion \
-# --no-gradient-accumulation-fusion \
+
+    # --no-shared-storage \
+    # --no-masked-softmax-fusion \
+    # --no-bias-gelu-fusion \

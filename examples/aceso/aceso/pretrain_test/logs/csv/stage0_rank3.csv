@@ -1,2 +1,2 @@
 global_batch_size,time,forward-backward,forward-compute,backward-compute,batch-generator,forward-send,backward-recv,forward-send-backward-recv,layernorm-grads-all-reduce,embedding-grads-all-reduce,all-grads-sync,params-all-gather,optimizer-copy-to-main-grad,optimizer-clip-main-grad,optimizer-count-zeros,optimizer-inner-step,optimizer-copy-main-to-model-params,optimizer,allocated,max_allocated,reserved,max_reserved
-4,94.19,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,571.16,687.24,766.00,766.00
+4,84.82,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,571.16,696.01,808.00,808.00

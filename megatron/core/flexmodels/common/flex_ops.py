@@ -544,7 +544,7 @@ class FlexLayerNormPostProcess(FlexModule):
         output, _ = self.output_layer(final_layernorm_output, weights)
         
         labels = input_extra_tensors["labels"]
-
+        
         if labels is None:
             output_tensors["output_tensor"] = output.transpose(0, 1).contiguous()
             return output_tensors

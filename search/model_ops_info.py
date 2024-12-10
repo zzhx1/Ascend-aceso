@@ -81,7 +81,7 @@ def get_no_recompute_op_list(args):
     global no_recompute_op_list
     if no_recompute_op_list is None:
         if args.model_name in ["gpt", "scale-layer"]:
-            no_recompute_op_list = ["encoder-embedding", "gpt-post-process"]
+            no_recompute_op_list = ["dec-embedding", "dec-self-attention", "dec-mlp", "dec-self-attention"]
         elif args.model_name in ["t5"]:
             no_recompute_op_list = ["encoder-embedding", "decoder-embedding", "t5-post-process"]
         elif args.model_name in ["resnet"]:

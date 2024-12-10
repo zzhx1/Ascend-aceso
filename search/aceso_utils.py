@@ -707,10 +707,10 @@ def generate_imbalance_op_config(full_op_list, num_stages, args):
 
     return initial_config
 
-import sys
+
 def generate_initial_config(num_stages, args):   
-    full_op_list = get_full_op_list(args) #获取完全包含所有layer的op
-    if args.initial_point == "balance": #### 问题？ #### 这几个有什么区别呢？
+    full_op_list = get_full_op_list(args) 
+    if args.initial_point == "balance":
         return generate_balance_config(full_op_list, num_stages, args)
     elif args.initial_point == "imbalance_gpu":
         return generate_imbalance_gpu_config(full_op_list, num_stages, args)

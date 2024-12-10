@@ -66,7 +66,6 @@ GPT_ARGS="
     --micro-batch-size ${MBS} \
     --global-batch-size ${GBS} \
     --use-distributed-optimizer \
-    --recompute-granularity selective \
     --train-iters 10 \
     --weight-decay 0.1 \
     --adam-beta1 0.9 \

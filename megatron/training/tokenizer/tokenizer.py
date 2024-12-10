@@ -405,7 +405,6 @@ class _GPTSentencePieceTokenizer(_SentencePieceTokenizer):
     """SentencePieceTokenizer-Megatron wrapper"""
 
     def __init__(self, model_file,):
-        print(f"{'#'*40}\nRank {os.environ.get('RANK', 0)} :  {model_file}\n {'#'*40}", flush=True)
         super().__init__(model_file, vocab_extra_ids=0)
 
     def _initalize(self, vocab_extra_ids):

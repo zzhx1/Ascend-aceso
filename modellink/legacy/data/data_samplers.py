@@ -32,12 +32,12 @@ def build_pretraining_data_loader(dataset, consumed_samples):
     if dataset is None:
         return None
     args = get_args()
-
+    micro_batch_size = args.micro_batch_size // len(parallel_state.get_data_parallel_ranks())
     if args.dataloader_type == 'single':
         batch_sampler = MegatronPretrainingSampler(
             total_samples=len(dataset),
             consumed_samples=consumed_samples,
-            micro_batch_size=args.micro_batch_size,
+            micro_batch_size=micro_batch_size,
             data_parallel_rank=parallel_state.get_data_parallel_rank(),
             data_parallel_size=parallel_state.get_data_parallel_world_size())
     elif args.dataloader_type == 'cyclic':
@@ -46,7 +46,7 @@ def build_pretraining_data_loader(dataset, consumed_samples):
             dataset=dataset,
             data_sharding=True,
             consumed_samples=consumed_samples,
-            micro_batch_size=args.micro_batch_size,
+            micro_batch_size=micro_batch_size,
             data_parallel_rank=parallel_state.get_data_parallel_rank(),
             data_parallel_size=parallel_state.get_data_parallel_world_size())
     else:

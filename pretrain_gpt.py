@@ -91,7 +91,6 @@ def model_provider(pre_process=True, post_process=True) -> Union[GPTModel, megat
 
 def get_batch(data_iterator):
     """Generate a batch."""
-
     # get batches based on the TP rank you are on
     batch = get_batch_on_this_tp_rank(data_iterator)
     args = get_args()

@@ -33,6 +33,8 @@ DATA_ARGS="
 "
 
 GPT_ARGS="
+    --use-cp-send-recv-overlap \
+    --context-parallel-algo megatron_cp_algo \
     --transformer-impl local \
     --no-async-tensor-model-parallel-allreduce \
     --hidden-size $HIDDEN_SIZE \
@@ -51,7 +53,6 @@ GPT_ARGS="
     --clip-grad 1.0 \
     --tokenizer-type GPT2BPETokenizer \
     --use-mcore-models \
-    --use-flash-attn \
     --no-gradient-accumulation-fusion \
     --no-masked-softmax-fusion \
     --no-bias-gelu-fusion \
@@ -59,12 +60,13 @@ GPT_ARGS="
     --attention-dropout 0.0 \
     --hidden-dropout 0.0 \
     --fp16 \
+    --use-flash-attn 
 "
 
 mkdir -p ${PROFILING_PATH}
 MAX_NUM_GPUS=8
 MODEL_NAME=gpt
-MODEL_SIZE=1_3B
+MODEL_SIZE=2_6B
 
 echo "------ Start profiling ------"
 for ((tp_size=1; tp_size<=$MAX_NUM_GPUS; tp_size=tp_size*2))

@@ -763,6 +763,7 @@ def finetune(config):
     for stage_index in range(config.num_stages):
         initial_time = config.time_list[stage_index]
         config_ = finetune_dim_op_level(config, stage_index)
+
         if config_ is not None:
             predict_time_breakdown(config_)
             time_ = config_.time_list[stage_index]

@@ -52,3 +52,14 @@ RuntimeError: NPU out of memory. Tried to allocate 2.13 GiB (NPU 0; 60.97 GiB to
 
 还有尝试sh文件里面的参数，但是也没有解决问题。
 
+
+
+修改函数：
+1. get_tunable_op_list：无需修改，只在finetune阶段使用该函数，搜索算法未启用finetune，
+
+2. [get_no_recompute_op_list](search/aceso_cost_model.py#L13)
+ops_not_recomputed = get_no_recompute_op_list(args) -> get_next_recompute_op_group() -> check_recompute()
+
+**check_recompute()**
+->[predict_value_after_move](search/aceso_cost_model.py#L738)
+

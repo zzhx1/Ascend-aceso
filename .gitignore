@@ -149,6 +149,7 @@ cython_debug/
 
 # User stuff
 /kernel*/
-/logs/
 /model_from_hf/
 /model_weights/
+
+draft.md

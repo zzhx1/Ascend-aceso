@@ -29,7 +29,7 @@ class _VocabParallelCrossEntropy(torch.autograd.Function):
         rank = get_tensor_model_parallel_rank()
         world_size = get_tensor_model_parallel_world_size()
         vocab_start_index, vocab_end_index = get_vocab_range(partition_vocab_size, rank, world_size)
-
+        
         # Create a mask of valid vocab ids (1 means it needs to be masked).
         target_mask = (target < vocab_start_index) | (target >= vocab_end_index)
         masked_target = target.clone() - vocab_start_index

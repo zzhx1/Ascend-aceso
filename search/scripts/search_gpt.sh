@@ -9,13 +9,13 @@
 
 #### Model info ####
 model_name=gpt
-model_size=1_3B
+model_size=2_6B
 global_batch_size=1024
 
 #### Hardware info ####
 num_nodes=1
 gpus_per_node=8
-memory_limit=28000
+memory_limit=60000
 
 #### Search algo parameters ####
 budget=200
@@ -35,23 +35,6 @@ echo "[LOG][SEARCH]($CURRENT_TIME) searching for $model_name, $model_size, $num_
     
 
 
-# python3 aceso_search.py \
-#     --model-name $model_name \
-#     --model-size $model_size \
-#     --global-batch-size $global_batch_size \
-#     --micro-batch-size 1 2 4 8 \
-#     --num-nodes $num_nodes \
-#     --num-gpus-per-node $gpus_per_node \
-#     --memory-limit $memory_limit \
-#     --log-path $LOG_PATH \
-#     --profiled-time-path $DATABASE_PATH \
-#     --config-save-path $CONFIG_SAVE_PATH \
-#     --config-suffix $CURRENT_TIME \
-#     --max-num-hops $max_num_hops \
-#     --time-budget-total $budget \
-#     --initial-point $init_config 
-
-
 python3 aceso_search.py \
     --model-name $model_name \
     --model-size $model_size \
@@ -68,6 +51,4 @@ python3 aceso_search.py \
     --time-budget-total $budget \
     --initial-point $init_config \
     2>&1 | tee ${LOG_PATH}log_${model_name}_${model_size}_budget${budget}_${CURRENT_TIME}.log
- 
-
  

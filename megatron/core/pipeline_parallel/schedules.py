@@ -197,7 +197,7 @@ def forward_step(
         context_manager = contextlib.nullcontext()
     with context_manager:
         if checkpoint_activations_microbatch is None:
-            print(f"forward func: {inspect.getfile(forward_step_func)}:{forward_step_func.__name__}")
+            # print(f"forward func: {inspect.getfile(forward_step_func)}:{forward_step_func.__name__}")
             output_tensor, output_extra_tensors, loss_func = forward_step_func(data_iterator, model, extra_tensors)
         else:
             output_tensor, output_extra_tensors, loss_func = forward_step_func(
