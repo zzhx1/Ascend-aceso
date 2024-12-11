@@ -654,7 +654,7 @@ def get_prof_tasks_by_rank(all_tasks, num_nodes, node_rank):
     return _all_tasks
 
 
-import torch_npu.profiler
+# import torch_npu.profiler
 def trace_handler(p):
     rank = int(os.environ.get("RANK", 0))   
     # output = p.key_averages().table(sort_by="self_cuda_time_total", row_limit=10)

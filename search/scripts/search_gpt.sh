@@ -9,13 +9,13 @@
 
 #### Model info ####
 model_name=gpt
-model_size=2_6B
+model_size=1_3B
 global_batch_size=1024
 
 #### Hardware info ####
 num_nodes=1
 gpus_per_node=8
-memory_limit=60000
+memory_limit=65000
 
 #### Search algo parameters ####
 budget=200
@@ -24,7 +24,7 @@ init_config=balance
 
 #### Paths ####
 DATABASE_PATH=../profiler/profiled-time-miniset/
-RESULT_PATH=./test_eval_logs_4/
+RESULT_PATH=./search_configs/
 
 LOG_PATH=${RESULT_PATH}search/${model_name}/${model_size}/
 CONFIG_SAVE_PATH=${RESULT_PATH}configs/${model_name}/${model_size}/
@@ -39,7 +39,7 @@ python3 aceso_search.py \
     --model-name $model_name \
     --model-size $model_size \
     --global-batch-size $global_batch_size \
-    --micro-batch-size 1 2 4 8 \
+    --micro-batch-size 1 2 4 8 16 32 64 \
     --num-nodes $num_nodes \
     --num-gpus-per-node $gpus_per_node \
     --memory-limit $memory_limit \

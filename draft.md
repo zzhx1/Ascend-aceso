@@ -7,11 +7,12 @@ args.flex_recompute_activations = config_dict["flex_recompute_activations"]
 if self.flex_recompute_activations:
 
 添加：
-    "flex_recompute_activations": [
-        true,
-        true,
-        true
-    ],
+"flex_recompute_activations": [
+    true,
+    true,
+    true
+],
+
 ```python
 adaptive_hyper_parameters ....................... 5
   add_action_finetune_algo ........................ False
@@ -128,3 +129,47 @@ AcesoConfig(global_bs=1024, micro_bs=1, stages=[AcesoStageInfo(index=0, num_stag
 
 AcesoConfig(global_bs=1024, micro_bs=1, stages=[AcesoStageInfo(index=0, num_stages_behind=3, num_gpus=2, ops=['dec-embedding', 'dec-self-attention', 'dec-mlp', 'dec-self-attention', 'dec-mlp', 'dec-self-attention', 'dec-mlp', 'dec-self-attention', 'dec-mlp', 'dec-self-attention', 'dec-mlp', 'dec-self-attention'], recompute_ops=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], tp_size=[2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], dp_size=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], algo=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]), AcesoStageInfo(index=1, num_stages_behind=2, num_gpus=2, ops=['dec-mlp', 'dec-self-attention', 'dec-mlp', 'dec-self-attention', 'dec-mlp', 'dec-self-attention', 'dec-mlp', 'dec-self-attention', 'dec-mlp', 'dec-self-attention', 'dec-mlp', 'dec-self-attention'], recompute_ops=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], tp_size=[2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], dp_size=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], algo=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]), AcesoStageInfo(index=2, num_stages_behind=1, num_gpus=2, ops=['dec-mlp', 'dec-self-attention', 'dec-mlp', 'dec-self-attention', 'dec-mlp', 'dec-self-attention', 'dec-mlp', 'dec-self-attention', 'dec-mlp', 'dec-self-attention', 'dec-mlp', 'dec-self-attention'], recompute_ops=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], tp_size=[2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], dp_size=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], algo=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]), AcesoStageInfo(index=3, num_stages_behind=0, num_gpus=2, ops=['dec-mlp', 'dec-self-attention', 'dec-mlp', 'dec-self-attention', 'dec-mlp', 'dec-self-attention', 'dec-mlp', 'dec-self-attention', 'dec-mlp', 'dec-self-attention', 'dec-mlp', 'dec-self-attention', 'dec-mlp', 'dec-post-process'], recompute_ops=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], tp_size=[2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], dp_size=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], algo=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], num_stages=4, history='start|67708.37|14936.97| op = [12, 12, 12, 14]| tp = [2, 2, 2, 2, ] | dp = [1, 1, 1, 1, ] | algo = [0, 0, 0, 0, ] | rc = [0, 0, 0, 0] | gpus = [2, 2, 2, 2] | micro_bs = 1 | time = [59380, 60727, 60727, 67708] | memory = [14936, 11680, 8840, 7312]\n', time_list=[59380.718671087554, 60727.291861622114, 60727.291861622114, 67708.36852214429], memory_list=[14936.971, 11680.698999999999, 8840.458999999999, 7312.282], compute_time_list=[56.898502, 57.305148, 57.305148, 65.039399], total_gpu_time=495151.26649962034, breakdown_ideal_time_per_gpu=[40.44587599999999, 40.44299099999999, 40.44299099999999, 46.784544], breakdown_eff_loss_time_per_gpu=[16.452626000000013, 16.862157000000007, 16.862157000000007, 18.25485500000001], breakdown_recomp_time_per_gpu=[0.0, 0.0, 0.0, 0.0], efficient_time_list=[11783.980860237996, 9765.321919745102, 9765.321919745102, 0.0], adaptive_times=0)
 ```
+
+
+
+执行脚本：`bash aceso_execute/aceso_gpt_execute.sh`
+aceso搜索出的最佳方案放在了 `aceso_execute/logs/configs/gpt/1_3B/top_configs`
+
+
+
+修改:
+
+- 注释掉了`runtime`里面关于 `flex_recompute_activations` 的部分
+ - [kw_args['flex_recompute_activations']](megatron/training/arguments.py#L565)
+ - [self.flex_recompute_activations](megatron/core/flexmodels/common/flex_model.py#L365)
+ - [ args.flex_recompute_activations](megatron/training/json_arguments.py#L36)
+ - [if self.flex_recompute_activations:](megatron/core/flexmodels/common/flex_model.py#L610)
+
+
+- aceso search算法里面的initialize里面get_full_op_list的逻辑。
+  - [get_full_op_list](search/model_ops_info.py#L38)，修改索引位置。
+
+目前遇到问题：爆显存， 无法使用flash-attention.
+RuntimeError: NPU out of memory. Tried to allocate 2.13 GiB (NPU 0; 60.97 GiB total capacity; 58.81 GiB already allocated; 58.81 GiB current active; 581.60 MiB free; 59.20 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.
+
+尝试修改json文件里面的参数大小，并没有解决爆显存的问题。修改seq_length, hidden_size, global_batch_size会出现矩阵乘维度对不上，修改micro_batch_size不能解决爆显存。
+
+还有尝试sh文件里面的参数，但是也没有解决问题。
+
+
+
+修改函数：
+1. get_tunable_op_list：无需修改，只在finetune阶段使用该函数，搜索算法未启用finetune，
+
+2. [get_no_recompute_op_list](search/aceso_cost_model.py#L13)
+ops_not_recomputed = get_no_recompute_op_list(args) -> get_next_recompute_op_group() -> check_recompute()
+
+**check_recompute()**
+->[predict_value_after_move](search/aceso_cost_model.py#L738)
+
+
+
+
+
+--position-embedding-type rope \
+加了这个参数之后，会出现 AssertionError: context parallel group is not initialized

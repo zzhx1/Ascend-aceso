@@ -1,2 +1,2 @@
-global_batch_size,time,forward-backward,forward-compute,backward-compute,batch-generator,layernorm-grads-all-reduce,embedding-grads-all-reduce,all-grads-sync,optimizer-copy-to-main-grad,optimizer-unscale-and-check-inf,optimizer,allocated,max_allocated,reserved,max_reserved
-1024,53962.29,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,33358.07,33374.14,33972.00,33972.00
+global_batch_size,time,forward-backward,forward-compute,backward-compute,batch-generator,forward-send,backward-recv,forward-send-backward-recv,layernorm-grads-all-reduce,embedding-grads-all-reduce,all-grads-sync,params-all-gather,optimizer-copy-to-main-grad,optimizer-unscale-and-check-inf,optimizer-clip-main-grad,optimizer-count-zeros,optimizer-inner-step,optimizer-copy-main-to-model-params,optimizer,allocated,max_allocated,reserved,max_reserved
+1024,35462.44,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,13287.04,33796.70,35088.00,35088.00

@@ -38,7 +38,7 @@ def get_balance_config(pp, tp, dp, base_mbs, recomp):
     if args.model_name in ["gpt", "scale-layer"]:
         config_list = []
         if args.num_layers % pp == 0:
-            num_ops_list = [(args.num_layers//pp) * 13 for _ in range(pp)]
+            num_ops_list = [(args.num_layers//pp) * 2 for _ in range(pp)]
             num_ops_list[0] += 1
             num_ops_list[-1] += 2
             config_list.append(get_config(num_ops_list, tp_per_op, dp_per_op, recompute_ops, base_batch_size, args.global_batch_size, full_op_list, algo_list))

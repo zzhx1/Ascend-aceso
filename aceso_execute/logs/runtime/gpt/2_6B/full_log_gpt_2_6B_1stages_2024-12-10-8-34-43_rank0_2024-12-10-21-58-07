@@ -1,0 +1,1653 @@
+[2024-12-10 21:58:10,491] torch.distributed.run: [WARNING] 
+[2024-12-10 21:58:10,491] torch.distributed.run: [WARNING] *****************************************
+[2024-12-10 21:58:10,491] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-12-10 21:58:10,491] torch.distributed.run: [WARNING] *****************************************
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:299: ImportWarning: 
+    *************************************************************************************************************
+    The torch.Tensor.cuda and torch.nn.Module.cuda are replaced with torch.Tensor.npu and torch.nn.Module.npu now..
+    The torch.cuda.DoubleTensor is replaced with torch.npu.FloatTensor cause the double type is not supported now..
+    The backend in torch.distributed.init_process_group set to hccl now..
+    The torch.cuda.* and torch.cuda.amp.* are replaced with torch.npu.* and torch.npu.amp.* now..
+    The device parameters have been replaced with npu in the function below:
+    torch.logspace, torch.randint, torch.hann_window, torch.rand, torch.full_like, torch.ones_like, torch.rand_like, torch.randperm, torch.arange, torch.frombuffer, torch.normal, torch._empty_per_channel_affine_quantized, torch.empty_strided, torch.empty_like, torch.scalar_tensor, torch.tril_indices, torch.bartlett_window, torch.ones, torch.sparse_coo_tensor, torch.randn, torch.kaiser_window, torch.tensor, torch.triu_indices, torch.as_tensor, torch.zeros, torch.randint_like, torch.full, torch.eye, torch._sparse_csr_tensor_unsafe, torch.empty, torch._sparse_coo_tensor_unsafe, torch.blackman_window, torch.zeros_like, torch.range, torch.sparse_csr_tensor, torch.randn_like, torch.from_file, torch._cudnn_init_dropout_state, torch._empty_affine_quantized, torch.linspace, torch.hamming_window, torch.empty_quantized, torch._pin_memory, torch.autocast, torch.load, torch.Generator, torch.Tensor.new_empty, torch.Tensor.new_empty_strided, torch.Tensor.new_full, torch.Tensor.new_ones, torch.Tensor.new_tensor, torch.Tensor.new_zeros, torch.Tensor.to, torch.nn.Module.to, torch.nn.Module.to_empty
+    *************************************************************************************************************
+    
+  warnings.warn(msg, ImportWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py39_cpu/adaptive_cp/build.ninja...
+Building extension module adaptive_cp...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+ninja: no work to do.
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Loading extension module adaptive_cp...
+Emitting ninja build file /root/.cache/torch_extensions/py39_cpu/adaptive_cp/build.ninja...
+Building extension module adaptive_cp...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+ninja: no work to do.
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+world_size: 8
+/workspace/RC4/ModelLink/megatron/training/tokenizer/gpt2_tokenization.py:159: ResourceWarning: unclosed file <_io.TextIOWrapper name='./vocab_file/gpt2-vocab.json' mode='r' encoding='UTF-8'>
+  self.encoder = json.load(open(vocab_file))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/RC4/ModelLink/megatron/training/tokenizer/gpt2_tokenization.py:164: ResourceWarning: unclosed file <_io.TextIOWrapper name='./vocab_file/gpt2-merges.txt' mode='r' encoding='utf-8'>
+  bpe_data = open(merges_file, encoding='utf-8').read().split('\n')[1:-1]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+world_size: 8
+/workspace/RC4/ModelLink/megatron/training/tokenizer/gpt2_tokenization.py:159: ResourceWarning: unclosed file <_io.TextIOWrapper name='./vocab_file/gpt2-vocab.json' mode='r' encoding='UTF-8'>
+  self.encoder = json.load(open(vocab_file))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+world_size: 8
+/workspace/RC4/ModelLink/megatron/training/tokenizer/gpt2_tokenization.py:164: ResourceWarning: unclosed file <_io.TextIOWrapper name='./vocab_file/gpt2-merges.txt' mode='r' encoding='utf-8'>
+  bpe_data = open(merges_file, encoding='utf-8').read().split('\n')[1:-1]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/RC4/ModelLink/megatron/training/tokenizer/gpt2_tokenization.py:159: ResourceWarning: unclosed file <_io.TextIOWrapper name='./vocab_file/gpt2-vocab.json' mode='r' encoding='UTF-8'>
+  self.encoder = json.load(open(vocab_file))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+world_size: 8
+/workspace/RC4/ModelLink/megatron/training/tokenizer/gpt2_tokenization.py:164: ResourceWarning: unclosed file <_io.TextIOWrapper name='./vocab_file/gpt2-merges.txt' mode='r' encoding='utf-8'>
+  bpe_data = open(merges_file, encoding='utf-8').read().split('\n')[1:-1]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+world_size: 8
+world_size: 8
+/workspace/RC4/ModelLink/megatron/training/tokenizer/gpt2_tokenization.py:159: ResourceWarning: unclosed file <_io.TextIOWrapper name='./vocab_file/gpt2-vocab.json' mode='r' encoding='UTF-8'>
+  self.encoder = json.load(open(vocab_file))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/RC4/ModelLink/megatron/training/tokenizer/gpt2_tokenization.py:164: ResourceWarning: unclosed file <_io.TextIOWrapper name='./vocab_file/gpt2-merges.txt' mode='r' encoding='utf-8'>
+  bpe_data = open(merges_file, encoding='utf-8').read().split('\n')[1:-1]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/RC4/ModelLink/megatron/training/tokenizer/gpt2_tokenization.py:159: ResourceWarning: unclosed file <_io.TextIOWrapper name='./vocab_file/gpt2-vocab.json' mode='r' encoding='UTF-8'>
+  self.encoder = json.load(open(vocab_file))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/RC4/ModelLink/megatron/training/tokenizer/gpt2_tokenization.py:164: ResourceWarning: unclosed file <_io.TextIOWrapper name='./vocab_file/gpt2-merges.txt' mode='r' encoding='utf-8'>
+  bpe_data = open(merges_file, encoding='utf-8').read().split('\n')[1:-1]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/RC4/ModelLink/megatron/training/tokenizer/gpt2_tokenization.py:159: ResourceWarning: unclosed file <_io.TextIOWrapper name='./vocab_file/gpt2-vocab.json' mode='r' encoding='UTF-8'>
+  self.encoder = json.load(open(vocab_file))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/RC4/ModelLink/megatron/training/tokenizer/gpt2_tokenization.py:164: ResourceWarning: unclosed file <_io.TextIOWrapper name='./vocab_file/gpt2-merges.txt' mode='r' encoding='utf-8'>
+  bpe_data = open(merges_file, encoding='utf-8').read().split('\n')[1:-1]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+world_size: 8
+using world size: 8, context-parallel size: 1
+--checkpoint-activations is no longer valid, use --recompute-activations, or, for more control, --recompute-granularity and --recompute-method.
+WARNING: Setting args.overlap_p2p_comm to False since non-interleaved schedule does not support overlapping p2p communication
+WARNING: Setting args.check_for_nan_in_loss_and_grad to False since dynamic loss scaling is being used
+using torch.float16 for parameters ...
+When context_parallel is not activated, kv_head_repeat_before_uly_alltoall would be set to False for reducing memory usage.
+[INFO] Setting args.create_attention_mask_in_dataloader to False since reset_data=False or alibi_without_flash_attn=False or args.tokenizer_padding_side=right
+------------------------ ModelLink Arguments ------------------------
+  accumulate_allreduce_grads_in_fp32 .............. False
+  adam_beta1 ...................................... 0.9
+  adam_beta2 ...................................... 0.95
+  adam_eps ........................................ 1e-08
+  adaptive_cp_dynamic_attn_mask ................... False
+  adaptive_cp_manually_set_mask_list .............. False
+  adaptive_cp_only_reschedule ..................... False
+  adaptive_cp_without_coarse ...................... False
+  adaptive_recompute_device_size .................. -1
+  adaptive_recompute_device_swap .................. False
+  adaptive_recompute_profiling_step ............... 10
+  add_bias_linear ................................. True
+  add_dense_bias .................................. False
+  add_position_embedding .......................... True
+  add_qkv_bias .................................... False
+  add_rmsnorm_offset .............................. False
+  adlr_autoresume ................................. False
+  adlr_autoresume_interval ........................ 1000
+  algo_of_each_op ................................. [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+  apply_layernorm_1p .............................. False
+  apply_query_key_layer_scaling ................... False
+  apply_residual_connection_post_layernorm ........ False
+  apply_rope_fusion ............................... True
+  async_tensor_model_parallel_allreduce ........... True
+  attention_dropout ............................... 0.0
+  attention_mask_on_cpu ........................... False
+  attention_softmax_in_fp32 ....................... True
+  attn_logit_softcapping .......................... None
+  auto_detect_ckpt_format ......................... False
+  barrier_with_L1_time ............................ True
+  bert_binary_head ................................ True
+  bert_embedder_type .............................. megatron
+  bert_load ....................................... None
+  bf16 ............................................ False
+  bias_dropout_fusion ............................. True
+  bias_gelu_fusion ................................ False
+  bias_swiglu_fusion .............................. True
+  biencoder_projection_dim ........................ 0
+  biencoder_shared_query_context_model ............ False
+  block_data_path ................................. None
+  check_for_nan_in_loss_and_grad .................. False
+  checkpoint_stages ............................... []
+  ckpt_fully_parallel_save ........................ False
+  ckpt_step ....................................... None
+  classes_fraction ................................ 1.0
+  clip_grad ....................................... 1.0
+  clone_scatter_output_in_embedding ............... True
+  consumed_train_samples .......................... 0
+  consumed_valid_samples .......................... 0
+  context_parallel_algo ........................... megatron_cp_algo
+  context_parallel_size ........................... 1
+  cp_attention_mask_type .......................... causal
+  cp_window_size .................................. 1
+  create_attention_mask_in_dataloader ............. False
+  data_cache_path ................................. None
+  data_parallel_random_init ....................... False
+  data_parallel_size_of_each_op ................... [[4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4], [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]]
+  data_path ....................................... None
+  data_per_class_fraction ......................... 1.0
+  data_sharding ................................... True
+  dataloader_type ................................. single
+  decoder_num_layers .............................. None
+  decoder_seq_length .............................. None
+  decoupled_lr .................................... None
+  decoupled_min_lr ................................ None
+  delay_grad_reduce ............................... True
+  delay_param_gather .............................. False
+  dim_model_base .................................. None
+  dino_bottleneck_size ............................ 256
+  dino_freeze_last_layer .......................... 1
+  dino_head_hidden_size ........................... 2048
+  dino_local_crops_number ......................... 10
+  dino_local_img_size ............................. 96
+  dino_norm_last_layer ............................ False
+  dino_teacher_temp ............................... 0.07
+  dino_warmup_teacher_temp ........................ 0.04
+  dino_warmup_teacher_temp_epochs ................. 30
+  dist_ckpt_format ................................ torch_dist
+  distribute_saved_activations .................... False
+  distributed_backend ............................. nccl
+  distributed_timeout_minutes ..................... 45
+  dpo_beta ........................................ 0.1
+  dpo_ftx ......................................... 0.0
+  dpo_label_smoothing ............................. 0.0
+  dpo_loss_type ................................... sigmoid
+  embed_layernorm ................................. False
+  embedding_multiplier_scale ...................... 1.0
+  embedding_path .................................. None
+  empty_unused_memory_level ....................... 0
+  enable_hbmfault_repair .......................... False
+  enable_high_availability ........................ False
+  enable_one_logger ............................... False
+  enable_optimizer_state_local_copy ............... False
+  enable_recompute_layers_per_pp_rank ............. False
+  enable_token_rearrange_opt ...................... False
+  encoder_num_layers .............................. 32
+  encoder_seq_length .............................. 2048
+  end_weight_decay ................................ 0.01
+  eod_mask_loss ................................... False
+  eval_interval ................................... 2000
+  eval_iters ...................................... 1
+  evidence_data_path .............................. None
+  exit_duration_in_mins ........................... None
+  exit_interval ................................... None
+  exit_on_missing_checkpoint ...................... False
+  exit_signal_handler ............................. False
+  expert_interval ................................. 1
+  expert_model_parallel_size ...................... 1
+  ffn_hidden_size ................................. 10240
+  fill_neg_inf .................................... False
+  finetune ........................................ False
+  first_k_dense_replace ........................... None
+  flexpipe ........................................ True
+  flexpipe_config ................................. /workspace/RC4/ModelLink/aceso_execute/logs/configs/gpt/2_6B/top_configs/gpt_2_6B_1stages_2024-12-10-8-34-43.json
+  fp16 ............................................ True
+  fp16_lm_cross_entropy ........................... False
+  fp32_residual_connection ........................ False
+  fp8 ............................................. None
+  fp8_amax_compute_algo ........................... most_recent
+  fp8_amax_history_len ............................ 1
+  fp8_interval .................................... 1
+  fp8_margin ...................................... 0
+  fp8_wgrad ....................................... True
+  full_shuffle_instruction_dataset ................ False
+  geglu ........................................... False
+  gelu_tanh ....................................... False
+  global_batch_size ............................... 1024
+  gradient_accumulation_fusion .................... False
+  group_query_attention ........................... False
+  head_lr_mult .................................... 1.0
+  hidden_dropout .................................. 0.0
+  hidden_size ..................................... 2560
+  high_freq_factor ................................ None
+  hysteresis ...................................... 2
+  ict_head_size ................................... None
+  ict_load ........................................ None
+  img_h ........................................... 224
+  img_w ........................................... 224
+  indexer_batch_size .............................. 128
+  indexer_log_interval ............................ 1000
+  inference_batch_times_seqlen_threshold .......... 512
+  init_method_std ................................. 0.006
+  init_method_xavier_uniform ...................... False
+  initial_loss_scale .............................. 4096.0
+  input_embeds_norm ............................... False
+  input_jitter .................................... True
+  input_layernorm_in_fp32 ......................... False
+  interleave_factor ............................... 1
+  interleave_sliding_window ....................... None
+  is_instruction_dataset .......................... False
+  is_pairwise_dataset ............................. False
+  iter_per_epoch .................................. 1250
+  jit_compile ..................................... False
+  kv_channels ..................................... 80
+  kv_head_repeat_before_uly_alltoall .............. False
+  kv_lora_rank .................................... None
+  lazy_mpu_init ................................... None
+  load ............................................ None
+  load_checkpoint_loosely ......................... False
+  local_rank ...................................... None
+  log_batch_size_to_tensorboard ................... False
+  log_interval .................................... 1
+  log_learning_rate_to_tensorboard ................ True
+  log_loss_scale_to_tensorboard ................... True
+  log_memory_to_tensorboard ....................... False
+  log_name ........................................ gpt_2_6B_1stages_2024-12-10-8-34-43
+  log_num_zeros_in_grad ........................... False
+  log_params_norm ................................. False
+  log_path ........................................ /workspace/RC4/ModelLink/aceso_execute/logs/runtime/gpt/2_6B/
+  log_progress .................................... False
+  log_throughput .................................. True
+  log_timers_to_tensorboard ....................... False
+  log_validation_ppl_to_tensorboard ............... False
+  log_world_size_to_tensorboard ................... False
+  lora_alpha ...................................... 32
+  lora_fusion ..................................... False
+  lora_load ....................................... None
+  lora_modules_to_save ............................ None
+  lora_r .......................................... 16
+  lora_register_forward_hook ...................... ['word_embeddings', 'input_layernorm']
+  lora_target_modules ............................. []
+  loss_scale ...................................... None
+  loss_scale_window ............................... 1000
+  low_freq_factor ................................. None
+  lr .............................................. 6e-05
+  lr_decay_iters .................................. 320000
+  lr_decay_samples ................................ None
+  lr_decay_style .................................. cosine
+  lr_warmup_fraction .............................. 0.001
+  lr_warmup_init .................................. 0.0
+  lr_warmup_iters ................................. 0
+  lr_warmup_samples ............................... 0
+  make_vocab_size_divisible_by .................... 128
+  manual_gc ....................................... False
+  manual_gc_eval .................................. True
+  manual_gc_interval .............................. 0
+  mask_factor ..................................... 1.0
+  mask_prob ....................................... 0.15
+  mask_type ....................................... random
+  masked_softmax_fusion ........................... False
+  max_position_embeddings ......................... 2048
+  max_tokens_to_oom ............................... 12000
+  merge_file ...................................... ./vocab_file/gpt2-merges.txt
+  micro_batch_size ................................ 32
+  min_loss_scale .................................. 1.0
+  min_lr .......................................... 6e-06
+  mmap_bin_files .................................. True
+  mock_data ....................................... True
+  moe_allgather_overlap_comm ...................... False
+  moe_alltoall_overlap_comm ....................... False
+  moe_aux_loss_coeff .............................. 0.0
+  moe_comm_aux_loss_coeff ......................... 0.0
+  moe_device_level_aux_loss_coeff ................. 0.0
+  moe_expert_capacity_factor ...................... None
+  moe_grouped_gemm ................................ False
+  moe_input_jitter_eps ............................ None
+  moe_intermediate_size ........................... None
+  moe_layer_freq .................................. None
+  moe_pad_expert_input_to_capacity ................ False
+  moe_per_layer_logging ........................... False
+  moe_permutation_async_comm ...................... False
+  moe_router_load_balancing_type .................. aux_loss
+  moe_router_topk ................................. 2
+  moe_token_dispatcher_type ....................... allgather
+  moe_token_drop_policy ........................... probs
+  moe_token_dropping .............................. False
+  moe_tp_extend_ep ................................ False
+  moe_train_capacity_factor ....................... 1.0
+  moe_without_activation .......................... False
+  moe_z_loss_coeff ................................ 0.0
+  multi_head_latent_attention ..................... False
+  n_shared_experts ................................ None
+  nccl_communicator_config_path ................... None
+  next_tockens .................................... 0
+  no_cut_token .................................... False
+  no_load_optim ................................... None
+  no_load_rng ..................................... None
+  no_persist_layer_norm ........................... False
+  no_post_layer_norm .............................. False
+  no_save_optim ................................... None
+  no_save_rng ..................................... None
+  no_shared_storage ............................... True
+  no_shuffle ...................................... False
+  noisy_gate_policy ............................... None
+  noop_layers ..................................... None
+  norm_epsilon .................................... 1e-05
+  norm_topk_prob .................................. False
+  normalization ................................... LayerNorm
+  num_attention_heads ............................. 32
+  num_channels .................................... 3
+  num_classes ..................................... 1000
+  num_experts ..................................... None
+  num_gpus ........................................ [4, 4]
+  num_layer_list .................................. None
+  num_layers ...................................... 32
+  num_layers_per_virtual_pipeline_stage ........... None
+  num_ops_in_each_stage ........................... [34, 32]
+  num_query_groups ................................ 1
+  num_stages ...................................... 2
+  num_workers ..................................... 2
+  one_logger_entity ............................... hwinf_dcm
+  one_logger_project .............................. e2e-tracking
+  one_logger_run_name ............................. None
+  onnx_safe ....................................... None
+  openai_gelu ..................................... False
+  optimizer ....................................... adam
+  original_max_position_embeddings ................ None
+  output_bert_embeddings .......................... False
+  output_layer_slice_num .......................... 1
+  output_logit_softcapping ........................ None
+  output_multiplier_scale ......................... None
+  overlap_grad_reduce ............................. False
+  overlap_p2p_comm ................................ False
+  overlap_param_gather ............................ False
+  override_opt_param_scheduler .................... False
+  pad_to_multiple_of .............................. 8
+  padded_vocab_size ............................... None
+  params_dtype .................................... torch.float16
+  patch_dim ....................................... 16
+  perform_initialization .......................... True
+  pipeline_model_parallel_size .................... 2
+  position_embedding_type ......................... learned_absolute
+  post_norm ....................................... False
+  pre_tockens ..................................... 65536
+  pref_ftx ........................................ 0.0
+  pretrained_checkpoint ........................... None
+  prof_cache_file ................................. None
+  prof_mbs_list ................................... None
+  prof_memory_only ................................ False
+  prof_model_name ................................. all
+  prof_model_size ................................. all
+  prof_node_rank .................................. None
+  prof_num_nodes .................................. None
+  prof_op ......................................... False
+  prof_path ....................................... None
+  prof_ref_data ................................... None
+  prof_repeat_threshold ........................... None
+  prof_repeat_times ............................... [50]
+  prof_skip_running ............................... False
+  prof_time_only .................................. False
+  prof_tp_size .................................... None
+  prof_warmup_threshold ........................... None
+  prof_warmup_times ............................... 20
+  profile ......................................... False
+  profile_level ................................... level0
+  profile_ranks ................................... [-1]
+  profile_record_shapes ........................... False
+  profile_save_path ............................... ./profile_dir
+  profile_step_end ................................ 12
+  profile_step_start .............................. 10
+  profile_with_cpu ................................ False
+  profile_with_memory ............................. False
+  profile_with_stack .............................. False
+  prompt_type ..................................... None
+  q_lora_rank ..................................... None
+  qk_layernorm .................................... False
+  qk_nope_head_dim ................................ None
+  qk_rope_head_dim ................................ None
+  query_in_block_prob ............................. 0.1
+  query_pre_attn_scalar ........................... None
+  rampup_batch_size ............................... None
+  rank ............................................ 0
+  recompute_activation_function ................... False
+  recompute_activation_function_num_layers ........ None
+  recompute_granularity ........................... None
+  recompute_in_advance ............................ False
+  recompute_in_bubble ............................. False
+  recompute_method ................................ None
+  recompute_num_layers ............................ None
+  recompute_ops ................................... [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+  reduce_recompute_for_last_chunk ................. False
+  ref_model ....................................... None
+  reset_attention_mask ............................ False
+  reset_position_ids .............................. False
+  resharding_stages ............................... [False, False]
+  retriever_report_topk_accuracies ................ []
+  retriever_score_scaling ......................... False
+  retriever_seq_length ............................ 256
+  retro_add_retriever ............................. False
+  retro_attention_gate ............................ 1
+  retro_cyclic_train_iters ........................ None
+  retro_encoder_attention_dropout ................. 0.1
+  retro_encoder_hidden_dropout .................... 0.1
+  retro_encoder_layers ............................ 2
+  retro_num_neighbors ............................. 2
+  retro_num_retrieved_chunks ...................... 2
+  retro_project_dir ............................... None
+  retro_verify_neighbor_count ..................... True
+  reuse_fp32_param ................................ False
+  rope_scaling_beta_fast .......................... 32
+  rope_scaling_beta_slow .......................... 1
+  rope_scaling_factor ............................. 1.0
+  rope_scaling_mscale ............................. 1.0
+  rope_scaling_mscale_all_dim ..................... 0.0
+  rope_scaling_original_max_position_embeddings ... None
+  rope_scaling_type ............................... None
+  rotary_base ..................................... None
+  rotary_interleaved .............................. False
+  rotary_percent .................................. 1.0
+  rotary_seq_len_interpolation_factor ............. None
+  routed_scaling_factor ........................... None
+  sample_rate ..................................... 1.0
+  save ............................................ None
+  save_interval ................................... 2000
+  scale_depth ..................................... None
+  scale_emb ....................................... None
+  scatter_gather_tensors_in_pipeline .............. True
+  seed ............................................ 1234
+  seq_aux ......................................... False
+  seq_length ...................................... 2048
+  sequence_parallel ............................... False
+  sgd_momentum .................................... 0.9
+  shape_order ..................................... SBH
+  share_embeddings_and_output_weights ............. True
+  shared_expert_gate .............................. False
+  shared_expert_gate_output_dimension ............. 1
+  short_seq_prob .................................. 0.1
+  skip_bias_add ................................... True
+  skip_train ...................................... False
+  sliding_window .................................. None
+  sparse_mode ..................................... 0
+  spec ............................................ None
+  split ........................................... 949,50,1
+  square_alibi_mask ............................... False
+  squared_relu .................................... False
+  stage ........................................... None
+  standalone_embedding_stage ...................... False
+  start_weight_decay .............................. 0.01
+  swap_attention .................................. False
+  swap_modules .................................... None
+  swiglu .......................................... False
+  swin_backbone_type .............................. tiny
+  tensor_parallel_size_of_each_op ................. [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
+  tensorboard_dir ................................. None
+  tensorboard_log_interval ........................ 1
+  tensorboard_queue_size .......................... 1000
+  test_data_path .................................. None
+  test_mode ....................................... False
+  timing_log_level ................................ 0
+  timing_log_option ............................... minmax
+  titles_data_path ................................ None
+  tokenizer_kwargs ................................ None
+  tokenizer_model ................................. None
+  tokenizer_name_or_path .......................... None
+  tokenizer_not_use_fast .......................... True
+  tokenizer_padding_side .......................... right
+  tokenizer_type .................................. GPT2BPETokenizer
+  topk_group ...................................... None
+  tp_comm_bulk_dgrad .............................. True
+  tp_comm_bulk_wgrad .............................. True
+  tp_comm_overlap ................................. False
+  tp_comm_overlap_ag .............................. True
+  tp_comm_overlap_cfg ............................. None
+  tp_comm_overlap_rs .............................. True
+  tp_comm_split_ag ................................ True
+  tp_comm_split_rs ................................ True
+  train_data_path ................................. None
+  train_iters ..................................... 10
+  train_samples ................................... None
+  transformer_impl ................................ local
+  ulysses_degree_in_cp ............................ None
+  untie_embeddings_and_output_weights ............. False
+  use_checkpoint_args ............................. False
+  use_checkpoint_opt_param_scheduler .............. False
+  use_cp_send_recv_overlap ........................ True
+  use_cpu_initialization .......................... None
+  use_deter_comp .................................. False
+  use_dist_ckpt ................................... False
+  use_distributed_optimizer ....................... True
+  use_flash_attn .................................. True
+  use_fused_moe_token_permute_and_unpermute ....... False
+  use_fused_ring_attention_update ................. False
+  use_fused_rmsnorm ............................... False
+  use_fused_rotary_pos_emb ........................ True
+  use_fused_swiglu ................................ False
+  use_glm_rope .................................... False
+  use_mc2 ......................................... False
+  use_mcore_models ................................ True
+  use_nanopipe .................................... False
+  use_one_sent_docs ............................... False
+  use_ring_exchange_p2p ........................... False
+  use_rotary_position_embeddings .................. False
+  v_head_dim ...................................... None
+  valid_data_path ................................. None
+  variable_seq_lengths ............................ False
+  virtual_pipeline_model_parallel_size ............ 1
+  vision_backbone_type ............................ vit
+  vision_pretraining .............................. False
+  vision_pretraining_type ......................... classify
+  vocab_extra_ids ................................. 0
+  vocab_file ...................................... ./vocab_file/gpt2-vocab.json
+  vocab_size ...................................... None
+  wandb_exp_name .................................. 
+  wandb_project ................................... 
+  wandb_save_dir .................................. 
+  weight_decay .................................... 0.01
+  weight_decay_incr_style ......................... constant
+  world_size ...................................... 8
+  yaml_cfg ........................................ None
+-------------------- end of ModelLink Arguments ---------------------
+setting number of micro-batches to constant 32
+> building GPT2BPETokenizer tokenizer ...
+world_size: 8
+/workspace/RC4/ModelLink/megatron/training/tokenizer/gpt2_tokenization.py:159: ResourceWarning: unclosed file <_io.TextIOWrapper name='./vocab_file/gpt2-vocab.json' mode='r' encoding='UTF-8'>
+  self.encoder = json.load(open(vocab_file))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/RC4/ModelLink/megatron/training/tokenizer/gpt2_tokenization.py:164: ResourceWarning: unclosed file <_io.TextIOWrapper name='./vocab_file/gpt2-merges.txt' mode='r' encoding='utf-8'>
+  bpe_data = open(merges_file, encoding='utf-8').read().split('\n')[1:-1]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/RC4/ModelLink/megatron/training/tokenizer/gpt2_tokenization.py:159: ResourceWarning: unclosed file <_io.TextIOWrapper name='./vocab_file/gpt2-vocab.json' mode='r' encoding='UTF-8'>
+  self.encoder = json.load(open(vocab_file))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/RC4/ModelLink/megatron/training/tokenizer/gpt2_tokenization.py:164: ResourceWarning: unclosed file <_io.TextIOWrapper name='./vocab_file/gpt2-merges.txt' mode='r' encoding='utf-8'>
+  bpe_data = open(merges_file, encoding='utf-8').read().split('\n')[1:-1]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ > padded vocab (size: 50257) with 47 dummy tokens (new size: 50304)
+> initializing torch distributed ...
+[W compiler_depend.ts:623] Warning: expandable_segments currently defaults to false. You can enable this feature by `export PYTORCH_NPU_ALLOC_CONF = expandable_segments:True`. (function operator())
+[W compiler_depend.ts:623] Warning: expandable_segments currently defaults to false. You can enable this feature by `export PYTORCH_NPU_ALLOC_CONF = expandable_segments:True`. (function operator())
+[W compiler_depend.ts:623] Warning: expandable_segments currently defaults to false. You can enable this feature by `export PYTORCH_NPU_ALLOC_CONF = expandable_segments:True`. (function operator())
+[W compiler_depend.ts:623] Warning: expandable_segments currently defaults to false. You can enable this feature by `export PYTORCH_NPU_ALLOC_CONF = expandable_segments:True`. (function operator())
+[W compiler_depend.ts:623] Warning: expandable_segments currently defaults to false. You can enable this feature by `export PYTORCH_NPU_ALLOC_CONF = expandable_segments:True`. (function operator())
+[W compiler_depend.ts:623] Warning: expandable_segments currently defaults to false. You can enable this feature by `export PYTORCH_NPU_ALLOC_CONF = expandable_segments:True`. (function operator())
+[W compiler_depend.ts:623] Warning: expandable_segments currently defaults to false. You can enable this feature by `export PYTORCH_NPU_ALLOC_CONF = expandable_segments:True`. (function operator())
+[W compiler_depend.ts:623] Warning: expandable_segments currently defaults to false. You can enable this feature by `export PYTORCH_NPU_ALLOC_CONF = expandable_segments:True`. (function operator())
+[DEBUG]|rank 5|     pipeline_rank= 1 |     tp_size= 1 |     tp_rank=0 |     tp_src_rank=5 |     dp_size= 4 |     parent ranks=[1] |     child ranks = [1] |     micro_batch_size = 32
+
+[DEBUG]|rank 5|     MPU_PIPELINE_MODEL_PARALLEL_WORLD_SIZE: 2 |     DATA_PARALLEL_RANKS: [range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8)] |     MPU_PIPELINE_MODEL_PARALLEL_RANK: 1 |     CHILD_RANKS: [[4], [5], [6], [7], [0], [1], [2], [3]] |     PARENT_RANKS: [[4], [5], [6], [7], [0], [1], [2], [3]] |     FLEXPIPE_PREV_RANKS: [1] |     FLEXPIPE_NEXT_RANKS: [1] |     RANKS_IN_EACH_PIPELINE_STAGE: [[0, 1, 2, 3], [4, 5, 6, 7]]|     OP_RESHARDING_RANKS: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None] |     EMBEDDING_GLOBAL_RANKS: [0, 1] |     POSITION_EMBEDDING_GLOBAL_RANKS: [0]
+[DEBUG]|rank 7|     pipeline_rank= 1 |     tp_size= 1 |     tp_rank=0 |     tp_src_rank=7 |     dp_size= 4 |     parent ranks=[3] |     child ranks = [3] |     micro_batch_size = 32
+
+[DEBUG]|rank 7|     MPU_PIPELINE_MODEL_PARALLEL_WORLD_SIZE: 2 |     DATA_PARALLEL_RANKS: [range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8)] |     MPU_PIPELINE_MODEL_PARALLEL_RANK: 1 |     CHILD_RANKS: [[4], [5], [6], [7], [0], [1], [2], [3]] |     PARENT_RANKS: [[4], [5], [6], [7], [0], [1], [2], [3]] |     FLEXPIPE_PREV_RANKS: [3] |     FLEXPIPE_NEXT_RANKS: [3] |     RANKS_IN_EACH_PIPELINE_STAGE: [[0, 1, 2, 3], [4, 5, 6, 7]]|     OP_RESHARDING_RANKS: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None] |     EMBEDDING_GLOBAL_RANKS: [0, 1] |     POSITION_EMBEDDING_GLOBAL_RANKS: [0]
+[DEBUG]|rank 3|     pipeline_rank= 0 |     tp_size= 1 |     tp_rank=0 |     tp_src_rank=3 |     dp_size= 4 |     parent ranks=[7] |     child ranks = [7] |     micro_batch_size = 32
+
+[DEBUG]|rank 3|     MPU_PIPELINE_MODEL_PARALLEL_WORLD_SIZE: 2 |     DATA_PARALLEL_RANKS: [range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4)] |     MPU_PIPELINE_MODEL_PARALLEL_RANK: 0 |     CHILD_RANKS: [[4], [5], [6], [7], [0], [1], [2], [3]] |     PARENT_RANKS: [[4], [5], [6], [7], [0], [1], [2], [3]] |     FLEXPIPE_PREV_RANKS: [7] |     FLEXPIPE_NEXT_RANKS: [7] |     RANKS_IN_EACH_PIPELINE_STAGE: [[0, 1, 2, 3], [4, 5, 6, 7]]|     OP_RESHARDING_RANKS: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None] |     EMBEDDING_GLOBAL_RANKS: [0, 1] |     POSITION_EMBEDDING_GLOBAL_RANKS: [0]
+[DEBUG]|rank 4|     pipeline_rank= 1 |     tp_size= 1 |     tp_rank=0 |     tp_src_rank=4 |     dp_size= 4 |     parent ranks=[0] |     child ranks = [0] |     micro_batch_size = 32
+
+[DEBUG]|rank 4|     MPU_PIPELINE_MODEL_PARALLEL_WORLD_SIZE: 2 |     DATA_PARALLEL_RANKS: [range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8)] |     MPU_PIPELINE_MODEL_PARALLEL_RANK: 1 |     CHILD_RANKS: [[4], [5], [6], [7], [0], [1], [2], [3]] |     PARENT_RANKS: [[4], [5], [6], [7], [0], [1], [2], [3]] |     FLEXPIPE_PREV_RANKS: [0] |     FLEXPIPE_NEXT_RANKS: [0] |     RANKS_IN_EACH_PIPELINE_STAGE: [[0, 1, 2, 3], [4, 5, 6, 7]]|     OP_RESHARDING_RANKS: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None] |     EMBEDDING_GLOBAL_RANKS: [0, 1] |     POSITION_EMBEDDING_GLOBAL_RANKS: [0]
+[DEBUG]|rank 2|     pipeline_rank= 0 |     tp_size= 1 |     tp_rank=0 |     tp_src_rank=2 |     dp_size= 4 |     parent ranks=[6] |     child ranks = [6] |     micro_batch_size = 32
+
+[DEBUG]|rank 2|     MPU_PIPELINE_MODEL_PARALLEL_WORLD_SIZE: 2 |     DATA_PARALLEL_RANKS: [range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4)] |     MPU_PIPELINE_MODEL_PARALLEL_RANK: 0 |     CHILD_RANKS: [[4], [5], [6], [7], [0], [1], [2], [3]] |     PARENT_RANKS: [[4], [5], [6], [7], [0], [1], [2], [3]] |     FLEXPIPE_PREV_RANKS: [6] |     FLEXPIPE_NEXT_RANKS: [6] |     RANKS_IN_EACH_PIPELINE_STAGE: [[0, 1, 2, 3], [4, 5, 6, 7]]|     OP_RESHARDING_RANKS: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None] |     EMBEDDING_GLOBAL_RANKS: [0, 1] |     POSITION_EMBEDDING_GLOBAL_RANKS: [0]
+[DEBUG]|rank 6|     pipeline_rank= 1 |     tp_size= 1 |     tp_rank=0 |     tp_src_rank=6 |     dp_size= 4 |     parent ranks=[2] |     child ranks = [2] |     micro_batch_size = 32
+
+[DEBUG]|rank 6|     MPU_PIPELINE_MODEL_PARALLEL_WORLD_SIZE: 2 |     DATA_PARALLEL_RANKS: [range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8), range(4, 8)] |     MPU_PIPELINE_MODEL_PARALLEL_RANK: 1 |     CHILD_RANKS: [[4], [5], [6], [7], [0], [1], [2], [3]] |     PARENT_RANKS: [[4], [5], [6], [7], [0], [1], [2], [3]] |     FLEXPIPE_PREV_RANKS: [2] |     FLEXPIPE_NEXT_RANKS: [2] |     RANKS_IN_EACH_PIPELINE_STAGE: [[0, 1, 2, 3], [4, 5, 6, 7]]|     OP_RESHARDING_RANKS: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None] |     EMBEDDING_GLOBAL_RANKS: [0, 1] |     POSITION_EMBEDDING_GLOBAL_RANKS: [0]
+[DEBUG]|rank 1|     pipeline_rank= 0 |     tp_size= 1 |     tp_rank=0 |     tp_src_rank=1 |     dp_size= 4 |     parent ranks=[5] |     child ranks = [5] |     micro_batch_size = 32
+
+[DEBUG]|rank 1|     MPU_PIPELINE_MODEL_PARALLEL_WORLD_SIZE: 2 |     DATA_PARALLEL_RANKS: [range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4)] |     MPU_PIPELINE_MODEL_PARALLEL_RANK: 0 |     CHILD_RANKS: [[4], [5], [6], [7], [0], [1], [2], [3]] |     PARENT_RANKS: [[4], [5], [6], [7], [0], [1], [2], [3]] |     FLEXPIPE_PREV_RANKS: [5] |     FLEXPIPE_NEXT_RANKS: [5] |     RANKS_IN_EACH_PIPELINE_STAGE: [[0, 1, 2, 3], [4, 5, 6, 7]]|     OP_RESHARDING_RANKS: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None] |     EMBEDDING_GLOBAL_RANKS: [0, 1] |     POSITION_EMBEDDING_GLOBAL_RANKS: [0]
+> initializing FlexPipe...
+[DEBUG]|rank 0|     pipeline_rank= 0 |     tp_size= 1 |     tp_rank=0 |     tp_src_rank=0 |     dp_size= 4 |     parent ranks=[4] |     child ranks = [4] |     micro_batch_size = 32
+
+[DEBUG]|rank 0|     MPU_PIPELINE_MODEL_PARALLEL_WORLD_SIZE: 2 |     DATA_PARALLEL_RANKS: [range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4), range(0, 4)] |     MPU_PIPELINE_MODEL_PARALLEL_RANK: 0 |     CHILD_RANKS: [[4], [5], [6], [7], [0], [1], [2], [3]] |     PARENT_RANKS: [[4], [5], [6], [7], [0], [1], [2], [3]] |     FLEXPIPE_PREV_RANKS: [4] |     FLEXPIPE_NEXT_RANKS: [4] |     RANKS_IN_EACH_PIPELINE_STAGE: [[0, 1, 2, 3], [4, 5, 6, 7]]|     OP_RESHARDING_RANKS: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None] |     EMBEDDING_GLOBAL_RANKS: [0, 1] |     POSITION_EMBEDDING_GLOBAL_RANKS: [0]
+> initialized tensor model parallel with size 1
+> initialized pipeline model parallel with size 2
+> setting random seeds to 1234 ...
+> compiling dataset index builder ...
+make: Entering directory '/workspace/RC4/ModelLink/megatron/core/datasets'
+make: Nothing to be done for 'default'.
+make: Leaving directory '/workspace/RC4/ModelLink/megatron/core/datasets'
+>>> done with dataset index builder. Compilation time: 1.035 seconds
+time to initialize megatron (seconds): 6.340
+[after megatron is initialized] datetime: 2024-12-10 21:58:30 
+building GPT model ...
+[rank 1 all ops] "dec-embedding","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention",
+[rank 1 recompute ops] 
+[rank 0 all ops] "dec-embedding","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention",
+[rank 0 recompute ops] 
+[rank 4 all ops] "dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-post-process",
+[rank 4 recompute ops] 
+ > number of parameters on (tensor, pipeline) model parallel rank (0, 0): 1419074560
+ > number of parameters on (tensor, pipeline) model parallel rank (0, 1): 1495398400
+[rank 2 all ops] "dec-embedding","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention",
+[rank 2 recompute ops] 
+[rank 7 all ops] "dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-post-process",
+[rank 7 recompute ops] 
+1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}
+[rank 5 all ops] "dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-post-process",
+[rank 5 recompute ops] 
+[rank 6 all ops] "dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-post-process",
+[rank 6 recompute ops] 
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}
+2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}
+7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}
+5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}
+6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}
+[rank 3 all ops] "dec-embedding","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention","dec-mlp","dec-self-attention",
+[rank 3 recompute ops] 
+3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}
+INFO:megatron.core.distributed.param_and_grad_buffer:Number of buckets for gradient all-reduce / reduce-scatter: 2
+INFO:megatron.core.distributed.param_and_grad_buffer:Params for bucket 1 (1290296320 elements):
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.30.mlp.linear_fc2.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.28.mlp.linear_fc2.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.24.mlp.linear_fc2.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.22.pre_mlp_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.18.pre_mlp_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.9.self_attention.linear_qkv.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.5.self_attention.linear_qkv.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.3.self_attention.linear_qkv.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.32.mlp.linear_fc1.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.26.pre_mlp_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.20.mlp.linear_fc1.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.7.self_attention.linear_proj.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.1.input_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.27.self_attention.linear_qkv.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.23.self_attention.linear_qkv.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.21.self_attention.linear_qkv.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.17.self_attention.linear_qkv.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.15.input_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.11.input_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.2.mlp.linear_fc2.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.25.self_attention.linear_proj.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.19.input_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.13.self_attention.linear_proj.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.33.input_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.29.input_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.16.mlp.linear_fc2.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.14.mlp.linear_fc2.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.10.mlp.linear_fc2.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.8.pre_mlp_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.4.pre_mlp_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.31.self_attention.linear_proj.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.22.mlp.linear_fc1.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.18.mlp.linear_fc1.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.16.pre_mlp_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.12.pre_mlp_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.10.mlp.linear_fc1.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.6.mlp.linear_fc1.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.32.mlp.linear_fc2.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.26.pre_mlp_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.13.self_attention.linear_qkv.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.7.self_attention.linear_qkv.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.1.input_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.30.pre_mlp_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.28.mlp.linear_fc1.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.24.mlp.linear_fc1.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.15.self_attention.linear_proj.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.11.self_attention.linear_proj.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.9.input_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.5.input_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.3.self_attention.linear_proj.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.31.self_attention.linear_qkv.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.25.self_attention.linear_qkv.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.19.input_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.6.mlp.linear_fc2.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.33.self_attention.linear_proj.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.29.self_attention.linear_proj.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.27.input_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.21.self_attention.linear_proj.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.23.input_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.17.self_attention.linear_proj.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.8.mlp.linear_fc1.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.4.mlp.linear_fc1.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.2.pre_mlp_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.28.mlp.linear_fc2.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.24.mlp.linear_fc2.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.22.mlp.linear_fc2.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.18.mlp.linear_fc2.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.16.pre_mlp_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.12.pre_mlp_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.3.self_attention.linear_qkv.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.26.mlp.linear_fc1.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.20.pre_mlp_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.14.mlp.linear_fc1.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.1.self_attention.linear_proj.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.30.pre_mlp_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.21.self_attention.linear_qkv.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.17.self_attention.linear_qkv.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.15.self_attention.linear_qkv.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.11.self_attention.linear_qkv.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.9.input_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.5.input_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.2.mlp.linear_fc2.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.32.mlp.linear_fc1.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.19.self_attention.linear_proj.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.13.input_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.7.self_attention.linear_proj.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.33.self_attention.linear_qkv.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.29.self_attention.linear_qkv.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.27.input_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.23.input_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.14.mlp.linear_fc2.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.10.mlp.linear_fc2.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.8.mlp.linear_fc2.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.4.mlp.linear_fc2.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.2.pre_mlp_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.31.input_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.29.self_attention.linear_proj.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.25.self_attention.linear_proj.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.16.mlp.linear_fc1.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.12.mlp.linear_fc1.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.10.pre_mlp_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.6.pre_mlp_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.4.mlp.linear_fc1.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.32.mlp.linear_fc2.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.26.mlp.linear_fc2.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.20.pre_mlp_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.7.self_attention.linear_qkv.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.1.self_attention.linear_qkv.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.30.mlp.linear_fc1.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.28.pre_mlp_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.22.mlp.linear_fc1.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.24.pre_mlp_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.18.mlp.linear_fc1.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.9.self_attention.linear_proj.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.5.self_attention.linear_proj.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.3.input_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.25.self_attention.linear_qkv.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.19.self_attention.linear_qkv.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.13.input_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.embedding.position_embeddings.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.27.self_attention.linear_proj.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.23.self_attention.linear_proj.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.21.input_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.17.input_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.15.self_attention.linear_proj.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.11.self_attention.linear_proj.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.2.mlp.linear_fc1.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.31.input_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.22.mlp.linear_fc2.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.18.mlp.linear_fc2.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.16.mlp.linear_fc2.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.12.mlp.linear_fc2.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.10.pre_mlp_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.6.pre_mlp_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.33.self_attention.linear_proj.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.20.mlp.linear_fc1.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.14.pre_mlp_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.8.mlp.linear_fc1.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.30.mlp.linear_fc2.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.28.pre_mlp_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.24.pre_mlp_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.15.self_attention.linear_qkv.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.11.self_attention.linear_qkv.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.9.self_attention.linear_qkv.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.5.self_attention.linear_qkv.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.3.input_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.32.pre_mlp_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.26.mlp.linear_fc1.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.13.self_attention.linear_proj.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.7.input_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.33.self_attention.linear_qkv.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.29.self_attention.linear_qkv.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.27.self_attention.linear_qkv.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.23.self_attention.linear_qkv.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.21.input_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.17.input_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.8.mlp.linear_fc2.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.4.mlp.linear_fc2.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.31.self_attention.linear_proj.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.29.input_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.25.input_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.23.self_attention.linear_proj.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.19.self_attention.linear_proj.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.10.mlp.linear_fc1.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.6.mlp.linear_fc1.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.4.pre_mlp_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.26.mlp.linear_fc2.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.20.mlp.linear_fc2.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.14.pre_mlp_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.1.self_attention.linear_qkv.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.28.mlp.linear_fc1.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.24.mlp.linear_fc1.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.22.pre_mlp_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.18.pre_mlp_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.16.mlp.linear_fc1.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.12.mlp.linear_fc1.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.3.self_attention.linear_proj.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.32.pre_mlp_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.19.self_attention.linear_qkv.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.13.self_attention.linear_qkv.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.7.input_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.1.self_attention.linear_proj.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.30.mlp.linear_fc1.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.21.self_attention.linear_proj.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.17.self_attention.linear_proj.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.15.input_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.11.input_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.9.self_attention.linear_proj.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.5.self_attention.linear_proj.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.31.self_attention.linear_qkv.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.25.input_layernorm.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.12.mlp.linear_fc2.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.6.mlp.linear_fc2.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.33.input_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.27.self_attention.linear_proj.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.20.mlp.linear_fc2.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.14.mlp.linear_fc1.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.8.pre_mlp_layernorm.weight
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.language_model.ops.2.mlp.linear_fc1.bias
+INFO:megatron.core.distributed.param_and_grad_buffer:Params for bucket 2 (128778240 elements):
+INFO:megatron.core.distributed.param_and_grad_buffer:    module.embedding.word_embeddings.weight
+INFO:megatron.core.optimizer:Setting up optimizer with OptimizerConfig(optimizer='adam', lr=6e-05, min_lr=6e-06, decoupled_lr=None, decoupled_min_lr=None, weight_decay=0.01, fp16=True, bf16=False, params_dtype=torch.float16, loss_scale=None, initial_loss_scale=4096.0, min_loss_scale=1.0, loss_scale_window=1000, hysteresis=2, adam_beta1=0.9, adam_beta2=0.95, adam_eps=1e-08, sgd_momentum=0.9, use_distributed_optimizer=True, overlap_grad_reduce=False, overlap_param_gather=False, clip_grad=1.0, log_num_zeros_in_grad=False, barrier_with_L1_time=True, timers=<megatron.core.timers.Timers object at 0xffff6018fbb0>)
+> learning rate decay style: cosine
+[after model, optimizer, and learning rate scheduler are built] datetime: 2024-12-10 21:58:31 
+> building train, validation, and test datasets ...
+ > datasets target sizes (minimum size):
+    train:      10240
+    validation: 1024
+    test:       1024
+INFO:megatron.core.datasets.blended_megatron_dataset_config:mock = True
+> building train, validation, and test datasets for GPT ...
+> finished creating GPT datasets ...
+[after dataloaders are built] datetime: 2024-12-10 21:58:32 
+done with setup ...
+/workspace/RC4/ModelLink/megatron/core/timers.py:241: UserWarning: AutoNonVariableTypeMode is deprecated and will be removed in 1.10 release. For kernel implementations please use AutoDispatchBelowADInplaceOrView instead, If you are looking for a user facing API to enable running your inference-only workload, please use c10::InferenceMode. Using AutoDispatchBelowADInplaceOrView in user code is under risk of producing silent wrong result in some edge cases. See Note [AutoDispatchBelowAutograd] for more details. (Triggered internally at build/CMakeFiles/torch_npu.dir/compiler_depend.ts:74.)
+  rank_name_to_time[rank, i] = self._timers[name].elapsed(reset=reset)
+/workspace/RC4/ModelLink/megatron/core/timers.py:241: UserWarning: AutoNonVariableTypeMode is deprecated and will be removed in 1.10 release. For kernel implementations please use AutoDispatchBelowADInplaceOrView instead, If you are looking for a user facing API to enable running your inference-only workload, please use c10::InferenceMode. Using AutoDispatchBelowADInplaceOrView in user code is under risk of producing silent wrong result in some edge cases. See Note [AutoDispatchBelowAutograd] for more details. (Triggered internally at build/CMakeFiles/torch_npu.dir/compiler_depend.ts:74.)
+  rank_name_to_time[rank, i] = self._timers[name].elapsed(reset=reset)
+/workspace/RC4/ModelLink/megatron/core/timers.py:241: UserWarning: AutoNonVariableTypeMode is deprecated and will be removed in 1.10 release. For kernel implementations please use AutoDispatchBelowADInplaceOrView instead, If you are looking for a user facing API to enable running your inference-only workload, please use c10::InferenceMode. Using AutoDispatchBelowADInplaceOrView in user code is under risk of producing silent wrong result in some edge cases. See Note [AutoDispatchBelowAutograd] for more details. (Triggered internally at build/CMakeFiles/torch_npu.dir/compiler_depend.ts:74.)
+  rank_name_to_time[rank, i] = self._timers[name].elapsed(reset=reset)
+/workspace/RC4/ModelLink/megatron/core/timers.py:241: UserWarning: AutoNonVariableTypeMode is deprecated and will be removed in 1.10 release. For kernel implementations please use AutoDispatchBelowADInplaceOrView instead, If you are looking for a user facing API to enable running your inference-only workload, please use c10::InferenceMode. Using AutoDispatchBelowADInplaceOrView in user code is under risk of producing silent wrong result in some edge cases. See Note [AutoDispatchBelowAutograd] for more details. (Triggered internally at build/CMakeFiles/torch_npu.dir/compiler_depend.ts:74.)
+  rank_name_to_time[rank, i] = self._timers[name].elapsed(reset=reset)
+/workspace/RC4/ModelLink/megatron/core/timers.py:241: UserWarning: AutoNonVariableTypeMode is deprecated and will be removed in 1.10 release. For kernel implementations please use AutoDispatchBelowADInplaceOrView instead, If you are looking for a user facing API to enable running your inference-only workload, please use c10::InferenceMode. Using AutoDispatchBelowADInplaceOrView in user code is under risk of producing silent wrong result in some edge cases. See Note [AutoDispatchBelowAutograd] for more details. (Triggered internally at build/CMakeFiles/torch_npu.dir/compiler_depend.ts:74.)
+  rank_name_to_time[rank, i] = self._timers[name].elapsed(reset=reset)
+/workspace/RC4/ModelLink/megatron/core/timers.py:241: UserWarning: AutoNonVariableTypeMode is deprecated and will be removed in 1.10 release. For kernel implementations please use AutoDispatchBelowADInplaceOrView instead, If you are looking for a user facing API to enable running your inference-only workload, please use c10::InferenceMode. Using AutoDispatchBelowADInplaceOrView in user code is under risk of producing silent wrong result in some edge cases. See Note [AutoDispatchBelowAutograd] for more details. (Triggered internally at build/CMakeFiles/torch_npu.dir/compiler_depend.ts:74.)
+  rank_name_to_time[rank, i] = self._timers[name].elapsed(reset=reset)
+/workspace/RC4/ModelLink/megatron/core/timers.py:241: UserWarning: AutoNonVariableTypeMode is deprecated and will be removed in 1.10 release. For kernel implementations please use AutoDispatchBelowADInplaceOrView instead, If you are looking for a user facing API to enable running your inference-only workload, please use c10::InferenceMode. Using AutoDispatchBelowADInplaceOrView in user code is under risk of producing silent wrong result in some edge cases. See Note [AutoDispatchBelowAutograd] for more details. (Triggered internally at build/CMakeFiles/torch_npu.dir/compiler_depend.ts:74.)
+  rank_name_to_time[rank, i] = self._timers[name].elapsed(reset=reset)
+/workspace/RC4/ModelLink/megatron/core/timers.py:241: UserWarning: AutoNonVariableTypeMode is deprecated and will be removed in 1.10 release. For kernel implementations please use AutoDispatchBelowADInplaceOrView instead, If you are looking for a user facing API to enable running your inference-only workload, please use c10::InferenceMode. Using AutoDispatchBelowADInplaceOrView in user code is under risk of producing silent wrong result in some edge cases. See Note [AutoDispatchBelowAutograd] for more details. (Triggered internally at build/CMakeFiles/torch_npu.dir/compiler_depend.ts:74.)
+  rank_name_to_time[rank, i] = self._timers[name].elapsed(reset=reset)
+
+==> Time (ms) | [stage 1, virtual 0, rank 6] | model-and-optimizer-setup: 0.00 | train/valid/test-data-iterators-setup: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 6] memory (MB) | allocated: 7130.64794921875 | max allocated: 21760.0283203125 | reserved: 9062.0 | max reserved: 21844.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 0] | model-and-optimizer-setup: 0.00 | train/valid/test-data-iterators-setup: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 0] memory (MB) | allocated: 6766.70458984375 | max allocated: 21760.0283203125 | reserved: 8142.0 | max reserved: 21844.0
+training ...
+(min, max) time across ranks (ms):
+    model-and-optimizer-setup ......................: (623.46, 671.83)
+    train/valid/test-data-iterators-setup ..........: (166.80, 1576.62)
+
+==> Time (ms) | [stage 1, virtual 0, rank 7] | model-and-optimizer-setup: 0.00 | train/valid/test-data-iterators-setup: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 7] memory (MB) | allocated: 7130.6376953125 | max allocated: 21760.0283203125 | reserved: 9062.0 | max reserved: 21844.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 4] | model-and-optimizer-setup: 0.00 | train/valid/test-data-iterators-setup: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 4] memory (MB) | allocated: 7130.646484375 | max allocated: 21760.0283203125 | reserved: 9062.0 | max reserved: 21844.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 2] | model-and-optimizer-setup: 0.00 | train/valid/test-data-iterators-setup: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 2] memory (MB) | allocated: 6766.705078125 | max allocated: 21760.0283203125 | reserved: 8142.0 | max reserved: 21844.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 1] | model-and-optimizer-setup: 0.00 | train/valid/test-data-iterators-setup: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 1] memory (MB) | allocated: 6766.7041015625 | max allocated: 21760.0283203125 | reserved: 8142.0 | max reserved: 21844.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 3] | model-and-optimizer-setup: 0.00 | train/valid/test-data-iterators-setup: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 3] memory (MB) | allocated: 6766.70556640625 | max allocated: 21760.0283203125 | reserved: 8142.0 | max reserved: 21844.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 5] | model-and-optimizer-setup: 0.00 | train/valid/test-data-iterators-setup: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 5] memory (MB) | allocated: 7130.64599609375 | max allocated: 21760.0283203125 | reserved: 9062.0 | max reserved: 21844.0
+[before the start of training step] datetime: 2024-12-10 21:58:32 
+7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}
+5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}
+1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}
+2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}
+6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}
+3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}
+0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}
+5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}
+6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}
+2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}
+3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}
+0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}
+Warning: Device do not support double dtype now, dtype cast repalce with float.Warning: Device do not support double dtype now, dtype cast repalce with float.
+
+Warning: Device do not support double dtype now, dtype cast repalce with float.
+Warning: Device do not support double dtype now, dtype cast repalce with float.
+[W compiler_depend.ts:103] Warning: Non finite check and unscale on NPU device! (function operator())
+[W compiler_depend.ts:103] Warning: Non finite check and unscale on NPU device! (function operator())
+[W compiler_depend.ts:103] Warning: Non finite check and unscale on NPU device! (function operator())
+[W compiler_depend.ts:103] Warning: Non finite check and unscale on NPU device! (function operator())
+Warning: Device do not support double dtype now, dtype cast repalce with float.
+Warning: Device do not support double dtype now, dtype cast repalce with float.
+Warning: Device do not support double dtype now, dtype cast repalce with float.
+Warning: Device do not support double dtype now, dtype cast repalce with float.
+[W compiler_depend.ts:103] Warning: Non finite check and unscale on NPU device! (function operator())
+[W compiler_depend.ts:103] Warning: Non finite check and unscale on NPU device! (function operator())
+[W compiler_depend.ts:103] Warning: Non finite check and unscale on NPU device! (function operator())
+[W compiler_depend.ts:103] Warning: Non finite check and unscale on NPU device! (function operator())
+increment: 1024
+increment: 1024
+increment: 1024
+increment: 1024
+increment: 1024increment: 1024
+increment: 1024
+
+increment: 1024
+ [2024-12-10 21:59:10] iteration        1/      10 | consumed samples:         4096 | elapsed time per iteration (ms): 37579.5 | throughput per GPU (TFLOP/s/GPU): 124.8 | learning rate: 1.875000E-07 | global batch size:  1024 | lm loss: 9.793657E+00 | loss scale: 4096.0 | grad norm: 579.335 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[Rank 4] (after 1 iterations) memory (MB) | allocated: 12064.34814453125 | max allocated: 35799.93408203125 | reserved: 36926.0 | max reserved: 36926.0
+[Rank 0] (after 1 iterations) memory (MB) | allocated: 11322.03564453125 | max allocated: 50907.72119140625 | reserved: 53132.0 | max reserved: 53132.0
+(min, max) time across ranks (ms):
+    forward-backward ...............................: (34211.57, 34895.93)
+    forward-compute ................................: (10016.59, 11214.77)
+    backward-compute ...............................: (21371.20, 21593.59)
+    batch-generator ................................: (36.86, 283.26)
+    forward-recv ...................................: (1087.64, 1245.21)
+    forward-send ...................................: (4.98, 5.06)
+    backward-recv ..................................: (339.54, 346.10)
+    backward-send ..................................: (4.73, 5.34)
+    forward-send-backward-recv .....................: (2827.85, 2988.69)
+    backward-send-forward-recv .....................: (380.01, 403.48)
+    layernorm-grads-all-reduce .....................: (0.07, 0.10)
+    embedding-grads-all-reduce .....................: (0.06, 0.14)
+    all-grads-sync .................................: (85.77, 333.89)
+    params-all-gather ..............................: (49.48, 59.15)
+    optimizer-copy-to-main-grad ....................: (6.49, 9.86)
+    optimizer-unscale-and-check-inf ................: (1392.23, 1392.50)
+    optimizer-clip-main-grad .......................: (39.74, 43.60)
+    optimizer-count-zeros ..........................: (0.05, 0.06)
+    optimizer-inner-step ...........................: (750.32, 788.00)
+    optimizer-copy-main-to-model-params ............: (6.21, 9.18)
+    optimizer ......................................: (2296.42, 2307.09)
+
+==> Time (ms) | [stage 0, virtual 0, rank 2] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 2] memory (MB) | allocated: 11322.03759765625 | max allocated: 50907.7216796875 | reserved: 53592.0 | max reserved: 53592.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 5] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 5] memory (MB) | allocated: 12064.34619140625 | max allocated: 35799.93359375 | reserved: 36926.0 | max reserved: 36926.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 3] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 3] memory (MB) | allocated: 11322.03955078125 | max allocated: 50907.72216796875 | reserved: 53252.0 | max reserved: 53252.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 7] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 7] memory (MB) | allocated: 12064.31298828125 | max allocated: 35799.92529296875 | reserved: 36926.0 | max reserved: 36926.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 0] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 0] memory (MB) | allocated: 11322.03564453125 | max allocated: 50907.72119140625 | reserved: 53132.0 | max reserved: 53132.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 6] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 6] memory (MB) | allocated: 12064.35400390625 | max allocated: 35799.935546875 | reserved: 36926.0 | max reserved: 36926.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 4] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 4] memory (MB) | allocated: 12064.34814453125 | max allocated: 35799.93408203125 | reserved: 36926.0 | max reserved: 36926.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 1] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 1] memory (MB) | allocated: 11322.03369140625 | max allocated: 50907.720703125 | reserved: 53592.0 | max reserved: 53592.0
+5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}
+7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}
+0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}
+2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}
+
+6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}
+
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}
+7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}
+6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}
+3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}
+0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}
+2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}
+increment: 1024
+increment: 1024
+increment: 1024
+increment: 1024
+increment: 1024increment: 1024
+
+increment: 1024
+increment: 1024
+ [2024-12-10 21:59:43] iteration        2/      10 | consumed samples:         8192 | elapsed time per iteration (ms): 33319.1 | throughput per GPU (TFLOP/s/GPU): 140.7 | learning rate: 3.750000E-07 | global batch size:  1024 | lm loss: 9.792166E+00 | loss scale: 4096.0 | grad norm: 596.573 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[Rank 0] (after 2 iterations) memory (MB) | allocated: 11567.6611328125 | max allocated: 54105.69189453125 | reserved: 56472.0 | max reserved: 56472.0
+[Rank 4] (after 2 iterations) memory (MB) | allocated: 12064.34814453125 | max allocated: 39143.48486328125 | reserved: 40408.0 | max reserved: 40408.0
+(min, max) time across ranks (ms):
+    forward-backward ...............................: (32407.62, 33082.61)
+    forward-compute ................................: (9359.65, 10603.61)
+    backward-compute ...............................: (21183.71, 21474.23)
+    batch-generator ................................: (34.58, 46.94)
+    forward-recv ...................................: (297.45, 306.52)
+    forward-send ...................................: (4.67, 4.82)
+    backward-recv ..................................: (330.25, 335.34)
+    backward-send ..................................: (4.71, 4.83)
+    forward-send-backward-recv .....................: (1810.51, 1991.45)
+    backward-send-forward-recv .....................: (293.35, 297.66)
+    layernorm-grads-all-reduce .....................: (0.06, 0.08)
+    embedding-grads-all-reduce .....................: (0.05, 0.07)
+    all-grads-sync .................................: (46.47, 63.78)
+    params-all-gather ..............................: (38.56, 46.75)
+    optimizer-copy-to-main-grad ....................: (4.39, 6.50)
+    optimizer-unscale-and-check-inf ................: (3.68, 3.73)
+    optimizer-clip-main-grad .......................: (21.08, 23.38)
+    optimizer-count-zeros ..........................: (0.05, 0.07)
+    optimizer-inner-step ...........................: (16.08, 20.46)
+    optimizer-copy-main-to-model-params ............: (4.24, 5.86)
+    optimizer ......................................: (102.02, 110.22)
+
+==> Time (ms) | [stage 1, virtual 0, rank 7] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 7] memory (MB) | allocated: 12064.31298828125 | max allocated: 39143.45849609375 | reserved: 40148.0 | max reserved: 40148.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 2] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 2] memory (MB) | allocated: 11567.6630859375 | max allocated: 54105.693359375 | reserved: 56472.0 | max reserved: 56472.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 3] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Time (ms) | [stage 0, virtual 0, rank 0] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+==> Memory | [stage 0, virtual 0, rank 3] memory (MB) | allocated: 11567.6650390625 | max allocated: 54105.69482421875 | reserved: 56272.0 | max reserved: 56272.0
+
+
+==> Memory | [stage 0, virtual 0, rank 0] memory (MB) | allocated: 11567.6611328125 | max allocated: 54105.69189453125 | reserved: 56472.0 | max reserved: 56472.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 5] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 5] memory (MB) | allocated: 12064.34619140625 | max allocated: 39143.4833984375 | reserved: 40308.0 | max reserved: 40308.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 4] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 4] memory (MB) | allocated: 12064.34814453125 | max allocated: 39143.48486328125 | reserved: 40408.0 | max reserved: 40408.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 1] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 1] memory (MB) | allocated: 11567.6591796875 | max allocated: 54105.6904296875 | reserved: 56972.0 | max reserved: 56972.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 6] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 6] memory (MB) | allocated: 12064.35400390625 | max allocated: 39143.4892578125 | reserved: 40328.0 | max reserved: 40328.0
+5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}
+
+0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}
+1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}
+3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}
+
+6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}
+5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}
+6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}
+3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}
+0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}
+2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}
+ [2024-12-10 22:00:16] iteration        3/      10 | consumed samples:        12288 | elapsed time per iteration (ms): 33252.1 | throughput per GPU (TFLOP/s/GPU): 141.0 | learning rate: 3.750000E-07 | global batch size:  1024 | loss scale: 4096.0 | number of skipped iterations:   1 | number of nan iterations:   0 |
+[Rank 0] (after 3 iterations) memory (MB) | allocated: 11813.28662109375 | max allocated: 54351.3173828125 | reserved: 56612.0 | max reserved: 56612.0
+[Rank 4] (after 3 iterations) memory (MB) | allocated: 12064.34814453125 | max allocated: 39143.48486328125 | reserved: 40408.0 | max reserved: 40408.0
+(min, max) time across ranks (ms):
+    forward-backward ...............................: (32433.65, 33110.55)
+    forward-compute ................................: (9354.08, 10636.07)
+    backward-compute ...............................: (21182.42, 21458.99)
+    batch-generator ................................: (34.18, 45.81)
+    forward-recv ...................................: (297.32, 300.84)
+    forward-send ...................................: (4.66, 4.82)
+    backward-recv ..................................: (328.21, 342.13)
+    backward-send ..................................: (4.68, 4.87)
+    forward-send-backward-recv .....................: (1844.95, 2041.39)
+    backward-send-forward-recv .....................: (292.47, 297.58)
+    layernorm-grads-all-reduce .....................: (0.06, 0.08)
+    embedding-grads-all-reduce .....................: (0.05, 0.06)
+    all-grads-sync .................................: (46.27, 69.66)
+    params-all-gather ..............................: (0.06, 0.09)
+    optimizer-copy-to-main-grad ....................: (4.32, 6.31)
+    optimizer-unscale-and-check-inf ................: (3.70, 3.79)
+    optimizer ......................................: (11.62, 11.68)
+
+==> Time (ms) | [stage 0, virtual 0, rank 2] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 2] memory (MB) | allocated: 11813.28857421875 | max allocated: 54351.31884765625 | reserved: 57012.0 | max reserved: 57012.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 7] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 7] memory (MB) | allocated: 12064.31298828125 | max allocated: 39143.45849609375 | reserved: 40148.0 | max reserved: 40148.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 0] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+==> Time (ms) | [stage 0, virtual 0, rank 3] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+
+==> Memory | [stage 0, virtual 0, rank 0] memory (MB) | allocated: 11813.28662109375 | max allocated: 54351.3173828125 | reserved: 56612.0 | max reserved: 56612.0
+==> Memory | [stage 0, virtual 0, rank 3] memory (MB) | allocated: 11813.29052734375 | max allocated: 54351.3203125 | reserved: 56992.0 | max reserved: 56992.0
+
+
+==> Time (ms) | [stage 0, virtual 0, rank 1] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 1] memory (MB) | allocated: 11813.28466796875 | max allocated: 54351.31591796875 | reserved: 56972.0 | max reserved: 56972.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 5] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Time (ms) | [stage 1, virtual 0, rank 4] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 4] memory (MB) | allocated: 12064.34814453125 | max allocated: 39143.48486328125 | reserved: 40408.0 | max reserved: 40408.0
+==> Memory | [stage 1, virtual 0, rank 5] memory (MB) | allocated: 12064.34619140625 | max allocated: 39143.4833984375 | reserved: 40308.0 | max reserved: 40308.0
+
+
+==> Time (ms) | [stage 1, virtual 0, rank 6] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 6] memory (MB) | allocated: 12064.35400390625 | max allocated: 39143.4892578125 | reserved: 40328.0 | max reserved: 40328.0
+7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}
+
+2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}
+3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}
+
+1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}
+5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}
+
+5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}
+2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}
+1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}
+0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}
+ [2024-12-10 22:00:50] iteration        4/      10 | consumed samples:        16384 | elapsed time per iteration (ms): 33212.3 | throughput per GPU (TFLOP/s/GPU): 141.2 | learning rate: 3.750000E-07 | global batch size:  1024 | loss scale: 2048.0 | number of skipped iterations:   1 | number of nan iterations:   0 |
+[Rank 0] (after 4 iterations) memory (MB) | allocated: 12058.912109375 | max allocated: 54596.94287109375 | reserved: 57052.0 | max reserved: 57052.0
+[Rank 4] (after 4 iterations) memory (MB) | allocated: 12064.34814453125 | max allocated: 39143.48486328125 | reserved: 40408.0 | max reserved: 40408.0
+(min, max) time across ranks (ms):
+    forward-backward ...............................: (32393.42, 33073.35)
+    forward-compute ................................: (9305.91, 10603.54)
+    backward-compute ...............................: (21176.15, 21467.41)
+    batch-generator ................................: (33.02, 42.74)
+    forward-recv ...................................: (297.11, 298.92)
+    forward-send ...................................: (4.62, 4.69)
+    backward-recv ..................................: (326.55, 337.52)
+    backward-send ..................................: (4.67, 4.86)
+    forward-send-backward-recv .....................: (1765.36, 2147.97)
+    backward-send-forward-recv .....................: (291.65, 297.09)
+    layernorm-grads-all-reduce .....................: (0.06, 0.08)
+    embedding-grads-all-reduce .....................: (0.05, 0.06)
+    all-grads-sync .................................: (46.93, 64.99)
+    params-all-gather ..............................: (0.06, 0.07)
+    optimizer-copy-to-main-grad ....................: (4.32, 6.87)
+    optimizer-unscale-and-check-inf ................: (3.60, 3.69)
+    optimizer ......................................: (17.72, 17.84)
+
+==> Time (ms) | [stage 0, virtual 0, rank 2] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Time (ms) | [stage 1, virtual 0, rank 7] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 2] memory (MB) | allocated: 12058.9140625 | max allocated: 54596.9443359375 | reserved: 57092.0 | max reserved: 57092.0
+==> Memory | [stage 1, virtual 0, rank 7] memory (MB) | allocated: 12064.31298828125 | max allocated: 39143.45849609375 | reserved: 40148.0 | max reserved: 40148.0
+
+
+==> Time (ms) | [stage 0, virtual 0, rank 0] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+==> Time (ms) | [stage 1, virtual 0, rank 4] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+==> Time (ms) | [stage 0, virtual 0, rank 3] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+
+==> Memory | [stage 1, virtual 0, rank 4] memory (MB) | allocated: 12064.34814453125 | max allocated: 39143.48486328125 | reserved: 40408.0 | max reserved: 40408.0
+
+
+==> Memory | [stage 0, virtual 0, rank 3] memory (MB) | allocated: 12058.916015625 | max allocated: 54596.94580078125 | reserved: 56992.0 | max reserved: 56992.0
+==> Memory | [stage 0, virtual 0, rank 0] memory (MB) | allocated: 12058.912109375 | max allocated: 54596.94287109375 | reserved: 57052.0 | max reserved: 57052.0
+
+
+==> Time (ms) | [stage 1, virtual 0, rank 5] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 5] memory (MB) | allocated: 12064.34619140625 | max allocated: 39143.4833984375 | reserved: 40308.0 | max reserved: 40308.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 1] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 1] memory (MB) | allocated: 12058.91015625 | max allocated: 54596.94140625 | reserved: 56972.0 | max reserved: 56972.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 6] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 6] memory (MB) | allocated: 12064.35400390625 | max allocated: 39143.4892578125 | reserved: 40328.0 | max reserved: 40328.0
+5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}
+6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}
+7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}
+0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}
+
+1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}
+2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}
+7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}
+6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}
+3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}
+2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}
+0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}
+ [2024-12-10 22:01:23] iteration        5/      10 | consumed samples:        20480 | elapsed time per iteration (ms): 33353.9 | throughput per GPU (TFLOP/s/GPU): 140.6 | learning rate: 3.750000E-07 | global batch size:  1024 | loss scale: 1024.0 | number of skipped iterations:   1 | number of nan iterations:   0 |
+[Rank 0] (after 5 iterations) memory (MB) | allocated: 12304.53759765625 | max allocated: 54842.568359375 | reserved: 57052.0 | max reserved: 57052.0
+[Rank 4] (after 5 iterations) memory (MB) | allocated: 12064.34814453125 | max allocated: 39143.48486328125 | reserved: 40408.0 | max reserved: 40408.0
+(min, max) time across ranks (ms):
+    forward-backward ...............................: (32530.65, 33217.38)
+    forward-compute ................................: (9350.59, 10747.13)
+    backward-compute ...............................: (21172.45, 21479.16)
+    batch-generator ................................: (33.05, 43.65)
+    forward-recv ...................................: (296.23, 299.61)
+    forward-send ...................................: (4.63, 4.67)
+    backward-recv ..................................: (334.22, 344.81)
+    backward-send ..................................: (4.67, 4.89)
+    forward-send-backward-recv .....................: (1940.96, 2151.07)
+    backward-send-forward-recv .....................: (290.52, 299.39)
+    layernorm-grads-all-reduce .....................: (0.06, 0.10)
+    embedding-grads-all-reduce .....................: (0.05, 0.07)
+    all-grads-sync .................................: (46.82, 67.29)
+    params-all-gather ..............................: (0.06, 0.07)
+    optimizer-copy-to-main-grad ....................: (4.25, 6.16)
+    optimizer-unscale-and-check-inf ................: (3.59, 3.68)
+    optimizer ......................................: (11.45, 11.57)
+
+==> Time (ms) | [stage 1, virtual 0, rank 7] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 7] memory (MB) | allocated: 12064.31298828125 | max allocated: 39143.45849609375 | reserved: 40148.0 | max reserved: 40148.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 4] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+==> Time (ms) | [stage 0, virtual 0, rank 0] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+
+==> Memory | [stage 1, virtual 0, rank 4] memory (MB) | allocated: 12064.34814453125 | max allocated: 39143.48486328125 | reserved: 40408.0 | max reserved: 40408.0
+==> Memory | [stage 0, virtual 0, rank 0] memory (MB) | allocated: 12304.53759765625 | max allocated: 54842.568359375 | reserved: 57052.0 | max reserved: 57052.0
+==> Time (ms) | [stage 0, virtual 0, rank 3] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+
+==> Time (ms) | [stage 0, virtual 0, rank 2] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+
+==> Memory | [stage 0, virtual 0, rank 3] memory (MB) | allocated: 12304.54150390625 | max allocated: 54842.5712890625 | reserved: 57492.0 | max reserved: 57492.0
+
+==> Memory | [stage 0, virtual 0, rank 2] memory (MB) | allocated: 12304.53955078125 | max allocated: 54842.56982421875 | reserved: 57592.0 | max reserved: 57592.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 5] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 5] memory (MB) | allocated: 12064.34619140625 | max allocated: 39143.4833984375 | reserved: 40308.0 | max reserved: 40308.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 6] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Time (ms) | [stage 0, virtual 0, rank 1] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+==> Memory | [stage 1, virtual 0, rank 6] memory (MB) | allocated: 12064.35400390625 | max allocated: 39143.4892578125 | reserved: 40328.0 | max reserved: 40328.0
+
+
+==> Memory | [stage 0, virtual 0, rank 1] memory (MB) | allocated: 12304.53564453125 | max allocated: 54842.56689453125 | reserved: 57172.0 | max reserved: 57172.0
+7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}
+5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}
+0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}
+6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}
+
+3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}
+2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}
+5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}
+6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}
+1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}
+2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}
+0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}
+ [2024-12-10 22:01:56] iteration        6/      10 | consumed samples:        24576 | elapsed time per iteration (ms): 33305.2 | throughput per GPU (TFLOP/s/GPU): 140.8 | learning rate: 3.750000E-07 | global batch size:  1024 | loss scale: 512.0 | number of skipped iterations:   1 | number of nan iterations:   0 |
+[Rank 4] (after 6 iterations) memory (MB) | allocated: 12064.34814453125 | max allocated: 39143.48486328125 | reserved: 40408.0 | max reserved: 40408.0
+[Rank 0] (after 6 iterations) memory (MB) | allocated: 12550.1630859375 | max allocated: 55088.19384765625 | reserved: 57512.0 | max reserved: 57512.0
+(min, max) time across ranks (ms):
+    forward-backward ...............................: (32495.73, 33173.95)
+    forward-compute ................................: (9349.04, 10714.19)
+    backward-compute ...............................: (21168.55, 21442.67)
+    batch-generator ................................: (32.32, 47.24)
+    forward-recv ...................................: (298.17, 299.68)
+    forward-send ...................................: (4.66, 4.74)
+    backward-recv ..................................: (329.97, 337.19)
+    backward-send ..................................: (4.70, 4.92)
+    forward-send-backward-recv .....................: (1919.54, 2119.70)
+    backward-send-forward-recv .....................: (290.87, 297.10)
+    layernorm-grads-all-reduce .....................: (0.06, 0.07)
+    embedding-grads-all-reduce .....................: (0.05, 0.06)
+    all-grads-sync .................................: (46.42, 64.29)
+    params-all-gather ..............................: (0.06, 0.07)
+    optimizer-copy-to-main-grad ....................: (4.38, 6.31)
+    optimizer-unscale-and-check-inf ................: (3.59, 3.71)
+    optimizer ......................................: (11.57, 11.70)
+
+==> Time (ms) | [stage 1, virtual 0, rank 7] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 7] memory (MB) | allocated: 12064.31298828125 | max allocated: 39143.45849609375 | reserved: 40148.0 | max reserved: 40148.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 0] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+==> Time (ms) | [stage 0, virtual 0, rank 3] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+
+==> Memory | [stage 0, virtual 0, rank 0] memory (MB) | allocated: 12550.1630859375 | max allocated: 55088.19384765625 | reserved: 57512.0 | max reserved: 57512.0
+
+==> Memory | [stage 0, virtual 0, rank 3] memory (MB) | allocated: 12550.1669921875 | max allocated: 55088.19677734375 | reserved: 57492.0 | max reserved: 57492.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 4] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 4] memory (MB) | allocated: 12064.34814453125 | max allocated: 39143.48486328125 | reserved: 40408.0 | max reserved: 40408.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 2] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 2] memory (MB) | allocated: 12550.1650390625 | max allocated: 55088.1953125 | reserved: 57592.0 | max reserved: 57592.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 5] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 5] memory (MB) | allocated: 12064.34619140625 | max allocated: 39143.4833984375 | reserved: 40308.0 | max reserved: 40308.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 6] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 6] memory (MB) | allocated: 12064.35400390625 | max allocated: 39143.4892578125 | reserved: 40328.0 | max reserved: 40328.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 1] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 1] memory (MB) | allocated: 12550.1611328125 | max allocated: 55088.1923828125 | reserved: 57412.0 | max reserved: 57412.0
+5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}
+7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}
+1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}
+
+0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}
+6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}
+5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}
+7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}
+1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}
+2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}
+0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}
+3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}
+ [2024-12-10 22:02:30] iteration        7/      10 | consumed samples:        28672 | elapsed time per iteration (ms): 33250.3 | throughput per GPU (TFLOP/s/GPU): 141.0 | learning rate: 3.750000E-07 | global batch size:  1024 | loss scale: 256.0 | number of skipped iterations:   1 | number of nan iterations:   0 |
+[Rank 0] (after 7 iterations) memory (MB) | allocated: 12795.78857421875 | max allocated: 55333.8193359375 | reserved: 58012.0 | max reserved: 58012.0
+[Rank 4] (after 7 iterations) memory (MB) | allocated: 12064.34814453125 | max allocated: 39143.48486328125 | reserved: 40408.0 | max reserved: 40408.0
+(min, max) time across ranks (ms):
+    forward-backward ...............................: (32446.73, 33119.56)
+    forward-compute ................................: (9297.81, 10662.24)
+    backward-compute ...............................: (21171.70, 21397.37)
+    batch-generator ................................: (32.17, 41.55)
+    forward-recv ...................................: (297.97, 299.49)
+    forward-send ...................................: (4.64, 4.73)
+    backward-recv ..................................: (326.14, 333.75)
+    backward-send ..................................: (4.69, 4.88)
+    forward-send-backward-recv .....................: (1922.92, 2171.73)
+    backward-send-forward-recv .....................: (290.71, 295.92)
+    layernorm-grads-all-reduce .....................: (0.06, 0.09)
+    embedding-grads-all-reduce .....................: (0.05, 0.07)
+    all-grads-sync .................................: (46.89, 64.04)
+    params-all-gather ..............................: (0.07, 0.08)
+    optimizer-copy-to-main-grad ....................: (4.38, 6.28)
+    optimizer-unscale-and-check-inf ................: (3.63, 3.72)
+    optimizer ......................................: (11.58, 11.72)
+
+==> Time (ms) | [stage 0, virtual 0, rank 2] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 2] memory (MB) | allocated: 12795.79052734375 | max allocated: 55333.82080078125 | reserved: 58092.0 | max reserved: 58092.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 7] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 7] memory (MB) | allocated: 12064.31298828125 | max allocated: 39143.45849609375 | reserved: 40148.0 | max reserved: 40148.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 6] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 6] memory (MB) | allocated: 12064.35400390625 | max allocated: 39143.4892578125 | reserved: 40328.0 | max reserved: 40328.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 5] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 5] memory (MB) | allocated: 12064.34619140625 | max allocated: 39143.4833984375 | reserved: 40308.0 | max reserved: 40308.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 4] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 4] memory (MB) | allocated: 12064.34814453125 | max allocated: 39143.48486328125 | reserved: 40408.0 | max reserved: 40408.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 0] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 0] memory (MB) | allocated: 12795.78857421875 | max allocated: 55333.8193359375 | reserved: 58012.0 | max reserved: 58012.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 3] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 3] memory (MB) | allocated: 12795.79248046875 | max allocated: 55333.822265625 | reserved: 57992.0 | max reserved: 57992.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 1] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 1] memory (MB) | allocated: 12795.78662109375 | max allocated: 55333.81787109375 | reserved: 57652.0 | max reserved: 57652.0
+7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}
+
+0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}
+
+1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}
+2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}
+5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}
+6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}
+1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}
+2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}
+0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}
+3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}
+ [2024-12-10 22:03:03] iteration        8/      10 | consumed samples:        32768 | elapsed time per iteration (ms): 33280.9 | throughput per GPU (TFLOP/s/GPU): 140.9 | learning rate: 3.750000E-07 | global batch size:  1024 | loss scale: 128.0 | number of skipped iterations:   1 | number of nan iterations:   0 |
+[Rank 0] (after 8 iterations) memory (MB) | allocated: 13041.4140625 | max allocated: 55579.44482421875 | reserved: 58012.0 | max reserved: 58012.0
+[Rank 4] (after 8 iterations) memory (MB) | allocated: 12064.34814453125 | max allocated: 39143.48486328125 | reserved: 40408.0 | max reserved: 40408.0
+(min, max) time across ranks (ms):
+    forward-backward ...............................: (32473.42, 33147.70)
+    forward-compute ................................: (9312.24, 10688.85)
+    backward-compute ...............................: (21166.18, 21498.27)
+    batch-generator ................................: (32.12, 44.83)
+    forward-recv ...................................: (294.72, 303.78)
+    forward-send ...................................: (4.61, 4.77)
+    backward-recv ..................................: (322.70, 333.09)
+    backward-send ..................................: (4.65, 4.78)
+    forward-send-backward-recv .....................: (1898.30, 2176.18)
+    backward-send-forward-recv .....................: (290.56, 299.12)
+    layernorm-grads-all-reduce .....................: (0.06, 0.07)
+    embedding-grads-all-reduce .....................: (0.05, 0.08)
+    all-grads-sync .................................: (46.78, 64.20)
+    params-all-gather ..............................: (0.06, 0.09)
+    optimizer-copy-to-main-grad ....................: (4.33, 7.62)
+    optimizer-unscale-and-check-inf ................: (4.09, 4.17)
+    optimizer ......................................: (13.80, 13.94)
+
+==> Time (ms) | [stage 0, virtual 0, rank 2] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 2] memory (MB) | allocated: 13041.416015625 | max allocated: 55579.4462890625 | reserved: 58092.0 | max reserved: 58092.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 7] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 7] memory (MB) | allocated: 12064.31298828125 | max allocated: 39143.45849609375 | reserved: 40148.0 | max reserved: 40148.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 4] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 4] memory (MB) | allocated: 12064.34814453125 | max allocated: 39143.48486328125 | reserved: 40408.0 | max reserved: 40408.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 5] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 5] memory (MB) | allocated: 12064.34619140625 | max allocated: 39143.4833984375 | reserved: 40308.0 | max reserved: 40308.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 6] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 6] memory (MB) | allocated: 12064.35400390625 | max allocated: 39143.4892578125 | reserved: 40328.0 | max reserved: 40328.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 0] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+==> Time (ms) | [stage 0, virtual 0, rank 1] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+
+==> Memory | [stage 0, virtual 0, rank 0] memory (MB) | allocated: 13041.4140625 | max allocated: 55579.44482421875 | reserved: 58012.0 | max reserved: 58012.0
+
+==> Memory | [stage 0, virtual 0, rank 1] memory (MB) | allocated: 13041.412109375 | max allocated: 55579.443359375 | reserved: 58372.0 | max reserved: 58372.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 3] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 3] memory (MB) | allocated: 13041.41796875 | max allocated: 55579.44775390625 | reserved: 57992.0 | max reserved: 57992.0
+7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}
+5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}
+0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}
+6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}
+1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}
+3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}
+5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}
+6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}
+1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}
+2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}
+0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}
+3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}
+ [2024-12-10 22:03:36] iteration        9/      10 | consumed samples:        36864 | elapsed time per iteration (ms): 33272.9 | throughput per GPU (TFLOP/s/GPU): 140.9 | learning rate: 3.750000E-07 | global batch size:  1024 | loss scale: 64.0 | number of skipped iterations:   1 | number of nan iterations:   0 |
+[Rank 0] (after 9 iterations) memory (MB) | allocated: 13287.03955078125 | max allocated: 55825.0703125 | reserved: 58072.0 | max reserved: 58072.0
+[Rank 4] (after 9 iterations) memory (MB) | allocated: 12064.34814453125 | max allocated: 39143.48486328125 | reserved: 40408.0 | max reserved: 40408.0
+(min, max) time across ranks (ms):
+    forward-backward ...............................: (32454.93, 33134.59)
+    forward-compute ................................: (9326.97, 10666.59)
+    backward-compute ...............................: (21171.42, 21468.37)
+    batch-generator ................................: (31.99, 54.19)
+    forward-recv ...................................: (298.73, 301.89)
+    forward-send ...................................: (4.67, 4.74)
+    backward-recv ..................................: (334.96, 348.10)
+    backward-send ..................................: (4.66, 4.80)
+    forward-send-backward-recv .....................: (1873.72, 2083.08)
+    backward-send-forward-recv .....................: (291.44, 297.33)
+    layernorm-grads-all-reduce .....................: (0.06, 0.08)
+    embedding-grads-all-reduce .....................: (0.05, 0.06)
+    all-grads-sync .................................: (47.40, 69.02)
+    params-all-gather ..............................: (0.06, 0.07)
+    optimizer-copy-to-main-grad ....................: (4.36, 6.40)
+    optimizer-unscale-and-check-inf ................: (3.66, 3.71)
+    optimizer ......................................: (11.80, 11.90)
+
+==> Time (ms) | [stage 1, virtual 0, rank 7] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 7] memory (MB) | allocated: 12064.31298828125 | max allocated: 39143.45849609375 | reserved: 40148.0 | max reserved: 40148.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 4] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 4] memory (MB) | allocated: 12064.34814453125 | max allocated: 39143.48486328125 | reserved: 40408.0 | max reserved: 40408.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 2] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+==> Time (ms) | [stage 0, virtual 0, rank 0] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 0] memory (MB) | allocated: 13287.03955078125 | max allocated: 55825.0703125 | reserved: 58072.0 | max reserved: 58072.0
+
+
+==> Memory | [stage 0, virtual 0, rank 2] memory (MB) | allocated: 13287.04150390625 | max allocated: 55825.07177734375 | reserved: 58092.0 | max reserved: 58092.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 1] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 1] memory (MB) | allocated: 13287.03759765625 | max allocated: 55825.06884765625 | reserved: 58372.0 | max reserved: 58372.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 6] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 6] memory (MB) | allocated: 12064.35400390625 | max allocated: 39143.4892578125 | reserved: 40328.0 | max reserved: 40328.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 5] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 5] memory (MB) | allocated: 12064.34619140625 | max allocated: 39143.4833984375 | reserved: 40308.0 | max reserved: 40308.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 3] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 3] memory (MB) | allocated: 13287.04345703125 | max allocated: 55825.0732421875 | reserved: 58032.0 | max reserved: 58032.0
+7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}
+0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}
+
+
+2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}
+6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}
+5, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[1]]}
+7, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[3]]}
+6, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[2]]}
+4, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {0: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {0: [[0]]}
+1, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[5]]}
+3, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[7]]}
+2, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[6]]}
+0, op.shared_weights_info[key]["sharing_weights_in_same_pipeline_rank"]: {65: False}, op.shared_weights_info[key]["sharing_weights_with_ranks": {65: [[4]]}
+ [2024-12-10 22:04:09] iteration       10/      10 | consumed samples:        40960 | elapsed time per iteration (ms): 33318.6 | throughput per GPU (TFLOP/s/GPU): 140.7 | learning rate: 3.750000E-07 | global batch size:  1024 | loss scale: 32.0 | number of skipped iterations:   1 | number of nan iterations:   0 |
+[Rank 0] (after 10 iterations) memory (MB) | allocated: 13532.6650390625 | max allocated: 56070.69580078125 | reserved: 58592.0 | max reserved: 58592.0
+[Rank 4] (after 10 iterations) memory (MB) | allocated: 12064.34814453125 | max allocated: 39143.48486328125 | reserved: 40408.0 | max reserved: 40408.0
+(min, max) time across ranks (ms):
+    forward-backward ...............................: (32510.73, 33186.91)
+    forward-compute ................................: (9319.92, 10730.19)
+    backward-compute ...............................: (21164.39, 21473.68)
+    batch-generator ................................: (31.81, 50.89)
+    forward-recv ...................................: (297.98, 301.43)
+    forward-send ...................................: (4.64, 4.70)
+    backward-recv ..................................: (332.75, 339.22)
+    backward-send ..................................: (4.65, 4.81)
+    forward-send-backward-recv .....................: (1917.48, 2201.50)
+    backward-send-forward-recv .....................: (290.88, 297.76)
+    layernorm-grads-all-reduce .....................: (0.06, 0.07)
+    embedding-grads-all-reduce .....................: (0.05, 0.06)
+    all-grads-sync .................................: (46.76, 64.07)
+    params-all-gather ..............................: (0.06, 0.07)
+    optimizer-copy-to-main-grad ....................: (4.34, 6.43)
+    optimizer-unscale-and-check-inf ................: (3.68, 3.72)
+    optimizer ......................................: (11.84, 11.96)
+
+==> Time (ms) | [stage 1, virtual 0, rank 7] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 7] memory (MB) | allocated: 12064.31298828125 | max allocated: 39143.45849609375 | reserved: 40148.0 | max reserved: 40148.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 2] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 2] memory (MB) | allocated: 13532.6669921875 | max allocated: 56070.697265625 | reserved: 58652.0 | max reserved: 58652.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 4] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 4] memory (MB) | allocated: 12064.34814453125 | max allocated: 39143.48486328125 | reserved: 40408.0 | max reserved: 40408.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 3] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 3] memory (MB) | allocated: 13532.6689453125 | max allocated: 56070.69873046875 | reserved: 58552.0 | max reserved: 58552.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 5] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+==> Time (ms) | [stage 0, virtual 0, rank 1] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+
+==> Memory | [stage 1, virtual 0, rank 5] memory (MB) | allocated: 12064.34619140625 | max allocated: 39143.4833984375 | reserved: 40308.0 | max reserved: 40308.0
+
+==> Memory | [stage 0, virtual 0, rank 1] memory (MB) | allocated: 13532.6630859375 | max allocated: 56070.6943359375 | reserved: 58392.0 | max reserved: 58392.0
+
+==> Time (ms) | [stage 0, virtual 0, rank 0] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-send: 0.00 | backward-recv: 0.00 | forward-send-backward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 0, virtual 0, rank 0] memory (MB) | allocated: 13532.6650390625 | max allocated: 56070.69580078125 | reserved: 58592.0 | max reserved: 58592.0
+
+==> Time (ms) | [stage 1, virtual 0, rank 6] | forward-backward: 0.00 | forward-compute: 0.00 | backward-compute: 0.00 | batch-generator: 0.00 | forward-recv: 0.00 | backward-send: 0.00 | backward-send-forward-recv: 0.00 | layernorm-grads-all-reduce: 0.00 | embedding-grads-all-reduce: 0.00 | all-grads-sync: 0.00 | params-all-gather: 0.00 | optimizer-copy-to-main-grad: 0.00 | optimizer-unscale-and-check-inf: 0.00 | optimizer-clip-main-grad: 0.00 | optimizer-count-zeros: 0.00 | optimizer-inner-step: 0.00 | optimizer-copy-main-to-model-params: 0.00 | optimizer: 0.00
+
+==> Memory | [stage 1, virtual 0, rank 6] memory (MB) | allocated: 12064.35400390625 | max allocated: 39143.4892578125 | reserved: 40328.0 | max reserved: 40328.0
+[after training is done] datetime: 2024-12-10 22:04:09 

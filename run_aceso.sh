@@ -1,1 +1,0 @@
-examples/aceso/pretrain_test/run.sh

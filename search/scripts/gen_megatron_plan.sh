@@ -24,7 +24,7 @@ init_config=balance
 
 #### Paths ####
 DATABASE_PATH=../profiler/profiled-time-miniset/
-RESULT_PATH=./test_eval_logs_4/
+RESULT_PATH=./gen_megatron_plan/
 
 LOG_PATH=${RESULT_PATH}search/${model_name}/${model_size}/
 CONFIG_SAVE_PATH=${RESULT_PATH}configs/${model_name}/${model_size}/

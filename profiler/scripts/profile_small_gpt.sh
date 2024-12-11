@@ -22,45 +22,56 @@ HIDDEN_SIZE=1024
 NUM_ATTENTION_HEADS=16
 SEQ_LENGTH=2048
 MAX_POSITION_EMBEDDINGS=$SEQ_LENGTH
-MICRO_BATCH_SIZE=4
+MICRO_BATCH_SIZE=16
 GLOBAL_BATCH_SIZE=16
 
+CP=1
+CP_TYPE='megatron_cp_algo'
 
 DATA_ARGS="
     --vocab-file $VOCAB_FILE \
     --merge-file $MERGE_FILE \
     --mock-data \
+    --split 949,50,1
 "
 
 GPT_ARGS="
-    --use-cp-send-recv-overlap \
-    --context-parallel-algo megatron_cp_algo \
-    --transformer-impl local \
-    --no-async-tensor-model-parallel-allreduce \
     --hidden-size $HIDDEN_SIZE \
     --num-attention-heads $NUM_ATTENTION_HEADS \
     --seq-length $SEQ_LENGTH \
     --max-position-embeddings $MAX_POSITION_EMBEDDINGS \
     --micro-batch-size $MICRO_BATCH_SIZE \
     --global-batch-size $GLOBAL_BATCH_SIZE \
-    --lr 0.00015 \
-    --train-iters 20 \
+    --use-mcore-models \
+    --use-cp-send-recv-overlap \
+    --context-parallel-size ${CP} \
+    --context-parallel-algo  ${CP_TYPE} \
+    --use-flash-attn \
+    --transformer-impl local \
+    --use-fused-rotary-pos-emb \
+    --tokenizer-type GPT2BPETokenizer \
+    --use-distributed-optimizer \
+    --train-iters 10 \
+    --eval-iters 0 \
+    --weight-decay 1e-2 \
+    --adam-beta1 0.9 \
+    --adam-beta2 0.95 \
+    --initial-loss-scale 4096 \
+    --init-method-std 0.006 \
+    --lr 6.0e-5 \
+    --min-lr 6.0e-6 \
+    --lr-warmup-fraction .001 \
     --lr-decay-iters 320000 \
     --lr-decay-style cosine \
-    --min-lr 1.0e-5 \
-    --weight-decay 1e-2 \
-    --lr-warmup-fraction .01 \
-    --clip-grad 1.0 \
-    --tokenizer-type GPT2BPETokenizer \
-    --use-mcore-models \
     --no-gradient-accumulation-fusion \
     --no-masked-softmax-fusion \
     --no-bias-gelu-fusion \
     --attention-softmax-in-fp32 \
     --attention-dropout 0.0 \
     --hidden-dropout 0.0 \
+    --no-shared-storage \
     --fp16 \
-    --use-flash-attn 
+    --clip-grad 1.0 \
 "
 
 mkdir -p ${PROFILING_PATH}
