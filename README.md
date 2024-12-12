@@ -1,30 +1,26 @@
-# [README_origin](./README_origin.md)
+### [MindSpeed-LLM](./README_origin.md)
+
+### [Aceso Link](https://github.com/microsoft/SuperScaler)
 
 
-## Todo
-
-- [x] aceso runtime
-
+## Simple Instructions
+### Step 1: Profile 
 ```bash
-bash run_aceso.sh
+cd aceso/profiler
+bash scripts/profile_small.sh
 ```
 
-- [x] aceso profiler
+### Step 2: Search
 
 ```bash
-# Note: Please modify the Python path in the script
-cd profiler
-bash script/profiler_small.sh
+cd aceso/search
+bash scripts/search_gpt.sh
 ```
 
-- [x] aceso search algorithm
+### Step 3: Train
 ```bash
-cd search
-bash script/search_gpt.sh
+cd aceso
+bash aceso_excute/aceso_gpt_execute.sh
 ```
-
-- [] train the model use search result
-
-
 
 

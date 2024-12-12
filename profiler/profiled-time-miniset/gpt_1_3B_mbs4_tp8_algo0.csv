@@ -1,5 +1,0 @@
-op_name,forward-compute,backward-compute,input_size,output_size,weights,activations,fwd_reserved,bwd_reserved
-dec-embedding,1283.073,643.396,0.031,32.000,33.000,32.072,67.928,120.000
-dec-self-attention,1469.326,1573.944,32.000,32.000,4.000,66.067,0.000,200.000
-dec-mlp,1238.298,1590.204,32.000,32.000,8.000,96.065,0.000,80.000
-dec-post-process,3129.148,2568.054,32.000,-0.016,25.000,232.167,227.833,0.000
