@@ -19,8 +19,8 @@ bash scripts/search_gpt.sh
 
 ### Step 3: Train
 ```bash
-cd aceso
-bash aceso_excute/aceso_gpt_execute.sh
+cd aceso/aceso_excute
+bash aceso_gpt_execute.sh
 ```
 
 
