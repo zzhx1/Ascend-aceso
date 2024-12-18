@@ -1,7 +1,7 @@
 #! /bin/bash
 RUNTIME_PATH=$(pwd)/
 PROFILING_PATH=${RUNTIME_PATH}profiled-time-miniset/
-mkdir ${PROFILING_PATH}
+mkdir -p ${PROFILING_PATH}
 FILE_NAME=${PROFILING_PATH}p2p_intra_node.csv
 
 MASTER_ADDR=localhost \

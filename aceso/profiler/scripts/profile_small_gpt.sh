@@ -18,8 +18,8 @@ MERGE_FILE=${RUNTIME_PATH}../../vocab_file/gpt2-merges.txt
 
 MAX_NUM_GPUS=8
 MODEL_NAME=gpt
-MODEL_SIZE=1_3B
-
+MODEL_SIZE=$1
+echo "profiling model size: $MODEL_SIZE"
 #  num_layers, seq_len, hidden_size, ffn_hidden_size, num_attention_heads, kv_channels, vocab_size, params_dtype are fake.
 HIDDEN_SIZE=1024
 NUM_ATTENTION_HEADS=16

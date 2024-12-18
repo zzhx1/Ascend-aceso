@@ -219,7 +219,7 @@ def infer_data_size(op_list: list[OpInfo], save_filename_prefix: str, mbs: int, 
             tp_split_dim = op.input_extra_tensors_info[input_extra_name]["tp_split_dim"]
             _input_extra_dict[input_extra_name] = input_shape
             ## current workaround for masks.
-            if "mask" not in input_extra_name:
+            if ("mask" not in input_extra_name) and ("labels" not in input_extra_name):
                 sum_input_extra_size += np.prod(input_shape) * DATA_BASE
 
         ## infer output extra tensor size
