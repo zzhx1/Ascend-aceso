@@ -1,0 +1,1428 @@
+[2024-12-20 14:13:51,813] torch.distributed.run: [WARNING] 
+[2024-12-20 14:13:51,813] torch.distributed.run: [WARNING] *****************************************
+[2024-12-20 14:13:51,813] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-12-20 14:13:51,813] torch.distributed.run: [WARNING] *****************************************
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:299: ImportWarning: 
+    *************************************************************************************************************
+    The torch.Tensor.cuda and torch.nn.Module.cuda are replaced with torch.Tensor.npu and torch.nn.Module.npu now..
+    The torch.cuda.DoubleTensor is replaced with torch.npu.FloatTensor cause the double type is not supported now..
+    The backend in torch.distributed.init_process_group set to hccl now..
+    The torch.cuda.* and torch.cuda.amp.* are replaced with torch.npu.* and torch.npu.amp.* now..
+    The device parameters have been replaced with npu in the function below:
+    torch.logspace, torch.randint, torch.hann_window, torch.rand, torch.full_like, torch.ones_like, torch.rand_like, torch.randperm, torch.arange, torch.frombuffer, torch.normal, torch._empty_per_channel_affine_quantized, torch.empty_strided, torch.empty_like, torch.scalar_tensor, torch.tril_indices, torch.bartlett_window, torch.ones, torch.sparse_coo_tensor, torch.randn, torch.kaiser_window, torch.tensor, torch.triu_indices, torch.as_tensor, torch.zeros, torch.randint_like, torch.full, torch.eye, torch._sparse_csr_tensor_unsafe, torch.empty, torch._sparse_coo_tensor_unsafe, torch.blackman_window, torch.zeros_like, torch.range, torch.sparse_csr_tensor, torch.randn_like, torch.from_file, torch._cudnn_init_dropout_state, torch._empty_affine_quantized, torch.linspace, torch.hamming_window, torch.empty_quantized, torch._pin_memory, torch.autocast, torch.load, torch.Generator, torch.Tensor.new_empty, torch.Tensor.new_empty_strided, torch.Tensor.new_full, torch.Tensor.new_ones, torch.Tensor.new_tensor, torch.Tensor.new_zeros, torch.Tensor.to, torch.nn.Module.to, torch.nn.Module.to_empty
+    *************************************************************************************************************
+    
+  warnings.warn(msg, ImportWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/contrib/transfer_to_npu.py:260: RuntimeWarning: torch.jit.script and torch.jit.script_method will be disabled by transfer_to_npu, which currently does not support them, if you need to enable them, please do not use transfer_to_npu.
+  warnings.warn(msg, RuntimeWarning)
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py39_cpu/adaptive_cp/build.ninja...
+Building extension module adaptive_cp...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+ninja: no work to do.
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py39_cpu/adaptive_cp/build.ninja...
+Building extension module adaptive_cp...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+Using /root/.cache/torch_extensions/py39_cpu as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py39_cpu/adaptive_cp/build.ninja...
+Building extension module adaptive_cp...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+Loading extension module adaptive_cp...
+world_size: 8
+/workspace/Ascend-aceso/megatron/training/tokenizer/gpt2_tokenization.py:159: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/Ascend-aceso/aceso/aceso_execute/../../vocab_file/gpt2-vocab.json' mode='r' encoding='UTF-8'>
+  self.encoder = json.load(open(vocab_file))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/Ascend-aceso/megatron/training/tokenizer/gpt2_tokenization.py:164: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/Ascend-aceso/aceso/aceso_execute/../../vocab_file/gpt2-merges.txt' mode='r' encoding='utf-8'>
+  bpe_data = open(merges_file, encoding='utf-8').read().split('\n')[1:-1]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+world_size: 8
+/workspace/Ascend-aceso/megatron/training/tokenizer/gpt2_tokenization.py:159: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/Ascend-aceso/aceso/aceso_execute/../../vocab_file/gpt2-vocab.json' mode='r' encoding='UTF-8'>
+  self.encoder = json.load(open(vocab_file))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/Ascend-aceso/megatron/training/tokenizer/gpt2_tokenization.py:164: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/Ascend-aceso/aceso/aceso_execute/../../vocab_file/gpt2-merges.txt' mode='r' encoding='utf-8'>
+  bpe_data = open(merges_file, encoding='utf-8').read().split('\n')[1:-1]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+world_size: 8
+/workspace/Ascend-aceso/megatron/training/tokenizer/gpt2_tokenization.py:159: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/Ascend-aceso/aceso/aceso_execute/../../vocab_file/gpt2-vocab.json' mode='r' encoding='UTF-8'>
+  self.encoder = json.load(open(vocab_file))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+world_size: 8
+using world size: 8, context-parallel size: 1
+--checkpoint-activations is no longer valid, use --recompute-activations, or, for more control, --recompute-granularity and --recompute-method.
+WARNING: Setting args.overlap_p2p_comm to False since non-interleaved schedule does not support overlapping p2p communication
+WARNING: Setting args.check_for_nan_in_loss_and_grad to False since dynamic loss scaling is being used
+using torch.float16 for parameters ...
+When context_parallel is not activated, kv_head_repeat_before_uly_alltoall would be set to False for reducing memory usage.
+[INFO] Setting args.create_attention_mask_in_dataloader to False since reset_data=False or alibi_without_flash_attn=False or args.tokenizer_padding_side=right
+------------------------ ModelLink Arguments ------------------------
+  accumulate_allreduce_grads_in_fp32 .............. False
+  adam_beta1 ...................................... 0.9
+  adam_beta2 ...................................... 0.95
+  adam_eps ........................................ 1e-08
+  adaptive_cp_dynamic_attn_mask ................... False
+  adaptive_cp_manually_set_mask_list .............. False
+  adaptive_cp_only_reschedule ..................... False
+  adaptive_cp_without_coarse ...................... False
+  adaptive_recompute_device_size .................. -1
+  adaptive_recompute_device_swap .................. False
+  adaptive_recompute_profiling_step ............... 10
+  add_bias_linear ................................. True
+  add_dense_bias .................................. False
+  add_position_embedding .......................... True
+  add_qkv_bias .................................... False
+  add_rmsnorm_offset .............................. False
+  adlr_autoresume ................................. False
+  adlr_autoresume_interval ........................ 1000
+  algo_of_each_op ................................. [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+  apply_layernorm_1p .............................. False
+  apply_query_key_layer_scaling ................... False
+  apply_residual_connection_post_layernorm ........ False
+  apply_rope_fusion ............................... True
+  async_tensor_model_parallel_allreduce ........... True
+  attention_dropout ............................... 0.0
+  attention_mask_on_cpu ........................... False
+  attention_softmax_in_fp32 ....................... True
+  attn_logit_softcapping .......................... None
+  auto_detect_ckpt_format ......................... False
+  barrier_with_L1_time ............................ True
+  bert_binary_head ................................ True
+  bert_embedder_type .............................. megatron
+  bert_load ....................................... None
+  bf16 ............................................ False
+  bias_dropout_fusion ............................. True
+  bias_gelu_fusion ................................ False
+  bias_swiglu_fusion .............................. True
+  biencoder_projection_dim ........................ 0
+  biencoder_shared_query_context_model ............ False
+  block_data_path ................................. None
+  check_for_nan_in_loss_and_grad .................. False
+  checkpoint_stages ............................... []
+  ckpt_fully_parallel_save ........................ False
+  ckpt_step ....................................... None
+  classes_fraction ................................ 1.0
+  clip_grad ....................................... 1.0
+  clone_scatter_output_in_embedding ............... True
+  consumed_train_samples .......................... 0
+  consumed_valid_samples .......................... 0
+  context_parallel_algo ........................... megatron_cp_algo
+  context_parallel_size ........................... 1
+  cp_attention_mask_type .......................... causal
+  cp_window_size .................................. 1
+  create_attention_mask_in_dataloader ............. False
+  data_cache_path ................................. None
+  data_parallel_random_init ....................... False
+  data_parallel_size_of_each_op ................... [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]]
+  data_path ....................................... None
+  data_per_class_fraction ......................... 1.0
+  data_sharding ................................... True
+  dataloader_type ................................. single
+  decoder_num_layers .............................. None
+  decoder_seq_length .............................. None
+  decoupled_lr .................................... None
+  decoupled_min_lr ................................ None
+  delay_grad_reduce ............................... True
+  delay_param_gather .............................. False
+  dim_model_base .................................. None
+  dino_bottleneck_size ............................ 256
+  dino_freeze_last_layer .......................... 1
+  dino_head_hidden_size ........................... 2048
+  dino_local_crops_number ......................... 10
+  dino_local_img_size ............................. 96
+  dino_norm_last_layer ............................ False
+  dino_teacher_temp ............................... 0.07
+  dino_warmup_teacher_temp ........................ 0.04
+  dino_warmup_teacher_temp_epochs ................. 30
+  dist_ckpt_format ................................ torch_dist
+  distribute_saved_activations .................... False
+  distributed_backend ............................. nccl
+  distributed_timeout_minutes ..................... 45
+  dpo_beta ........................................ 0.1
+  dpo_ftx ......................................... 0.0
+  dpo_label_smoothing ............................. 0.0
+  dpo_loss_type ................................... sigmoid
+  embed_layernorm ................................. False
+  embedding_multiplier_scale ...................... 1.0
+  embedding_path .................................. None
+  empty_unused_memory_level ....................... 0
+  enable_hbmfault_repair .......................... False
+  enable_high_availability ........................ False
+  enable_one_logger ............................... False
+  enable_optimizer_state_local_copy ............... False
+  enable_recompute_layers_per_pp_rank ............. False
+  enable_token_rearrange_opt ...................... False
+  encoder_num_layers .............................. 40
+  encoder_seq_length .............................. 2048
+  end_weight_decay ................................ 0.01
+  eod_mask_loss ................................... False
+  eval_interval ................................... 2000
+  eval_iters ...................................... 1
+  evidence_data_path .............................. None
+  exit_duration_in_mins ........................... None
+  exit_interval ................................... None
+  exit_on_missing_checkpoint ...................... False
+  exit_signal_handler ............................. False
+  expert_interval ................................. 1
+  expert_model_parallel_size ...................... 1
+  ffn_hidden_size ................................. 20480
+  fill_neg_inf .................................... False
+  finetune ........................................ False
+  first_k_dense_replace ........................... None
+  flexpipe ........................................ True
+  flexpipe_config ................................. /workspace/Ascend-aceso/aceso/aceso_execute/../search_configs/configs/gpt/13B/top_configs/gpt_13B_5stages_2024-12-19-16-49-13.json
+  fp16 ............................................ True
+  fp16_lm_cross_entropy ........................... False
+  fp32_residual_connection ........................ False
+  fp8 ............................................. None
+  fp8_amax_compute_algo ........................... most_recent
+  fp8_amax_history_len ............................ 1
+  fp8_interval .................................... 1
+  fp8_margin ...................................... 0
+  fp8_wgrad ....................................... True
+  full_shuffle_instruction_dataset ................ False
+  geglu ........................................... False
+  gelu_tanh ....................................... False
+  global_batch_size ............................... 1024
+  gradient_accumulation_fusion .................... False
+  group_query_attention ........................... False
+  head_lr_mult .................................... 1.0
+  hidden_dropout .................................. 0.0
+  hidden_size ..................................... 5120
+  high_freq_factor ................................ None
+  hysteresis ...................................... 2
+  ict_head_size ................................... None
+  ict_load ........................................ None
+  img_h ........................................... 224
+  img_w ........................................... 224
+  indexer_batch_size .............................. 128
+  indexer_log_interval ............................ 1000
+  inference_batch_times_seqlen_threshold .......... 512
+  init_method_std ................................. 0.006
+  init_method_xavier_uniform ...................... False
+  initial_loss_scale .............................. 4096.0
+  input_embeds_norm ............................... False
+  input_jitter .................................... True
+  input_layernorm_in_fp32 ......................... False
+  interleave_factor ............................... 1
+  interleave_sliding_window ....................... None
+  is_instruction_dataset .......................... False
+  is_pairwise_dataset ............................. False
+  iter_per_epoch .................................. 1250
+  jit_compile ..................................... False
+  kv_channels ..................................... 128
+  kv_head_repeat_before_uly_alltoall .............. False
+  kv_lora_rank .................................... None
+  lazy_mpu_init ................................... None
+  load ............................................ None
+  load_checkpoint_loosely ......................... False
+  local_rank ...................................... None
+  log_batch_size_to_tensorboard ................... False
+  log_interval .................................... 1
+  log_learning_rate_to_tensorboard ................ True
+  log_loss_scale_to_tensorboard ................... True
+  log_memory_to_tensorboard ....................... False
+  log_name ........................................ gpt_13B_5stages_2024-12-19-16-49-13
+  log_num_zeros_in_grad ........................... False
+  log_params_norm ................................. False
+  log_path ........................................ /workspace/Ascend-aceso/aceso/aceso_execute/logs/gpt/13B/
+  log_progress .................................... False
+  log_throughput .................................. True
+  log_timers_to_tensorboard ....................... False
+  log_validation_ppl_to_tensorboard ............... False
+  log_world_size_to_tensorboard ................... False
+  lora_alpha ...................................... 32
+  lora_fusion ..................................... False
+  lora_load ....................................... None
+  lora_modules_to_save ............................ None
+  lora_r .......................................... 16
+  lora_register_forward_hook ...................... ['word_embeddings', 'input_layernorm']
+  lora_target_modules ............................. []
+  loss_scale ...................................... None
+  loss_scale_window ............................... 1000
+  low_freq_factor ................................. None
+  lr .............................................. 6e-05
+  lr_decay_iters .................................. 320000
+  lr_decay_samples ................................ None
+  lr_decay_style .................................. cosine
+  lr_warmup_fraction .............................. 0.001
+  lr_warmup_init .................................. 0.0
+  lr_warmup_iters ................................. 0
+  lr_warmup_samples ............................... 0
+  make_vocab_size_divisible_by .................... 128
+  manual_gc ....................................... False
+  manual_gc_eval .................................. True
+  manual_gc_interval .............................. 0
+  mask_factor ..................................... 1.0
+  mask_prob ....................................... 0.15
+  mask_type ....................................... random
+  masked_softmax_fusion ........................... False
+  max_position_embeddings ......................... 2048
+  max_tokens_to_oom ............................... 12000
+  merge_file ...................................... /workspace/Ascend-aceso/aceso/aceso_execute/../../vocab_file/gpt2-merges.txt
+  micro_batch_size ................................ 2
+  min_loss_scale .................................. 1.0
+  min_lr .......................................... 6e-06
+  mmap_bin_files .................................. True
+  mock_data ....................................... True
+  moe_allgather_overlap_comm ...................... False
+  moe_alltoall_overlap_comm ....................... False
+  moe_aux_loss_coeff .............................. 0.0
+  moe_comm_aux_loss_coeff ......................... 0.0
+  moe_device_level_aux_loss_coeff ................. 0.0
+  moe_expert_capacity_factor ...................... None
+  moe_grouped_gemm ................................ False
+  moe_input_jitter_eps ............................ None
+  moe_intermediate_size ........................... None
+  moe_layer_freq .................................. None
+  moe_pad_expert_input_to_capacity ................ False
+  moe_per_layer_logging ........................... False
+  moe_permutation_async_comm ...................... False
+  moe_router_load_balancing_type .................. aux_loss
+  moe_router_topk ................................. 2
+  moe_token_dispatcher_type ....................... allgather
+  moe_token_drop_policy ........................... probs
+  moe_token_dropping .............................. False
+  moe_tp_extend_ep ................................ False
+  moe_train_capacity_factor ....................... 1.0
+  moe_without_activation .......................... False
+  moe_z_loss_coeff ................................ 0.0
+  multi_head_latent_attention ..................... False
+  n_shared_experts ................................ None
+  nccl_communicator_config_path ................... None
+  next_tockens .................................... 0
+  no_cut_token .................................... False
+  no_load_optim ................................... None
+  no_load_rng ..................................... None
+  no_persist_layer_norm ........................... False
+  no_post_layer_norm .............................. False
+  no_save_optim ................................... None
+  no_save_rng ..................................... None
+  no_shared_storage ............................... True
+  no_shuffle ...................................... False
+  noisy_gate_policy ............................... None
+  noop_layers ..................................... None
+  norm_epsilon .................................... 1e-05
+  norm_topk_prob .................................. False
+  normalization ................................... LayerNorm
+  num_attention_heads ............................. 40
+  num_channels .................................... 3
+  num_classes ..................................... 1000
+  num_experts ..................................... None
+  num_gpus ........................................ [1, 1, 2, 2, 2]
+  num_layer_list .................................. None
+  num_layers ...................................... 40
+  num_layers_per_virtual_pipeline_stage ........... None
+  num_ops_in_each_stage ........................... [11, 10, 20, 21, 20]
+  num_query_groups ................................ 1
+  num_stages ...................................... 5
+  num_workers ..................................... 2
+  one_logger_entity ............................... hwinf_dcm
+  one_logger_project .............................. e2e-tracking
+  one_logger_run_name ............................. None
+  onnx_safe ....................................... None
+  openai_gelu ..................................... False
+  optimizer ....................................... adam
+  original_max_position_embeddings ................ None
+  output_bert_embeddings .......................... False
+  output_layer_slice_num .......................... 1
+  output_logit_softcapping ........................ None
+  output_multiplier_scale ......................... None
+  overlap_grad_reduce ............................. False
+  overlap_p2p_comm ................................ False
+  overlap_param_gather ............................ False
+  override_opt_param_scheduler .................... False
+  pad_to_multiple_of .............................. 8
+  padded_vocab_size ............................... None
+  params_dtype .................................... torch.float16
+  patch_dim ....................................... 16
+  perform_initialization .......................... True
+  pipeline_model_parallel_size .................... 5
+  position_embedding_type ......................... learned_absolute
+  post_norm ....................................... False
+  pre_tockens ..................................... 65536
+  pref_ftx ........................................ 0.0
+  pretrained_checkpoint ........................... None
+  prof_cache_file ................................. None
+  prof_mbs_list ................................... None
+  prof_memory_only ................................ False
+  prof_model_name ................................. all
+  prof_model_size ................................. all
+  prof_node_rank .................................. None
+  prof_num_nodes .................................. None
+  prof_op ......................................... False
+  prof_path ....................................... None
+  prof_ref_data ................................... None
+  prof_repeat_threshold ........................... None
+  prof_repeat_times ............................... [50]
+  prof_skip_running ............................... False
+  prof_time_only .................................. False
+  prof_tp_size .................................... None
+  prof_warmup_threshold ........................... None
+  prof_warmup_times ............................... 20
+  profile ......................................... False
+  profile_level ................................... level0
+  profile_ranks ................................... [-1]
+  profile_record_shapes ........................... False
+  profile_save_path ............................... ./profile_dir
+  profile_step_end ................................ 12
+  profile_step_start .............................. 10
+  profile_with_cpu ................................ False
+  profile_with_memory ............................. False
+  profile_with_stack .............................. False
+  prompt_type ..................................... None
+  q_lora_rank ..................................... None
+  qk_layernorm .................................... False
+  qk_nope_head_dim ................................ None
+  qk_rope_head_dim ................................ None
+  query_in_block_prob ............................. 0.1
+  query_pre_attn_scalar ........................... None
+  rampup_batch_size ............................... None
+  rank ............................................ 0
+  recompute_activation_function ................... False
+  recompute_activation_function_num_layers ........ None
+  recompute_granularity ........................... None
+  recompute_in_advance ............................ False
+/workspace/Ascend-aceso/megatron/training/tokenizer/gpt2_tokenization.py:164: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/Ascend-aceso/aceso/aceso_execute/../../vocab_file/gpt2-merges.txt' mode='r' encoding='utf-8'>
+  bpe_data = open(merges_file, encoding='utf-8').read().split('\n')[1:-1]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+  recompute_in_bubble ............................. False
+  recompute_method ................................ None
+  recompute_num_layers ............................ None
+  recompute_ops ................................... [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+  reduce_recompute_for_last_chunk ................. False
+  ref_model ....................................... None
+  reset_attention_mask ............................ False
+  reset_position_ids .............................. False
+  resharding_stages ............................... [False, False, False, False, False]
+  retriever_report_topk_accuracies ................ []
+  retriever_score_scaling ......................... False
+  retriever_seq_length ............................ 256
+  retro_add_retriever ............................. False
+  retro_attention_gate ............................ 1
+  retro_cyclic_train_iters ........................ None
+  retro_encoder_attention_dropout ................. 0.1
+  retro_encoder_hidden_dropout .................... 0.1
+  retro_encoder_layers ............................ 2
+  retro_num_neighbors ............................. 2
+  retro_num_retrieved_chunks ...................... 2
+  retro_project_dir ............................... None
+  retro_verify_neighbor_count ..................... True
+  reuse_fp32_param ................................ False
+  rope_scaling_beta_fast .......................... 32
+  rope_scaling_beta_slow .......................... 1
+  rope_scaling_factor ............................. 1.0
+  rope_scaling_mscale ............................. 1.0
+  rope_scaling_mscale_all_dim ..................... 0.0
+  rope_scaling_original_max_position_embeddings ... None
+  rope_scaling_type ............................... None
+  rotary_base ..................................... None
+  rotary_interleaved .............................. False
+  rotary_percent .................................. 1.0
+  rotary_seq_len_interpolation_factor ............. None
+  routed_scaling_factor ........................... None
+  sample_rate ..................................... 1.0
+  save ............................................ None
+  save_interval ................................... 2000
+  scale_depth ..................................... None
+  scale_emb ....................................... None
+  scatter_gather_tensors_in_pipeline .............. True
+  seed ............................................ 1234
+  seq_aux ......................................... False
+  seq_length ...................................... 2048
+  sequence_parallel ............................... False
+  sgd_momentum .................................... 0.9
+  shape_order ..................................... SBH
+  share_embeddings_and_output_weights ............. True
+  shared_expert_gate .............................. False
+  shared_expert_gate_output_dimension ............. 1
+  short_seq_prob .................................. 0.1
+  skip_bias_add ................................... True
+  skip_train ...................................... False
+  sliding_window .................................. None
+  sparse_mode ..................................... 0
+  spec ............................................ None
+  split ........................................... 949,50,1
+  square_alibi_mask ............................... False
+  squared_relu .................................... False
+  stage ........................................... None
+  standalone_embedding_stage ...................... False
+  start_weight_decay .............................. 0.01
+  swap_attention .................................. False
+  swap_modules .................................... None
+  swiglu .......................................... False
+  swin_backbone_type .............................. tiny
+  tensor_parallel_size_of_each_op ................. [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
+  tensorboard_dir ................................. None
+  tensorboard_log_interval ........................ 1
+  tensorboard_queue_size .......................... 1000
+  test_data_path .................................. None
+  test_mode ....................................... False
+  timing_log_level ................................ 2
+  timing_log_option ............................... minmax
+  titles_data_path ................................ None
+  tokenizer_kwargs ................................ None
+  tokenizer_model ................................. None
+  tokenizer_name_or_path .......................... None
+  tokenizer_not_use_fast .......................... True
+  tokenizer_padding_side .......................... right
+  tokenizer_type .................................. GPT2BPETokenizer
+  topk_group ...................................... None
+  tp_comm_bulk_dgrad .............................. True
+  tp_comm_bulk_wgrad .............................. True
+  tp_comm_overlap ................................. False
+  tp_comm_overlap_ag .............................. True
+  tp_comm_overlap_cfg ............................. None
+  tp_comm_overlap_rs .............................. True
+  tp_comm_split_ag ................................ True
+  tp_comm_split_rs ................................ True
+  train_data_path ................................. None
+  train_iters ..................................... 8
+  train_samples ................................... None
+  transformer_impl ................................ local
+  ulysses_degree_in_cp ............................ None
+  untie_embeddings_and_output_weights ............. False
+  use_checkpoint_args ............................. False
+  use_checkpoint_opt_param_scheduler .............. False
+  use_cp_send_recv_overlap ........................ True
+  use_cpu_initialization .......................... None
+  use_deter_comp .................................. False
+  use_dist_ckpt ................................... False
+  use_distributed_optimizer ....................... True
+  use_flash_attn .................................. True
+  use_fused_moe_token_permute_and_unpermute ....... False
+  use_fused_ring_attention_update ................. False
+  use_fused_rmsnorm ............................... False
+  use_fused_rotary_pos_emb ........................ False
+  use_fused_swiglu ................................ False
+  use_glm_rope .................................... False
+  use_mc2 ......................................... False
+  use_mcore_models ................................ True
+  use_nanopipe .................................... False
+  use_one_sent_docs ............................... False
+  use_ring_exchange_p2p ........................... False
+  use_rotary_position_embeddings .................. False
+  v_head_dim ...................................... None
+  valid_data_path ................................. None
+  variable_seq_lengths ............................ False
+  virtual_pipeline_model_parallel_size ............ 1
+  vision_backbone_type ............................ vit
+  vision_pretraining .............................. False
+  vision_pretraining_type ......................... classify
+  vocab_extra_ids ................................. 0
+  vocab_file ...................................... /workspace/Ascend-aceso/aceso/aceso_execute/../../vocab_file/gpt2-vocab.json
+  vocab_size ...................................... None
+  wandb_exp_name .................................. 
+  wandb_project ................................... 
+  wandb_save_dir .................................. 
+  weight_decay .................................... 0.01
+  weight_decay_incr_style ......................... constant
+  world_size ...................................... 8
+  yaml_cfg ........................................ None
+-------------------- end of ModelLink Arguments ---------------------
+setting number of micro-batches to constant 512
+> building GPT2BPETokenizer tokenizer ...
+world_size: 8
+/workspace/Ascend-aceso/megatron/training/tokenizer/gpt2_tokenization.py:159: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/Ascend-aceso/aceso/aceso_execute/../../vocab_file/gpt2-vocab.json' mode='r' encoding='UTF-8'>
+  self.encoder = json.load(open(vocab_file))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/Ascend-aceso/megatron/training/tokenizer/gpt2_tokenization.py:164: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/Ascend-aceso/aceso/aceso_execute/../../vocab_file/gpt2-merges.txt' mode='r' encoding='utf-8'>
+  bpe_data = open(merges_file, encoding='utf-8').read().split('\n')[1:-1]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/Ascend-aceso/megatron/training/tokenizer/gpt2_tokenization.py:159: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/Ascend-aceso/aceso/aceso_execute/../../vocab_file/gpt2-vocab.json' mode='r' encoding='UTF-8'>
+  self.encoder = json.load(open(vocab_file))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/Ascend-aceso/megatron/training/tokenizer/gpt2_tokenization.py:164: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/Ascend-aceso/aceso/aceso_execute/../../vocab_file/gpt2-merges.txt' mode='r' encoding='utf-8'>
+  bpe_data = open(merges_file, encoding='utf-8').read().split('\n')[1:-1]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ > padded vocab (size: 50257) with 47 dummy tokens (new size: 50304)
+> initializing torch distributed ...
+[W compiler_depend.ts:623] Warning: expandable_segments currently defaults to false. You can enable this feature by `export PYTORCH_NPU_ALLOC_CONF = expandable_segments:True`. (function operator())
+world_size: 8
+[W compiler_depend.ts:623] Warning: expandable_segments currently defaults to false. You can enable this feature by `export PYTORCH_NPU_ALLOC_CONF = expandable_segments:True`. (function operator())
+/workspace/Ascend-aceso/megatron/training/tokenizer/gpt2_tokenization.py:159: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/Ascend-aceso/aceso/aceso_execute/../../vocab_file/gpt2-vocab.json' mode='r' encoding='UTF-8'>
+  self.encoder = json.load(open(vocab_file))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/Ascend-aceso/megatron/training/tokenizer/gpt2_tokenization.py:164: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/Ascend-aceso/aceso/aceso_execute/../../vocab_file/gpt2-merges.txt' mode='r' encoding='utf-8'>
+  bpe_data = open(merges_file, encoding='utf-8').read().split('\n')[1:-1]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+world_size: 8
+/workspace/Ascend-aceso/megatron/training/tokenizer/gpt2_tokenization.py:159: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/Ascend-aceso/aceso/aceso_execute/../../vocab_file/gpt2-vocab.json' mode='r' encoding='UTF-8'>
+  self.encoder = json.load(open(vocab_file))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/Ascend-aceso/megatron/training/tokenizer/gpt2_tokenization.py:164: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/Ascend-aceso/aceso/aceso_execute/../../vocab_file/gpt2-merges.txt' mode='r' encoding='utf-8'>
+  bpe_data = open(merges_file, encoding='utf-8').read().split('\n')[1:-1]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[W compiler_depend.ts:623] Warning: expandable_segments currently defaults to false. You can enable this feature by `export PYTORCH_NPU_ALLOC_CONF = expandable_segments:True`. (function operator())
+world_size: 8
+[W compiler_depend.ts:623] Warning: expandable_segments currently defaults to false. You can enable this feature by `export PYTORCH_NPU_ALLOC_CONF = expandable_segments:True`. (function operator())
+/workspace/Ascend-aceso/megatron/training/tokenizer/gpt2_tokenization.py:159: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/Ascend-aceso/aceso/aceso_execute/../../vocab_file/gpt2-vocab.json' mode='r' encoding='UTF-8'>
+  self.encoder = json.load(open(vocab_file))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/workspace/Ascend-aceso/megatron/training/tokenizer/gpt2_tokenization.py:164: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/Ascend-aceso/aceso/aceso_execute/../../vocab_file/gpt2-merges.txt' mode='r' encoding='utf-8'>
+  bpe_data = open(merges_file, encoding='utf-8').read().split('\n')[1:-1]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[W compiler_depend.ts:623] Warning: expandable_segments currently defaults to false. You can enable this feature by `export PYTORCH_NPU_ALLOC_CONF = expandable_segments:True`. (function operator())
+[W compiler_depend.ts:623] Warning: expandable_segments currently defaults to false. You can enable this feature by `export PYTORCH_NPU_ALLOC_CONF = expandable_segments:True`. (function operator())
+[W compiler_depend.ts:623] Warning: expandable_segments currently defaults to false. You can enable this feature by `export PYTORCH_NPU_ALLOC_CONF = expandable_segments:True`. (function operator())
+[W compiler_depend.ts:623] Warning: expandable_segments currently defaults to false. You can enable this feature by `export PYTORCH_NPU_ALLOC_CONF = expandable_segments:True`. (function operator())
+[DEBUG]|rank 2|     pipeline_rank= 2 |     tp_size= 1 |     tp_rank=0 |     tp_src_rank=2 |     dp_size= 2 |     parent ranks=[1] |     child ranks = [4] |     micro_batch_size = 2
+
+[DEBUG]|rank 2|     MPU_PIPELINE_MODEL_PARALLEL_WORLD_SIZE: 5 |     DATA_PARALLEL_RANKS: [range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4)] |     MPU_PIPELINE_MODEL_PARALLEL_RANK: 2 |     CHILD_RANKS: [[1], [2, 3], [4], [5], [6], [7], [0], [0]] |     PARENT_RANKS: [[6, 7], [0], [1], [1], [2], [3], [4], [5]] |     FLEXPIPE_PREV_RANKS: [1] |     FLEXPIPE_NEXT_RANKS: [4] |     RANKS_IN_EACH_PIPELINE_STAGE: [[0], [1], [2, 3], [4, 5], [6, 7]]|     OP_RESHARDING_RANKS: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None] |     EMBEDDING_GLOBAL_RANKS: [0, 4] |     POSITION_EMBEDDING_GLOBAL_RANKS: [0]
+[DEBUG]|rank 7|     pipeline_rank= 4 |     tp_size= 1 |     tp_rank=0 |     tp_src_rank=7 |     dp_size= 2 |     parent ranks=[5] |     child ranks = [0] |     micro_batch_size = 2
+
+[DEBUG]|rank 7|     MPU_PIPELINE_MODEL_PARALLEL_WORLD_SIZE: 5 |     DATA_PARALLEL_RANKS: [range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8)] |     MPU_PIPELINE_MODEL_PARALLEL_RANK: 4 |     CHILD_RANKS: [[1], [2, 3], [4], [5], [6], [7], [0], [0]] |     PARENT_RANKS: [[6, 7], [0], [1], [1], [2], [3], [4], [5]] |     FLEXPIPE_PREV_RANKS: [5] |     FLEXPIPE_NEXT_RANKS: [0] |     RANKS_IN_EACH_PIPELINE_STAGE: [[0], [1], [2, 3], [4, 5], [6, 7]]|     OP_RESHARDING_RANKS: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None] |     EMBEDDING_GLOBAL_RANKS: [0, 4] |     POSITION_EMBEDDING_GLOBAL_RANKS: [0]
+[DEBUG]|rank 5|     pipeline_rank= 3 |     tp_size= 1 |     tp_rank=0 |     tp_src_rank=5 |     dp_size= 2 |     parent ranks=[3] |     child ranks = [7] |     micro_batch_size = 2
+
+[DEBUG]|rank 5|     MPU_PIPELINE_MODEL_PARALLEL_WORLD_SIZE: 5 |     DATA_PARALLEL_RANKS: [range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6)] |     MPU_PIPELINE_MODEL_PARALLEL_RANK: 3 |     CHILD_RANKS: [[1], [2, 3], [4], [5], [6], [7], [0], [0]] |     PARENT_RANKS: [[6, 7], [0], [1], [1], [2], [3], [4], [5]] |     FLEXPIPE_PREV_RANKS: [3] |     FLEXPIPE_NEXT_RANKS: [7] |     RANKS_IN_EACH_PIPELINE_STAGE: [[0], [1], [2, 3], [4, 5], [6, 7]]|     OP_RESHARDING_RANKS: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None] |     EMBEDDING_GLOBAL_RANKS: [0, 4] |     POSITION_EMBEDDING_GLOBAL_RANKS: [0]
+> initializing FlexPipe...
+[DEBUG]|rank 0|     pipeline_rank= 0 |     tp_size= 1 |     tp_rank=0 |     tp_src_rank=0 |     dp_size= 1 |     parent ranks=[6, 7] |     child ranks = [1] |     micro_batch_size = 2
+
+[DEBUG]|rank 0|     MPU_PIPELINE_MODEL_PARALLEL_WORLD_SIZE: 5 |     DATA_PARALLEL_RANKS: [range(0, 1), range(0, 1), range(0, 1), range(0, 1), range(0, 1), range(0, 1), range(0, 1), range(0, 1), range(0, 1), range(0, 1), range(0, 1)] |     MPU_PIPELINE_MODEL_PARALLEL_RANK: 0 |     CHILD_RANKS: [[1], [2, 3], [4], [5], [6], [7], [0], [0]] |     PARENT_RANKS: [[6, 7], [0], [1], [1], [2], [3], [4], [5]] |     FLEXPIPE_PREV_RANKS: [6, 7] |     FLEXPIPE_NEXT_RANKS: [1] |     RANKS_IN_EACH_PIPELINE_STAGE: [[0], [1], [2, 3], [4, 5], [6, 7]]|     OP_RESHARDING_RANKS: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None] |     EMBEDDING_GLOBAL_RANKS: [0, 4] |     POSITION_EMBEDDING_GLOBAL_RANKS: [0]
+> initialized tensor model parallel with size 1
+> initialized pipeline model parallel with size 5
+> setting random seeds to 1234 ...
+> compiling dataset index builder ...
+[DEBUG]|rank 6|     pipeline_rank= 4 |     tp_size= 1 |     tp_rank=0 |     tp_src_rank=6 |     dp_size= 2 |     parent ranks=[4] |     child ranks = [0] |     micro_batch_size = 2
+
+[DEBUG]|rank 6|     MPU_PIPELINE_MODEL_PARALLEL_WORLD_SIZE: 5 |     DATA_PARALLEL_RANKS: [range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8), range(6, 8)] |     MPU_PIPELINE_MODEL_PARALLEL_RANK: 4 |     CHILD_RANKS: [[1], [2, 3], [4], [5], [6], [7], [0], [0]] |     PARENT_RANKS: [[6, 7], [0], [1], [1], [2], [3], [4], [5]] |     FLEXPIPE_PREV_RANKS: [4] |     FLEXPIPE_NEXT_RANKS: [0] |     RANKS_IN_EACH_PIPELINE_STAGE: [[0], [1], [2, 3], [4, 5], [6, 7]]|     OP_RESHARDING_RANKS: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None] |     EMBEDDING_GLOBAL_RANKS: [0, 4] |     POSITION_EMBEDDING_GLOBAL_RANKS: [0]
+make: Entering directory '/workspace/Ascend-aceso/megatron/core/datasets'
+[DEBUG]|rank 1|     pipeline_rank= 1 |     tp_size= 1 |     tp_rank=0 |     tp_src_rank=1 |     dp_size= 1 |     parent ranks=[0] |     child ranks = [2, 3] |     micro_batch_size = 2
+
+[DEBUG]|rank 1|     MPU_PIPELINE_MODEL_PARALLEL_WORLD_SIZE: 5 |     DATA_PARALLEL_RANKS: [range(1, 2), range(1, 2), range(1, 2), range(1, 2), range(1, 2), range(1, 2), range(1, 2), range(1, 2), range(1, 2), range(1, 2)] |     MPU_PIPELINE_MODEL_PARALLEL_RANK: 1 |     CHILD_RANKS: [[1], [2, 3], [4], [5], [6], [7], [0], [0]] |     PARENT_RANKS: [[6, 7], [0], [1], [1], [2], [3], [4], [5]] |     FLEXPIPE_PREV_RANKS: [0] |     FLEXPIPE_NEXT_RANKS: [2, 3] |     RANKS_IN_EACH_PIPELINE_STAGE: [[0], [1], [2, 3], [4, 5], [6, 7]]|     OP_RESHARDING_RANKS: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None] |     EMBEDDING_GLOBAL_RANKS: [0, 4] |     POSITION_EMBEDDING_GLOBAL_RANKS: [0]
+[DEBUG]|rank 4|     pipeline_rank= 3 |     tp_size= 1 |     tp_rank=0 |     tp_src_rank=4 |     dp_size= 2 |     parent ranks=[2] |     child ranks = [6] |     micro_batch_size = 2
+
+[DEBUG]|rank 4|     MPU_PIPELINE_MODEL_PARALLEL_WORLD_SIZE: 5 |     DATA_PARALLEL_RANKS: [range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6), range(4, 6)] |     MPU_PIPELINE_MODEL_PARALLEL_RANK: 3 |     CHILD_RANKS: [[1], [2, 3], [4], [5], [6], [7], [0], [0]] |     PARENT_RANKS: [[6, 7], [0], [1], [1], [2], [3], [4], [5]] |     FLEXPIPE_PREV_RANKS: [2] |     FLEXPIPE_NEXT_RANKS: [6] |     RANKS_IN_EACH_PIPELINE_STAGE: [[0], [1], [2, 3], [4, 5], [6, 7]]|     OP_RESHARDING_RANKS: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None] |     EMBEDDING_GLOBAL_RANKS: [0, 4] |     POSITION_EMBEDDING_GLOBAL_RANKS: [0]
+make: Nothing to be done for 'default'.
+make: Leaving directory '/workspace/Ascend-aceso/megatron/core/datasets'
+>>> done with dataset index builder. Compilation time: 1.054 seconds
+[DEBUG]|rank 3|     pipeline_rank= 2 |     tp_size= 1 |     tp_rank=0 |     tp_src_rank=3 |     dp_size= 2 |     parent ranks=[1] |     child ranks = [5] |     micro_batch_size = 2
+
+[DEBUG]|rank 3|     MPU_PIPELINE_MODEL_PARALLEL_WORLD_SIZE: 5 |     DATA_PARALLEL_RANKS: [range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4), range(2, 4)] |     MPU_PIPELINE_MODEL_PARALLEL_RANK: 2 |     CHILD_RANKS: [[1], [2, 3], [4], [5], [6], [7], [0], [0]] |     PARENT_RANKS: [[6, 7], [0], [1], [1], [2], [3], [4], [5]] |     FLEXPIPE_PREV_RANKS: [1] |     FLEXPIPE_NEXT_RANKS: [5] |     RANKS_IN_EACH_PIPELINE_STAGE: [[0], [1], [2, 3], [4, 5], [6, 7]]|     OP_RESHARDING_RANKS: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None] |     EMBEDDING_GLOBAL_RANKS: [0, 4] |     POSITION_EMBEDDING_GLOBAL_RANKS: [0]
+Warning: Device do not support double dtype now, dtype cast repalce with float.
+Warning: Device do not support double dtype now, dtype cast repalce with float.
+Warning: Device do not support double dtype now, dtype cast repalce with float.
+Warning: Device do not support double dtype now, dtype cast repalce with float.
+Warning: Device do not support double dtype now, dtype cast repalce with float.
+Traceback (most recent call last):
+  File "/workspace/Ascend-aceso/aceso/aceso_execute/../../pretrain_gpt.py", line 227, in <module>
+    main()
+  File "/workspace/Ascend-aceso/aceso/aceso_execute/../../pretrain_gpt.py", line 220, in main
+    pretrain(train_valid_test_datasets_provider,
+  File "/workspace/Ascend-aceso/modellink/training/training.py", line 309, in pretrain
+    torch.distributed.all_reduce(start_time_tensor,
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/c10d_logger.py", line 47, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 2050, in all_reduce
+Traceback (most recent call last):
+  File "/workspace/Ascend-aceso/aceso/aceso_execute/../../pretrain_gpt.py", line 227, in <module>
+    main()
+  File "/workspace/Ascend-aceso/aceso/aceso_execute/../../pretrain_gpt.py", line 220, in main
+    work = group.allreduce([tensor], opts)
+RuntimeError: [7] is setting up HCCL communicator and retrieving hcclUniqueId from [0] via c10d key-value store by key '0', but store->get('0') got error: Socket Timeout
+Exception raised from doWait at /pytorch/torch/csrc/distributed/c10d/TCPStore.cpp:445 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x68 (0xffff9d570898 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0xec (0xffff9d529400 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #2: c10d::TCPStore::doWait(c10::ArrayRef<std::string>, std::chrono::duration<long, std::ratio<1l, 1000l> >) + 0x2bc (0xffffa1839410 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: c10d::TCPStore::doGet(std::string const&) + 0x2c (0xffffa18397ac in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: c10d::TCPStore::get(std::string const&) + 0x68 (0xffffa1839b98 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffffa17f71f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffffa17f71f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #7: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffffa17f71f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #8: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffffa17f71f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #9: <unknown function> + 0xddfe5c (0xffff915cce5c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #10: <unknown function> + 0xdea7d0 (0xffff915d77d0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #11: <unknown function> + 0xdeca1c (0xffff915d9a1c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #12: <unknown function> + 0xdee1cc (0xffff915db1cc in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #13: <unknown function> + 0x420ca30 (0xffffa17e8a30 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #14: <unknown function> + 0x4213b04 (0xffffa17efb04 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #15: <unknown function> + 0x422d330 (0xffffa1809330 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #16: <unknown function> + 0xb482a8 (0xffffa5da22a8 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_python.so)
+frame #17: <unknown function> + 0x223814 (0xffffa547d814 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_python.so)
+frame #18: <unknown function> + 0x200d94 (0xaaaad0100d94 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #19: _PyObject_MakeTpCall + 0x94 (0xaaaacff7d50c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #20: <unknown function> + 0x1ec4e4 (0xaaaad00ec4e4 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #21: _PyEval_EvalFrameDefault + 0x72c4 (0xaaaacff6e3ac in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #22: <unknown function> + 0x10f920 (0xaaaad000f920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #23: _PyFunction_Vectorcall + 0x90 (0xaaaacff7d268 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #24: PyVectorcall_Call + 0xe0 (0xaaaacff7d008 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #25: _PyEval_EvalFrameDefault + 0x1994 (0xaaaacff68a7c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #26: <unknown function> + 0x10f920 (0xaaaad000f920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #27: _PyFunction_Vectorcall + 0x90 (0xaaaacff7d268 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #28: _PyEval_EvalFrameDefault + 0x58bc (0xaaaacff6c9a4 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #29: <unknown function> + 0x10f920 (0xaaaad000f920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #30: _PyFunction_Vectorcall + 0x90 (0xaaaacff7d268 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #31: _PyEval_EvalFrameDefault + 0x5738 (0xaaaacff6c820 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #32: <unknown function> + 0x66188 (0xaaaacff66188 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #33: _PyEval_EvalFrameDefault + 0x5738 (0xaaaacff6c820 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #34: <unknown function> + 0x10f920 (0xaaaad000f920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #35: _PyEval_EvalCodeWithName + 0x64 (0xaaaad000fd7c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #36: PyEval_EvalCodeEx + 0x48 (0xaaaad000fdd0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #37: PyEval_EvalCode + 0x34 (0xaaaad000fe14 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #38: <unknown function> + 0x146d44 (0xaaaad0046d44 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #39: <unknown function> + 0x146e4c (0xaaaad0046e4c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #40: <unknown function> + 0x14a380 (0xaaaad004a380 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #41: PyRun_SimpleFileExFlags + 0x158 (0xaaaad004a578 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #42: Py_RunMain + 0x734 (0xaaaacff70fb4 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #43: Py_BytesMain + 0x3c (0xaaaacff71584 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #44: <unknown function> + 0x2b040 (0xffffa6a79040 in /usr/lib64/libc.so.6)
+frame #45: __libc_start_main + 0x94 (0xffffa6a79118 in /usr/lib64/libc.so.6)
+frame #46: <unknown function> + 0x6fea8 (0xaaaacff6fea8 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+. This may indicate a possible application crash on rank 0 or a network set up issue.
+[ERROR] 2024-12-20-14:14:07 (PID:913718, Device:7, RankID:7) ERR02005 DIST internal error
+    pretrain(train_valid_test_datasets_provider,
+  File "/workspace/Ascend-aceso/modellink/training/training.py", line 309, in pretrain
+    torch.distributed.all_reduce(start_time_tensor,
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/c10d_logger.py", line 47, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 2050, in all_reduce
+    work = group.allreduce([tensor], opts)
+RuntimeError: [2] is setting up HCCL communicator and retrieving hcclUniqueId from [0] via c10d key-value store by key '0', but store->get('0') got error: Socket Timeout
+Exception raised from doWait at /pytorch/torch/csrc/distributed/c10d/TCPStore.cpp:445 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x68 (0xffffb1d3e898 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0xec (0xffffb1cf7400 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #2: c10d::TCPStore::doWait(c10::ArrayRef<std::string>, std::chrono::duration<long, std::ratio<1l, 1000l> >) + 0x2bc (0xffffb6007410 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: c10d::TCPStore::doGet(std::string const&) + 0x2c (0xffffb60077ac in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: c10d::TCPStore::get(std::string const&) + 0x68 (0xffffb6007b98 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffffb5fc51f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffffb5fc51f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #7: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffffb5fc51f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #8: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffffb5fc51f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #9: <unknown function> + 0xddfe5c (0xffffa5d9ae5c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #10: <unknown function> + 0xdea7d0 (0xffffa5da57d0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #11: <unknown function> + 0xdeca1c (0xffffa5da7a1c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #12: <unknown function> + 0xdee1cc (0xffffa5da91cc in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #13: <unknown function> + 0x420ca30 (0xffffb5fb6a30 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #14: <unknown function> + 0x4213b04 (0xffffb5fbdb04 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #15: <unknown function> + 0x422d330 (0xffffb5fd7330 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #16: <unknown function> + 0xb482a8 (0xffffba5702a8 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_python.so)
+frame #17: <unknown function> + 0x223814 (0xffffb9c4b814 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_python.so)
+frame #18: <unknown function> + 0x200d94 (0xaaaad0590d94 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #19: _PyObject_MakeTpCall + 0x94 (0xaaaad040d50c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #20: <unknown function> + 0x1ec4e4 (0xaaaad057c4e4 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #21: _PyEval_EvalFrameDefault + 0x72c4 (0xaaaad03fe3ac in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #22: <unknown function> + 0x10f920 (0xaaaad049f920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #23: _PyFunction_Vectorcall + 0x90 (0xaaaad040d268 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #24: PyVectorcall_Call + 0xe0 (0xaaaad040d008 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #25: _PyEval_EvalFrameDefault + 0x1994 (0xaaaad03f8a7c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #26: <unknown function> + 0x10f920 (0xaaaad049f920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #27: _PyFunction_Vectorcall + 0x90 (0xaaaad040d268 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #28: _PyEval_EvalFrameDefault + 0x58bc (0xaaaad03fc9a4 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #29: <unknown function> + 0x10f920 (0xaaaad049f920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #30: _PyFunction_Vectorcall + 0x90 (0xaaaad040d268 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #31: _PyEval_EvalFrameDefault + 0x5738 (0xaaaad03fc820 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #32: <unknown function> + 0x66188 (0xaaaad03f6188 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #33: _PyEval_EvalFrameDefault + 0x5738 (0xaaaad03fc820 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #34: <unknown function> + 0x10f920 (0xaaaad049f920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #35: _PyEval_EvalCodeWithName + 0x64 (0xaaaad049fd7c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #36: PyEval_EvalCodeEx + 0x48 (0xaaaad049fdd0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #37: PyEval_EvalCode + 0x34 (0xaaaad049fe14 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #38: <unknown function> + 0x146d44 (0xaaaad04d6d44 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #39: <unknown function> + 0x146e4c (0xaaaad04d6e4c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #40: <unknown function> + 0x14a380 (0xaaaad04da380 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #41: PyRun_SimpleFileExFlags + 0x158 (0xaaaad04da578 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #42: Py_RunMain + 0x734 (0xaaaad0400fb4 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #43: Py_BytesMain + 0x3c (0xaaaad0401584 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #44: <unknown function> + 0x2b040 (0xffffbb247040 in /usr/lib64/libc.so.6)
+frame #45: __libc_start_main + 0x94 (0xffffbb247118 in /usr/lib64/libc.so.6)
+frame #46: <unknown function> + 0x6fea8 (0xaaaad03ffea8 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+. This may indicate a possible application crash on rank 0 or a network set up issue.
+[ERROR] 2024-12-20-14:14:07 (PID:913713, Device:2, RankID:2) ERR02005 DIST internal error
+Traceback (most recent call last):
+  File "/workspace/Ascend-aceso/aceso/aceso_execute/../../pretrain_gpt.py", line 227, in <module>
+    main()
+  File "/workspace/Ascend-aceso/aceso/aceso_execute/../../pretrain_gpt.py", line 220, in main
+    pretrain(train_valid_test_datasets_provider,
+  File "/workspace/Ascend-aceso/modellink/training/training.py", line 309, in pretrain
+Traceback (most recent call last):
+  File "/workspace/Ascend-aceso/aceso/aceso_execute/../../pretrain_gpt.py", line 227, in <module>
+    torch.distributed.all_reduce(start_time_tensor,
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/c10d_logger.py", line 47, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 2050, in all_reduce
+    main()
+  File "/workspace/Ascend-aceso/aceso/aceso_execute/../../pretrain_gpt.py", line 220, in main
+    pretrain(train_valid_test_datasets_provider,
+  File "/workspace/Ascend-aceso/modellink/training/training.py", line 309, in pretrain
+    work = group.allreduce([tensor], opts)
+RuntimeError: [5] is setting up HCCL communicator and retrieving hcclUniqueId from [0] via c10d key-value store by key '0', but store->get('0') got error: Socket Timeout
+Exception raised from doWait at /pytorch/torch/csrc/distributed/c10d/TCPStore.cpp:445 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x68 (0xffffa714f898 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0xec (0xffffa7108400 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #2: c10d::TCPStore::doWait(c10::ArrayRef<std::string>, std::chrono::duration<long, std::ratio<1l, 1000l> >) + 0x2bc (0xffffab418410 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: c10d::TCPStore::doGet(std::string const&) + 0x2c (0xffffab4187ac in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: c10d::TCPStore::get(std::string const&) + 0x68 (0xffffab418b98 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffffab3d61f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffffab3d61f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #7: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffffab3d61f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #8: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffffab3d61f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #9: <unknown function> + 0xddfe5c (0xffff9b1abe5c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #10: <unknown function> + 0xdea7d0 (0xffff9b1b67d0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #11: <unknown function> + 0xdeca1c (0xffff9b1b8a1c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #12: <unknown function> + 0xdee1cc (0xffff9b1ba1cc in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #13: <unknown function> + 0x420ca30 (0xffffab3c7a30 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #14: <unknown function> + 0x4213b04 (0xffffab3ceb04 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #15: <unknown function> + 0x422d330 (0xffffab3e8330 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #16: <unknown function> + 0xb482a8 (0xffffaf9812a8 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_python.so)
+frame #17: <unknown function> + 0x223814 (0xffffaf05c814 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_python.so)
+frame #18: <unknown function> + 0x200d94 (0xaaaae0c90d94 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #19: _PyObject_MakeTpCall + 0x94 (0xaaaae0b0d50c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #20: <unknown function> + 0x1ec4e4 (0xaaaae0c7c4e4 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #21: _PyEval_EvalFrameDefault + 0x72c4 (0xaaaae0afe3ac in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #22: <unknown function> + 0x10f920 (0xaaaae0b9f920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #23: _PyFunction_Vectorcall + 0x90 (0xaaaae0b0d268 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #24: PyVectorcall_Call + 0xe0 (0xaaaae0b0d008 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #25: _PyEval_EvalFrameDefault + 0x1994 (0xaaaae0af8a7c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #26: <unknown function> + 0x10f920 (0xaaaae0b9f920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #27: _PyFunction_Vectorcall + 0x90 (0xaaaae0b0d268 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #28: _PyEval_EvalFrameDefault + 0x58bc (0xaaaae0afc9a4 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #29: <unknown function> + 0x10f920 (0xaaaae0b9f920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #30: _PyFunction_Vectorcall + 0x90 (0xaaaae0b0d268 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #31: _PyEval_EvalFrameDefault + 0x5738 (0xaaaae0afc820 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #32: <unknown function> + 0x66188 (0xaaaae0af6188 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #33: _PyEval_EvalFrameDefault + 0x5738 (0xaaaae0afc820 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #34: <unknown function> + 0x10f920 (0xaaaae0b9f920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #35: _PyEval_EvalCodeWithName + 0x64 (0xaaaae0b9fd7c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #36: PyEval_EvalCodeEx + 0x48 (0xaaaae0b9fdd0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #37: PyEval_EvalCode + 0x34 (0xaaaae0b9fe14 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #38: <unknown function> + 0x146d44 (0xaaaae0bd6d44 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #39: <unknown function> + 0x146e4c (0xaaaae0bd6e4c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #40: <unknown function> + 0x14a380 (0xaaaae0bda380 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #41: PyRun_SimpleFileExFlags + 0x158 (0xaaaae0bda578 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #42: Py_RunMain + 0x734 (0xaaaae0b00fb4 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #43: Py_BytesMain + 0x3c (0xaaaae0b01584 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #44: <unknown function> + 0x2b040 (0xffffb0658040 in /usr/lib64/libc.so.6)
+frame #45: __libc_start_main + 0x94 (0xffffb0658118 in /usr/lib64/libc.so.6)
+frame #46: <unknown function> + 0x6fea8 (0xaaaae0affea8 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+. This may indicate a possible application crash on rank 0 or a network set up issue.
+[ERROR] 2024-12-20-14:14:07 (PID:913716, Device:5, RankID:5) ERR02005 DIST internal error
+    torch.distributed.all_reduce(start_time_tensor,
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/c10d_logger.py", line 47, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 2050, in all_reduce
+    work = group.allreduce([tensor], opts)
+RuntimeError: [1] is setting up HCCL communicator and retrieving hcclUniqueId from [0] via c10d key-value store by key '0', but store->get('0') got error: Socket Timeout
+Exception raised from doWait at /pytorch/torch/csrc/distributed/c10d/TCPStore.cpp:445 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x68 (0xffff99745898 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0xec (0xffff996fe400 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #2: c10d::TCPStore::doWait(c10::ArrayRef<std::string>, std::chrono::duration<long, std::ratio<1l, 1000l> >) + 0x2bc (0xffff9da0e410 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: c10d::TCPStore::doGet(std::string const&) + 0x2c (0xffff9da0e7ac in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: c10d::TCPStore::get(std::string const&) + 0x68 (0xffff9da0eb98 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffff9d9cc1f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffff9d9cc1f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #7: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffff9d9cc1f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #8: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffff9d9cc1f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #9: <unknown function> + 0xddfe5c (0xffff8d7a1e5c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #10: <unknown function> + 0xdea7d0 (0xffff8d7ac7d0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #11: <unknown function> + 0xdeca1c (0xffff8d7aea1c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #12: <unknown function> + 0xdee1cc (0xffff8d7b01cc in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #13: <unknown function> + 0x420ca30 (0xffff9d9bda30 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #14: <unknown function> + 0x4213b04 (0xffff9d9c4b04 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #15: <unknown function> + 0x422d330 (0xffff9d9de330 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #16: <unknown function> + 0xb482a8 (0xffffa1f772a8 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_python.so)
+frame #17: <unknown function> + 0x223814 (0xffffa1652814 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_python.so)
+frame #18: <unknown function> + 0x200d94 (0xaaaadf9c0d94 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #19: _PyObject_MakeTpCall + 0x94 (0xaaaadf83d50c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #20: <unknown function> + 0x1ec4e4 (0xaaaadf9ac4e4 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #21: _PyEval_EvalFrameDefault + 0x72c4 (0xaaaadf82e3ac in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #22: <unknown function> + 0x10f920 (0xaaaadf8cf920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #23: _PyFunction_Vectorcall + 0x90 (0xaaaadf83d268 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #24: PyVectorcall_Call + 0xe0 (0xaaaadf83d008 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #25: _PyEval_EvalFrameDefault + 0x1994 (0xaaaadf828a7c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #26: <unknown function> + 0x10f920 (0xaaaadf8cf920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #27: _PyFunction_Vectorcall + 0x90 (0xaaaadf83d268 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #28: _PyEval_EvalFrameDefault + 0x58bc (0xaaaadf82c9a4 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #29: <unknown function> + 0x10f920 (0xaaaadf8cf920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #30: _PyFunction_Vectorcall + 0x90 (0xaaaadf83d268 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #31: _PyEval_EvalFrameDefault + 0x5738 (0xaaaadf82c820 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #32: <unknown function> + 0x66188 (0xaaaadf826188 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #33: _PyEval_EvalFrameDefault + 0x5738 (0xaaaadf82c820 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #34: <unknown function> + 0x10f920 (0xaaaadf8cf920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #35: _PyEval_EvalCodeWithName + 0x64 (0xaaaadf8cfd7c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #36: PyEval_EvalCodeEx + 0x48 (0xaaaadf8cfdd0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #37: PyEval_EvalCode + 0x34 (0xaaaadf8cfe14 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #38: <unknown function> + 0x146d44 (0xaaaadf906d44 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #39: <unknown function> + 0x146e4c (0xaaaadf906e4c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #40: <unknown function> + 0x14a380 (0xaaaadf90a380 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #41: PyRun_SimpleFileExFlags + 0x158 (0xaaaadf90a578 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #42: Py_RunMain + 0x734 (0xaaaadf830fb4 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #43: Py_BytesMain + 0x3c (0xaaaadf831584 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #44: <unknown function> + 0x2b040 (0xffffa2c4e040 in /usr/lib64/libc.so.6)
+frame #45: __libc_start_main + 0x94 (0xffffa2c4e118 in /usr/lib64/libc.so.6)
+frame #46: <unknown function> + 0x6fea8 (0xaaaadf82fea8 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+. This may indicate a possible application crash on rank 0 or a network set up issue.
+[ERROR] 2024-12-20-14:14:07 (PID:913712, Device:1, RankID:1) ERR02005 DIST internal error
+Traceback (most recent call last):
+  File "/workspace/Ascend-aceso/aceso/aceso_execute/../../pretrain_gpt.py", line 227, in <module>
+    main()
+  File "/workspace/Ascend-aceso/aceso/aceso_execute/../../pretrain_gpt.py", line 220, in main
+    pretrain(train_valid_test_datasets_provider,
+  File "/workspace/Ascend-aceso/modellink/training/training.py", line 309, in pretrain
+    torch.distributed.all_reduce(start_time_tensor,
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/c10d_logger.py", line 47, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 2050, in all_reduce
+    work = group.allreduce([tensor], opts)
+RuntimeError: [6] is setting up HCCL communicator and retrieving hcclUniqueId from [0] via c10d key-value store by key '0', but store->get('0') got error: Socket Timeout
+Exception raised from doWait at /pytorch/torch/csrc/distributed/c10d/TCPStore.cpp:445 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x68 (0xffffa938b898 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0xec (0xffffa9344400 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #2: c10d::TCPStore::doWait(c10::ArrayRef<std::string>, std::chrono::duration<long, std::ratio<1l, 1000l> >) + 0x2bc (0xffffad654410 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: c10d::TCPStore::doGet(std::string const&) + 0x2c (0xffffad6547ac in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: c10d::TCPStore::get(std::string const&) + 0x68 (0xffffad654b98 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffffad6121f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffffad6121f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #7: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffffad6121f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #8: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffffad6121f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #9: <unknown function> + 0xddfe5c (0xffff9d3e7e5c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #10: <unknown function> + 0xdea7d0 (0xffff9d3f27d0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #11: <unknown function> + 0xdeca1c (0xffff9d3f4a1c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #12: <unknown function> + 0xdee1cc (0xffff9d3f61cc in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #13: <unknown function> + 0x420ca30 (0xffffad603a30 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #14: <unknown function> + 0x4213b04 (0xffffad60ab04 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #15: <unknown function> + 0x422d330 (0xffffad624330 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #16: <unknown function> + 0xb482a8 (0xffffb1bbd2a8 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_python.so)
+frame #17: <unknown function> + 0x223814 (0xffffb1298814 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_python.so)
+frame #18: <unknown function> + 0x200d94 (0xaaaad7870d94 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #19: _PyObject_MakeTpCall + 0x94 (0xaaaad76ed50c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #20: <unknown function> + 0x1ec4e4 (0xaaaad785c4e4 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #21: _PyEval_EvalFrameDefault + 0x72c4 (0xaaaad76de3ac in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #22: <unknown function> + 0x10f920 (0xaaaad777f920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #23: _PyFunction_Vectorcall + 0x90 (0xaaaad76ed268 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #24: PyVectorcall_Call + 0xe0 (0xaaaad76ed008 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #25: _PyEval_EvalFrameDefault + 0x1994 (0xaaaad76d8a7c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #26: <unknown function> + 0x10f920 (0xaaaad777f920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #27: _PyFunction_Vectorcall + 0x90 (0xaaaad76ed268 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #28: _PyEval_EvalFrameDefault + 0x58bc (0xaaaad76dc9a4 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #29: <unknown function> + 0x10f920 (0xaaaad777f920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #30: _PyFunction_Vectorcall + 0x90 (0xaaaad76ed268 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #31: _PyEval_EvalFrameDefault + 0x5738 (0xaaaad76dc820 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #32: <unknown function> + 0x66188 (0xaaaad76d6188 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #33: _PyEval_EvalFrameDefault + 0x5738 (0xaaaad76dc820 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #34: <unknown function> + 0x10f920 (0xaaaad777f920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #35: _PyEval_EvalCodeWithName + 0x64 (0xaaaad777fd7c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #36: PyEval_EvalCodeEx + 0x48 (0xaaaad777fdd0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #37: PyEval_EvalCode + 0x34 (0xaaaad777fe14 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #38: <unknown function> + 0x146d44 (0xaaaad77b6d44 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #39: <unknown function> + 0x146e4c (0xaaaad77b6e4c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #40: <unknown function> + 0x14a380 (0xaaaad77ba380 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #41: PyRun_SimpleFileExFlags + 0x158 (0xaaaad77ba578 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #42: Py_RunMain + 0x734 (0xaaaad76e0fb4 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #43: Py_BytesMain + 0x3c (0xaaaad76e1584 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #44: <unknown function> + 0x2b040 (0xffffb2894040 in /usr/lib64/libc.so.6)
+frame #45: __libc_start_main + 0x94 (0xffffb2894118 in /usr/lib64/libc.so.6)
+frame #46: <unknown function> + 0x6fea8 (0xaaaad76dfea8 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+. This may indicate a possible application crash on rank 0 or a network set up issue.
+[ERROR] 2024-12-20-14:14:07 (PID:913717, Device:6, RankID:6) ERR02005 DIST internal error
+Warning: Device do not support double dtype now, dtype cast repalce with float.
+Traceback (most recent call last):
+  File "/workspace/Ascend-aceso/aceso/aceso_execute/../../pretrain_gpt.py", line 227, in <module>
+    main()
+  File "/workspace/Ascend-aceso/aceso/aceso_execute/../../pretrain_gpt.py", line 220, in main
+    pretrain(train_valid_test_datasets_provider,
+  File "/workspace/Ascend-aceso/modellink/training/training.py", line 309, in pretrain
+    torch.distributed.all_reduce(start_time_tensor,
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/c10d_logger.py", line 47, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 2050, in all_reduce
+    work = group.allreduce([tensor], opts)
+RuntimeError: [4] is setting up HCCL communicator and retrieving hcclUniqueId from [0] via c10d key-value store by key '0', but store->get('0') got error: Socket Timeout
+Exception raised from doWait at /pytorch/torch/csrc/distributed/c10d/TCPStore.cpp:445 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x68 (0xffff7a2b5898 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0xec (0xffff7a26e400 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libc10.so)
+frame #2: c10d::TCPStore::doWait(c10::ArrayRef<std::string>, std::chrono::duration<long, std::ratio<1l, 1000l> >) + 0x2bc (0xffff7e57e410 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: c10d::TCPStore::doGet(std::string const&) + 0x2c (0xffff7e57e7ac in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: c10d::TCPStore::get(std::string const&) + 0x68 (0xffff7e57eb98 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffff7e53c1f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffff7e53c1f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #7: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffff7e53c1f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #8: c10d::PrefixStore::get(std::string const&) + 0x3c (0xffff7e53c1f0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #9: <unknown function> + 0xddfe5c (0xffff6e311e5c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #10: <unknown function> + 0xdea7d0 (0xffff6e31c7d0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #11: <unknown function> + 0xdeca1c (0xffff6e31ea1c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #12: <unknown function> + 0xdee1cc (0xffff6e3201cc in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch_npu/lib/libtorch_npu.so)
+frame #13: <unknown function> + 0x420ca30 (0xffff7e52da30 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #14: <unknown function> + 0x4213b04 (0xffff7e534b04 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #15: <unknown function> + 0x422d330 (0xffff7e54e330 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_cpu.so)
+frame #16: <unknown function> + 0xb482a8 (0xffff82ae72a8 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_python.so)
+frame #17: <unknown function> + 0x223814 (0xffff821c2814 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/lib/libtorch_python.so)
+frame #18: <unknown function> + 0x200d94 (0xaaaabb270d94 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #19: _PyObject_MakeTpCall + 0x94 (0xaaaabb0ed50c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #20: <unknown function> + 0x1ec4e4 (0xaaaabb25c4e4 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #21: _PyEval_EvalFrameDefault + 0x72c4 (0xaaaabb0de3ac in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #22: <unknown function> + 0x10f920 (0xaaaabb17f920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #23: _PyFunction_Vectorcall + 0x90 (0xaaaabb0ed268 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #24: PyVectorcall_Call + 0xe0 (0xaaaabb0ed008 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #25: _PyEval_EvalFrameDefault + 0x1994 (0xaaaabb0d8a7c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #26: <unknown function> + 0x10f920 (0xaaaabb17f920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #27: _PyFunction_Vectorcall + 0x90 (0xaaaabb0ed268 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #28: _PyEval_EvalFrameDefault + 0x58bc (0xaaaabb0dc9a4 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #29: <unknown function> + 0x10f920 (0xaaaabb17f920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #30: _PyFunction_Vectorcall + 0x90 (0xaaaabb0ed268 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #31: _PyEval_EvalFrameDefault + 0x5738 (0xaaaabb0dc820 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #32: <unknown function> + 0x66188 (0xaaaabb0d6188 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #33: _PyEval_EvalFrameDefault + 0x5738 (0xaaaabb0dc820 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #34: <unknown function> + 0x10f920 (0xaaaabb17f920 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #35: _PyEval_EvalCodeWithName + 0x64 (0xaaaabb17fd7c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #36: PyEval_EvalCodeEx + 0x48 (0xaaaabb17fdd0 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #37: PyEval_EvalCode + 0x34 (0xaaaabb17fe14 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #38: <unknown function> + 0x146d44 (0xaaaabb1b6d44 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #39: <unknown function> + 0x146e4c (0xaaaabb1b6e4c in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #40: <unknown function> + 0x14a380 (0xaaaabb1ba380 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #41: PyRun_SimpleFileExFlags + 0x158 (0xaaaabb1ba578 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #42: Py_RunMain + 0x734 (0xaaaabb0e0fb4 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #43: Py_BytesMain + 0x3c (0xaaaabb0e1584 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+frame #44: <unknown function> + 0x2b040 (0xffff837be040 in /usr/lib64/libc.so.6)
+frame #45: __libc_start_main + 0x94 (0xffff837be118 in /usr/lib64/libc.so.6)
+frame #46: <unknown function> + 0x6fea8 (0xaaaabb0dfea8 in /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9)
+. This may indicate a possible application crash on rank 0 or a network set up issue.
+[ERROR] 2024-12-20-14:14:07 (PID:913715, Device:4, RankID:4) ERR02005 DIST internal error
+[2024-12-20 14:14:16,901] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 913711 closing signal SIGTERM
+[2024-12-20 14:14:16,902] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 913714 closing signal SIGTERM
+[2024-12-20 14:14:19,232] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 1 (pid: 913712) of binary: /home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/python3.9
+Process ForkServerProcess-8:
+Process ForkServerProcess-7:
+Process ForkServerProcess-4:
+Process ForkServerProcess-6:
+Process ForkServerProcess-2:
+Process ForkServerProcess-9:
+Process ForkServerProcess-3:
+Process ForkServerProcess-5:
+Traceback (most recent call last):
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 65, in wrapper
+    raise exp
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 62, in wrapper
+    func(*args, **kwargs)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 262, in task_distribute
+    key, func_name, detail = resource_proxy[TASK_QUEUE].get()
+  File "<string>", line 2, in get
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/managers.py", line 810, in _callmethod
+    kind, result = conn.recv()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 255, in recv
+    buf = self._recv_bytes()
+Traceback (most recent call last):
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 419, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 388, in _recv
+    raise EOFError
+Traceback (most recent call last):
+EOFError
+Traceback (most recent call last):
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 65, in wrapper
+    raise exp
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 62, in wrapper
+    func(*args, **kwargs)
+Traceback (most recent call last):
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 262, in task_distribute
+    key, func_name, detail = resource_proxy[TASK_QUEUE].get()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "<string>", line 2, in get
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 65, in wrapper
+    raise exp
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/managers.py", line 810, in _callmethod
+    kind, result = conn.recv()
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 62, in wrapper
+    func(*args, **kwargs)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 255, in recv
+    buf = self._recv_bytes()
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 262, in task_distribute
+    key, func_name, detail = resource_proxy[TASK_QUEUE].get()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 419, in _recv_bytes
+    buf = self._recv(4)
+  File "<string>", line 2, in get
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 388, in _recv
+    raise EOFError
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/managers.py", line 810, in _callmethod
+    kind, result = conn.recv()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 255, in recv
+    buf = self._recv_bytes()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 419, in _recv_bytes
+    buf = self._recv(4)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 65, in wrapper
+    raise exp
+EOFError
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 388, in _recv
+    raise EOFError
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 62, in wrapper
+    func(*args, **kwargs)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 262, in task_distribute
+    key, func_name, detail = resource_proxy[TASK_QUEUE].get()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "<string>", line 2, in get
+EOFError
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/managers.py", line 810, in _callmethod
+    kind, result = conn.recv()
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 65, in wrapper
+    raise exp
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 255, in recv
+    buf = self._recv_bytes()
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 62, in wrapper
+    func(*args, **kwargs)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 419, in _recv_bytes
+    buf = self._recv(4)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 262, in task_distribute
+    key, func_name, detail = resource_proxy[TASK_QUEUE].get()
+Traceback (most recent call last):
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 388, in _recv
+    raise EOFError
+Traceback (most recent call last):
+  File "<string>", line 2, in get
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/managers.py", line 810, in _callmethod
+    kind, result = conn.recv()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 255, in recv
+    buf = self._recv_bytes()
+EOFError
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 419, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 388, in _recv
+    raise EOFError
+EOFError
+Traceback (most recent call last):
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 65, in wrapper
+    raise exp
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 65, in wrapper
+    raise exp
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 62, in wrapper
+    func(*args, **kwargs)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 62, in wrapper
+    func(*args, **kwargs)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 262, in task_distribute
+    key, func_name, detail = resource_proxy[TASK_QUEUE].get()
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 262, in task_distribute
+    key, func_name, detail = resource_proxy[TASK_QUEUE].get()
+  File "<string>", line 2, in get
+  File "<string>", line 2, in get
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/managers.py", line 810, in _callmethod
+    kind, result = conn.recv()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/managers.py", line 810, in _callmethod
+    kind, result = conn.recv()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 255, in recv
+    buf = self._recv_bytes()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 419, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 255, in recv
+    buf = self._recv_bytes()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 388, in _recv
+    raise EOFError
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 419, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 388, in _recv
+    raise EOFError
+EOFError
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+EOFError
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 65, in wrapper
+    raise exp
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 62, in wrapper
+    func(*args, **kwargs)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 262, in task_distribute
+    key, func_name, detail = resource_proxy[TASK_QUEUE].get()
+  File "<string>", line 2, in get
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/managers.py", line 810, in _callmethod
+    kind, result = conn.recv()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 255, in recv
+    buf = self._recv_bytes()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 419, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 388, in _recv
+    raise EOFError
+EOFError
+Process ForkServerProcess-6:
+Process ForkServerProcess-8:
+Process ForkServerProcess-5:
+Process ForkServerProcess-7:
+Process ForkServerProcess-4:
+Process ForkServerProcess-9:
+Process ForkServerProcess-3:
+Process ForkServerProcess-2:
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 65, in wrapper
+    raise exp
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 65, in wrapper
+    raise exp
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 62, in wrapper
+    func(*args, **kwargs)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 65, in wrapper
+    raise exp
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 62, in wrapper
+    func(*args, **kwargs)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 262, in task_distribute
+    key, func_name, detail = resource_proxy[TASK_QUEUE].get()
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 62, in wrapper
+    func(*args, **kwargs)
+  File "<string>", line 2, in get
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 262, in task_distribute
+    key, func_name, detail = resource_proxy[TASK_QUEUE].get()
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 262, in task_distribute
+    key, func_name, detail = resource_proxy[TASK_QUEUE].get()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/managers.py", line 810, in _callmethod
+    kind, result = conn.recv()
+  File "<string>", line 2, in get
+  File "<string>", line 2, in get
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 255, in recv
+    buf = self._recv_bytes()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/managers.py", line 810, in _callmethod
+    kind, result = conn.recv()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/managers.py", line 810, in _callmethod
+    kind, result = conn.recv()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 419, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 255, in recv
+    buf = self._recv_bytes()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 255, in recv
+    buf = self._recv_bytes()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 388, in _recv
+    raise EOFError
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 419, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 419, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 388, in _recv
+    raise EOFError
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 388, in _recv
+    raise EOFError
+EOFError
+EOFError
+EOFError
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 65, in wrapper
+    raise exp
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 65, in wrapper
+    raise exp
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 62, in wrapper
+    func(*args, **kwargs)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 62, in wrapper
+    func(*args, **kwargs)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 262, in task_distribute
+    key, func_name, detail = resource_proxy[TASK_QUEUE].get()
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 262, in task_distribute
+    key, func_name, detail = resource_proxy[TASK_QUEUE].get()
+  File "<string>", line 2, in get
+  File "<string>", line 2, in get
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/managers.py", line 810, in _callmethod
+    kind, result = conn.recv()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/managers.py", line 810, in _callmethod
+    kind, result = conn.recv()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 255, in recv
+    buf = self._recv_bytes()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 255, in recv
+    buf = self._recv_bytes()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 419, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 419, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 388, in _recv
+    raise EOFError
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 388, in _recv
+    raise EOFError
+EOFError
+EOFError
+Traceback (most recent call last):
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 65, in wrapper
+    raise exp
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 62, in wrapper
+    func(*args, **kwargs)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 262, in task_distribute
+    key, func_name, detail = resource_proxy[TASK_QUEUE].get()
+  File "<string>", line 2, in get
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/managers.py", line 810, in _callmethod
+    kind, result = conn.recv()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 255, in recv
+    buf = self._recv_bytes()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 419, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 388, in _recv
+    raise EOFError
+EOFError
+Traceback (most recent call last):
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 65, in wrapper
+    raise exp
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 62, in wrapper
+    func(*args, **kwargs)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 262, in task_distribute
+    key, func_name, detail = resource_proxy[TASK_QUEUE].get()
+  File "<string>", line 2, in get
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/managers.py", line 810, in _callmethod
+    kind, result = conn.recv()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 255, in recv
+    buf = self._recv_bytes()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 419, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 388, in _recv
+    raise EOFError
+EOFError
+Traceback (most recent call last):
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 65, in wrapper
+    raise exp
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 62, in wrapper
+    func(*args, **kwargs)
+  File "/usr/local/Ascend/ascend-toolkit/latest/python/site-packages/tbe/common/repository_manager/route.py", line 262, in task_distribute
+    key, func_name, detail = resource_proxy[TASK_QUEUE].get()
+  File "<string>", line 2, in get
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/managers.py", line 810, in _callmethod
+    kind, result = conn.recv()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 255, in recv
+    buf = self._recv_bytes()
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 419, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/connection.py", line 388, in _recv
+    raise EOFError
+EOFError
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/resource_tracker.py:216: UserWarning: resource_tracker: There appear to be 30 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/multiprocessing/resource_tracker.py:216: UserWarning: resource_tracker: There appear to be 30 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+Traceback (most recent call last):
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/run.py", line 806, in main
+    run(args)
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/ma-user/anaconda3/envs/PyTorch-2.1.0/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/workspace/Ascend-aceso/aceso/aceso_execute/../../pretrain_gpt.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-12-20_14:14:16
+  host      : ascend01
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 913713)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-12-20_14:14:16
+  host      : ascend01
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 913715)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2024-12-20_14:14:16
+  host      : ascend01
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 913716)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2024-12-20_14:14:16
+  host      : ascend01
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 913717)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2024-12-20_14:14:16
+  host      : ascend01
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 913718)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-12-20_14:14:16
+  host      : ascend01
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 913712)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

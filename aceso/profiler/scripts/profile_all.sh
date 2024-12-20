@@ -8,3 +8,5 @@ for model_size in "${modelsize[@]}"
 do
   bash ${ROOT_PATH}scripts/profile_small_gpt.sh "$model_size"
 done
+
+bash ${ROOT_PATH}scripts/profile_p2p.sh

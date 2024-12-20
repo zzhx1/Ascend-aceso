@@ -618,10 +618,6 @@ def train_step(forward_step_func, data_iterator,
     # Update learning rate.
     if update_successful:
         increment = args.micro_batch_size * get_num_microbatches()
-        print(f"increment: {increment}")
-        # increment = get_num_microbatches() * \
-        #             args.micro_batch_size * \
-        #             args.data_parallel_size
         opt_param_scheduler.step(increment=increment)
         skipped_iter = 0
     else:

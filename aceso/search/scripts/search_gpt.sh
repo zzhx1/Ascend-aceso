@@ -9,7 +9,7 @@
 
 #### Model info ####
 model_name=gpt
-model_size=13B
+model_size=$1
 global_batch_size=1024
 
 #### Hardware info ####

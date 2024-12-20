@@ -1,14 +1,12 @@
-#! /bin/bash
-export COMBINED_ENABLE=1
-export ASCEND_LAUNCH_BLOCKING=1
+#/bin/bash
 export CUDA_DEVICE_MAX_CONNECTIONS=1
 export PYTORCH_NPU_ALLOC_CONF=expandable_segments:True
 ROOT_PATH=$(pwd)/
 export PYTHONPATH=$PYTHONPATH:${ROOT_PATH}../../
 model_name=gpt
 #### Model info ####
-model_size=1_3B
-
+model_size=13B
+train_iters=8
 
 #### Hardware info ####
 NNODES=1
@@ -48,10 +46,9 @@ GPT_ARGS="
     --context-parallel-algo  ${CP_TYPE} \
     --use-flash-attn \
     --transformer-impl local \
-    --use-fused-rotary-pos-emb \
     --tokenizer-type GPT2BPETokenizer \
     --use-distributed-optimizer \
-    --train-iters 10 \
+    --train-iters ${train_iters} \
     --eval-iters 0 \
     --weight-decay 1e-2 \
     --adam-beta1 0.9 \
@@ -89,6 +86,8 @@ OUTPUT_ARGS="
     --eval-interval 2000 \
     --eval-iters 1 \
     --log-throughput \
+    --timing-log-level 2 \
+    --timing-log-option minmax \
     --log-path $LOG_PATH \
 "
 
