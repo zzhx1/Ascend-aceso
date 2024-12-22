@@ -870,7 +870,7 @@ def training_log(loss_dict, total_loss_dict, learning_rate, decoupled_learning_r
                 for row in time_to_csv:
                     writer.writerow(row)
 
-    return report_memory_flag, elapsed_time_per_iteration * 1000.0
+    return report_memory_flag, elapsed_time_per_iteration 
 
 
 def compute_throughputs_and_append_to_progress_log(iteration,
@@ -1014,6 +1014,7 @@ def train(forward_step_func, model, optimizer, opt_param_scheduler,
                 'validation_iterations_time_msecs_avg': validation_iterations_time_msecs_avg
             })
 
+    all_iteration_time = []
     while iteration < args.train_iters:
         if args.profile and \
            iteration == args.profile_step_start and \
@@ -1067,13 +1068,13 @@ def train(forward_step_func, model, optimizer, opt_param_scheduler,
                 decoupled_learning_rate = param_group['lr']
             else:
                 learning_rate = param_group['lr']
-        report_memory_flag = training_log(loss_dict, total_loss_dict,
+        report_memory_flag, elapsed_time_per_iteration = training_log(loss_dict, total_loss_dict,
                                           learning_rate,
                                           decoupled_learning_rate,
                                           iteration, loss_scale,
                                           report_memory_flag, skipped_iter,
                                           grad_norm, params_norm, num_zeros_in_grad)
-
+        all_iteration_time.append(elapsed_time_per_iteration)
         # Autoresume
         if args.adlr_autoresume and \
            (iteration % args.adlr_autoresume_interval == 0):
@@ -1178,6 +1179,7 @@ def train(forward_step_func, model, optimizer, opt_param_scheduler,
     if args.use_distributed_optimizer and args.overlap_param_gather:
         optimizer.disable_pre_hook()
 
+    
     # If any exit conditions (signal handler, duration, iterations) have been reached, exit.
     if exit:
         sys.exit()

@@ -56,7 +56,7 @@ from megatron.core.distributed import finalize_model_grads
 from modellink.training.initialize import set_jit_fusion_options
 from modellink.tasks.finetune.lora.utils import is_enable_lora
 
-
+all_iteration_time = []
 def model_provider_func_wrapper(model_provider_func):
     @wraps(model_provider_func)
     def wrapper(*args, **kwargs):
@@ -354,7 +354,11 @@ def pretrain(train_valid_test_dataset_provider,
             forward_step_func, model, optimizer, opt_param_scheduler, train_data_iterator, valid_data_iterator, process_non_loss_data_func, config = train_args
 
         print_datetime('after training is done')
-
+        if torch.distributed.get_rank() == 0:
+            print(f"{'-'*5} all-iteration-time {'-'*5}")
+            for i in range(len(all_iteration_time)):
+                print(f"iteration {i+1}: {all_iteration_time[i]:.3f}")
+            print(f"{'-'*30}")
         if args.save and iteration != 0 and iteration % args.save_interval != 0:
             save_checkpoint(iteration, model, optimizer, opt_param_scheduler,
                             num_floating_point_operations_so_far)
@@ -469,11 +473,31 @@ def train(forward_step_func, model, optimizer, opt_param_scheduler,
                 'train_iterations_time_msecs_avg': train_iterations_time_msecs_avg,
                 'validation_iterations_time_msecs_avg': validation_iterations_time_msecs_avg
             })
-
     if is_profile_enabled():
         prof = get_profiler()
         prof.start()
-
+######################################
+    # import torch_npu
+    # experimental_config = torch_npu.profiler._ExperimentalConfig(
+    #     aic_metrics=torch_npu.profiler.AiCMetrics.PipeUtilization,
+    #     profiler_level=torch_npu.profiler.ProfilerLevel.Level1,
+    #     l2_cache = False,
+    #     data_simplification = False
+    # )
+    # prof = torch_npu.profiler.profile(
+    #     activities=[
+    #             torch_npu.profiler.ProfilerActivity.CPU,
+    #             torch_npu.profiler.ProfilerActivity.NPU
+    #             ],
+    #     schedule=torch_npu.profiler.schedule(wait=1, warmup=1, active=1, repeat=0, skip_first=1),
+    #     on_trace_ready=torch_npu.profiler.tensorboard_trace_handler("./TB_result"),
+    #     record_shapes=False,
+    #     profile_memory=True,
+    #     with_stack=True,
+    #     with_flops=False,
+    #     experimental_config=experimental_config)
+    # prof.start()
+######################################
     while iteration < args.train_iters:
 
         # Update number of microbatches first without consistency check to decide if a
@@ -531,13 +555,14 @@ def train(forward_step_func, model, optimizer, opt_param_scheduler,
                 decoupled_learning_rate = param_group['lr']
             else:
                 learning_rate = param_group['lr']
-        report_memory_flag = training_log(loss_dict, total_loss_dict,
+        report_memory_flag, elapsed_time_per_iteration = training_log(loss_dict, total_loss_dict,
                                           learning_rate,
                                           decoupled_learning_rate,
                                           iteration, loss_scale,
                                           report_memory_flag, skipped_iter,
                                           grad_norm, params_norm, num_zeros_in_grad)
 
+        all_iteration_time.append(elapsed_time_per_iteration)
         # Autoresume
         if args.adlr_autoresume and \
            (iteration % args.adlr_autoresume_interval == 0):
@@ -624,7 +649,12 @@ def train(forward_step_func, model, optimizer, opt_param_scheduler,
 
         if is_profile_enabled():
             prof.step()
-
+######################################
+    #     prof.step()
+    # if torch.distributed.get_rank() == 0:
+    #     prof.export_chrome_trace('./chrome_trace_aceso_rank0.json')
+    # prof.stop() 
+######################################
     if is_profile_enabled():
         prof.stop()
     
@@ -641,6 +671,8 @@ def train(forward_step_func, model, optimizer, opt_param_scheduler,
     # Close out pre-hooks if using distributed optimizer and overlapped param gather.
     if args.use_distributed_optimizer and args.overlap_param_gather:
         optimizer.disable_pre_hook()
+
+    
 
     # If any exit conditions (signal handler, duration, iterations) have been reached, exit.
     if exit:
