@@ -154,3 +154,7 @@ cython_debug/
 
 draft.md
 A_tmp_tools
+TB_result
+fusion_result.json
+
+logs
