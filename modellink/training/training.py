@@ -49,7 +49,8 @@ from megatron.training.training import (
 import megatron.training.utils
 from megatron.training.utils import (
     check_adlr_autoresume_termination,
-    print_rank_0
+    print_rank_0, debug_mem_report
+
 )
 from megatron.core.distributed import DistributedDataParallel as DDP
 from megatron.core.distributed import finalize_model_grads
@@ -649,6 +650,7 @@ def train(forward_step_func, model, optimizer, opt_param_scheduler,
 
         if is_profile_enabled():
             prof.step()
+        # debug_mem_report("dehub_mem_report")
 ######################################
     #     prof.step()
     # if torch.distributed.get_rank() == 0:
